@@ -41,9 +41,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120%;
+    /* height: 100%; */
     top: 0;
-    position: sticky
+    position: sticky;
 }
 
 /**-----------------------Media Query------------------ -----*/
@@ -63,7 +63,7 @@ header{
 }
 
 /*?----PARA CEL 320 PX  VERTICAL----*/
-@media screen and (max-width:500px){
+@media screen and (max-width:626px){
     header{
         flex-direction: column;
         justify-content: center;
@@ -77,6 +77,9 @@ header{
     header img{ 
         margin-right: 100px;
     } 
+    li{
+        margin: -40px;
+    }
 }
 
 
@@ -96,8 +99,7 @@ header nav a:hover{
 header nav ul li{
     list-style: none;
     text-align: right;
-    /*display: inline-block;*/
-    margin: 40px 40px;
+    margin: 40px;
 }
 
 header nav ul{
@@ -146,13 +148,14 @@ header nav ul a{
     text-align: center;
 }
 
-/* @media screen and (max-width:768px){
-    .hero{
-        background-size: cover;
-        width: 100%;
+@media screen and (max-width:446px){
+    .hero h1{
+        font-size: 50px
+    }
+    .parrafo p{
+        font-size: 20px
     }
 }
- */
 
 
 /* @media screen and (max-width:280px){
@@ -178,7 +181,7 @@ header nav ul a{
 
 .lineas{
     width: auto;
-    height: 100vh;
+    height: auto;
     border-bottom:  #c7c268 solid 2px ;
 
 }
@@ -244,6 +247,46 @@ header nav ul a{
     }
 }
 
+@media screen and (max-width:446px){
+    .lineas-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .lineas-contenedor div{
+        width: 100%;
+        height: auto;
+    }
+    .lineas-contenedor img{
+        width: 100%;
+
+    }
+    .lineas-contenedor a{
+        width: auto;
+    }
+}
+@media screen and (max-width:626px){
+    .lineas-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .lineas-contenedor div{
+        width: 100%;
+        height: auto;
+    }
+    .lineas-contenedor img{
+        width: 100%;
+        
+    }
+    .lineas-contenedor a{
+        width: auto;
+    }
+}
 /*?------------------------CON-FLEXBOX------------------------*/
 /* .lineas{
     width: 100%;
