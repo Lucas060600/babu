@@ -48,7 +48,7 @@ header{
 
 /**-----------------------Media Query------------------ -----*/
 
-/*?----PARA TABLETS 768 VERTICAL----*/
+
 
 @media screen and (max-width:800px){
     header{
@@ -62,7 +62,7 @@ header{
     } 
 }
 
-/*?----PARA CEL 320 PX  VERTICAL----*/
+
 @media screen and (max-width:626px){
     header{
         flex-direction: column;
@@ -77,13 +77,13 @@ header{
     header img{ 
         margin-right: 100px;
     } 
-    li{
-        margin: -40px;
+    header nav ul li{
+        margin: 10px;
     }
 }
 
 
-
+/**-------------------------------*/
 
 
 header img{
