@@ -10,28 +10,10 @@
 
 /*?Inicioooooo*/
 
-body{
+.Contenedor{
     background-color: black;
     font-family: 'Inter', sans-serif;
 }
-
-
-/* @media screen and (max-width:1024px){
-    .Contenedor{    
-        display: flex;
-        flex-direction: column;
-
-    }
-}
-
-
-@media screen and (max-width:950px){
-    .Contenedor{    
-        display: flex;
-        flex-direction: column;
-    }
-}
- */
 
 /*!---------------------------Header------------------------------------*/
 
@@ -46,44 +28,7 @@ header{
     position: sticky;
 }
 
-/**-----------------------Media Query------------------ -----*/
 
-
-
-@media screen and (max-width:800px){
-    header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    header img{ 
-        margin-right: 100px;
-    } 
-}
-
-
-@media screen and (max-width:626px){
-    header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    ul{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    header img{ 
-        margin-right: 100px;
-    } 
-    header nav ul li{
-        margin: 10px;
-    }
-}
-
-
-/**-------------------------------*/
 
 
 header img{
@@ -96,7 +41,7 @@ header nav a:hover{
     color:rgb(10, 168, 10);
 }
 
-header nav ul li{
+.lista{
     list-style: none;
     text-align: right;
     margin: 40px;
@@ -107,14 +52,66 @@ header nav ul{
     justify-content: space-around;
 }
 
-header nav ul a{
+.lista a{
     text-decoration: none;
     color: black;
     font-weight: 900;
     font-size: 18px;
 }
 
+/**-----------------------Media Query------------------ -----*/
 
+
+
+@media screen and (max-width:834px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header img{ 
+        margin-right: 100px;
+    } 
+    .lista{
+        margin: 20px 40px 20px 40px;
+    }
+}
+
+
+@media screen and (max-width:626px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    header img{ 
+        margin-right: 100px;
+        width: 90px;
+        height: 90px;
+    } 
+    .lista{
+        margin: 5px 15px 5px 15px;
+    }
+    .lista a{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    nav{
+        margin-bottom: 10px;
+    }
+}
+
+
+/**-------------------------------*/
 /*!-------------------------Heroseccion--------------------------------------*/
 .hero{
     background-image: url("../img/Seleccionadas/planta1.JPG");
@@ -203,6 +200,12 @@ header nav ul a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.lineas-contenedor div:hover{
+    transform: scale(1.1);
+
 }
 
 .lineas h2{
@@ -410,8 +413,10 @@ header nav ul a{
 .video video{
     width: 600px;
     height: 500px;
-
 }
+
+/*!-----Media querys ---*/
+
 
 /*?--------------------------Contacto------------------------*/
 .contacto{
@@ -454,47 +459,60 @@ header nav ul a{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
     align-items: center;
+    width: 100%;
+    height: 200px;
     
 }
-.mapa{
-    /*border: #c7c268 solid 4px;*/
-    margin-left: 20px;
 
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 190px;
+    margin-left: 20px;
 }
 .mapa iframe{
-    margin: 30px;
-    width: 300px;
-    height: 200px; 
+    /* margin: 30px; */
+    width: 250px;
+    height: 190px; 
 
 
 }
 
 .redes a img{
-    width: 51px;
-    height: 51px;
+    width: 41px;
+    height: 41px;
+    border-radius: 10px;
 }
 .redes{
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 190px;
+    margin-right: 20px;
     
 }
 .redes a{
     display: flex;
     justify-content: space-around;
-    margin: 20px;
-    margin-right: 40px;
+    margin: 10px;
 }
 
 .textofooter{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    /* width: 1200px; */
+    height: 190px;
 }
 .textofooter div{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 5px;
 }
 .textofooter div a{
@@ -506,6 +524,159 @@ header nav ul a{
     border-bottom: black solid 2px;
     text-align: center;
     margin: 5px;
+    transition: 1s;
+}
+.textofooter div a:hover{
+    color:rgb(10, 168, 10);
+}
+
+/*!-----Media querys ---*/
+@media screen and (max-width:1200px){
+    .mapa iframe{
+        margin: 30px;
+        width: 200px;
+        height: 190px; 
+    }
+    .textofooter div a{
+        font-size: 15px;
+    }
+    .redes a img{
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .mapa{
+        width:200px;
+    }
+    .mapa iframe{
+        margin: 30px;
+        width: 180px;
+        height: 170px; 
+    }
+    .textofooter div{
+        margin: 1px;
+    }
+    .textofooter div a{
+        font-size: 15px;
+    }
+    .redes{
+        width: 200px;
+    }
+    .redes a img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* @media screen and (max-width:900px){
+    .footer{
+        flex-direction: column;
+        height: 220px;
+    }
+    .mapa{
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+    }
+    .mapa iframe{
+        width: 400px;
+        height: 60px;
+    }
+    .redes{
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        margin: 0px;
+    }
+    .redes a{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .textofooter{
+        width: 100%;
+        height: 60px;
+        margin: 0px;
+        
+    }
+} */
+
+
+@media screen and (max-width:900px){
+    .footer{
+        height: 250px;
+    }
+
+    .textofooter{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 33%;
+        height: 215px;
+    }
+    .textofooter div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .textofooter div a{
+        margin: 0.5px;
+        padding: 2px;
+        font-weight: 300;
+        border-bottom: black solid 1px;
+    }
+    .mapa{
+        width: 33%;
+        margin: 0px;
+        height: 220px;
+    }
+    .redes{
+        width: 20%;
+        margin: 0px;
+        height: 220px;
+        }
+}
+
+@media screen and (max-width:626px){
+    .footer{
+        height: 250px;
+    }
+    .mapa{
+        margin-left:10px ;
+    }
+    .mapa iframe{
+        margin-left: 60px;
+    }
+    .redes{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:540px){
+    .textofooter{
+        margin-left: 20px;
+    }
+    .textofooter div a{
+        font-size: 13px;
+    }
+    .mapa iframe{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .mapa iframe{
+        width: 120px;
+        height: 120px;
+    }
+    .redes a img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 /*?------------------Lineabienestar-page CON FLEBOX------------------*/
@@ -690,14 +861,23 @@ header nav ul a{
     justify-content: center;
     align-content: center;
     text-decoration: none;
-    font-size: 18px;
-    
 }
 .comprarbienestar a{
+    border: #c7c268 solid 1px;
+    border-radius: 30px;
+
+}
+
+.comprarbienestar a button{
     text-decoration: none;
     color: #f0edd7;
-    border: #c7c268 solid 1px;
-    padding: 5px;
+    border-bottom: #c7c268;
+    font-size: 18px; 
+
+}
+
+.comprarbienestar a button:hover{
+    color: #c7c268;
 
 }
 
@@ -711,7 +891,142 @@ header nav ul a{
     
 }
 
-    
+/*?----Media Querys------*/
+
+@media screen and (max-width:1350px){
+    .BienestarProductosGrid{
+        margin: 60px 100px 60px 100px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .BienestarProductosGrid{
+        margin: 60px 80px 60px 80px;
+    }
+    .ProductosGrid .imagen img{
+        width: 400px;
+        height: 267px;
+    }
+    .ProductosGrid{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 40px 267px 40px;
+    }
+    .titulo h3{
+        font-size: 20px;
+    }
+    .parrafobienestar{
+        font-size: 18px;
+    }
+    .comprarbienestar a button{
+        font-size: 18px;
+    }
+    .lineabienestarh2{
+        height: 80px;
+    }
+    .lineabienestarh2 div{
+        height: 80px;
+    }
+    .lineabienestarh2 div h2{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:849px){
+    .BienestarProductosGrid{
+        margin: 30px;
+    }
+    .ProductosGrid .imagen img{
+        width: 370px;
+        height: 247px;
+    }
+    .ProductosGrid{
+        display: grid;
+        grid-template-columns: 370px 1fr;
+        grid-template-rows: 40px 247px 40px;
+    }
+    .titulo h3{
+        font-size: 19px;
+    }
+    .parrafobienestar{
+        font-size: 17px;
+    }
+    .comprarbienestar a button{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .BienestarProductosGrid{
+        margin: 30px 20px 30px 20px;;
+    }
+    .ProductosGrid .imagen img{
+        width: 310px;
+        height: 217px;
+    }
+    .ProductosGrid{
+        display: grid;
+        grid-template-columns: 310px 1fr;
+        grid-template-rows: 40px 217px 40px;
+    }
+    .titulo h3{
+        font-size: 17px;
+    }
+    .parrafobienestar{
+        font-size: 15px;
+    }
+    .comprarbienestar a button{
+        font-size: 15px;
+    }
+    .lineabienestarh2{
+        height: 60px;
+    }
+    .lineabienestarh2 div{
+        height: 60px;
+    }
+    .lineabienestarh2 div h2{
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width:619px){
+    .ProductosGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 217px 40px 100px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "comprarbienestar"
+        "parrafobienestar";
+        row-gap: 20px;
+    }
+    .ProductosGrid .imagen{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:465px){
+    .ProductosGrid{
+        grid-template-rows: 40px 217px 40px 150px;
+    }
+
+}
+@media screen and (max-width:389px){
+    .ProductosGrid{
+        grid-template-rows: 40px 217px 40px 170px;
+    }
+
+}
+
 
 /*!--------------Derechaaaaaaaaaaaaaaaa-----------------*/
 
@@ -775,10 +1090,16 @@ header nav ul a{
     
 }
 .comprarbienestar2 a{
+    border: #c7c268 solid 1px;
+    border-radius: 30px; 
+
+}
+
+.comprarbienestar2 a button{
     text-decoration: none;
     color: #f0edd7;
-    border: #c7c268 solid 1px;
-    padding: 5px;
+    border-bottom: #c7c268;
+    font-size: 18px; 
 
 }
 
@@ -789,6 +1110,120 @@ header nav ul a{
     box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
     -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
     -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);    
+}
+
+/*?----Media Querys------*/
+
+@media screen and (max-width:1350px){
+    .BienestarProductosGrid{
+        margin: 60px 100px 60px 100px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .BienestarProductosGrid{
+        margin: 60px 80px 60px 80px;
+    }
+    .ProductosGrid2 .imagen2 img{
+        width: 400px;
+        height: 267px;
+    }
+    .ProductosGrid2{
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: 40px 267px 40px;
+    }
+    .titulo2 h3{
+        font-size: 20px;
+    }
+    .parrafobienestar2{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:849px){
+    .BienestarProductosGrid{
+        margin: 30px;
+    }
+    .ProductosGrid2 .imagen2 img{
+        width: 370px;
+        height: 247px;
+    }
+    .ProductosGrid2{
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: 40px 247px 40px;
+    }
+    .titulo2 h3{
+        font-size: 19px;
+    }
+    .parrafobienestar2{
+        font-size: 17px;
+    }
+    .comprarbienestar2 a button{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .BienestarProductosGrid{
+        margin: 30px 20px 30px 20px;;
+    }
+    .ProductosGrid2 .imagen2 img{
+        width: 310px;
+        height: 217px;
+    }
+    .ProductosGrid2{
+        display: grid;
+        grid-template-columns: 1fr 310px;
+        grid-template-rows: 40px 217px 40px;
+    }
+    .titulo2 h3{
+        font-size: 17px;
+    }
+    .parrafobienestar2{
+        font-size: 15px;
+    }
+    .comprarbienestar2 a button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:619px){
+    .ProductosGrid2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 217px 40px 100px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        grid-template-areas: 
+        "titulo2"
+        "imagen2"
+        "comprarbienestar2"
+        "parrafobienestar2";
+        row-gap: 20px;
+    }
+    .ProductosGrid2 .imagen2{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:465px){
+    .ProductosGrid2{
+        grid-template-rows: 40px 217px 40px 150px;
+    }
+
+}
+@media screen and (max-width:389px){
+    .ProductosGrid2{
+        grid-template-rows: 40px 217px 40px 170px;
+    }
+
 }
 
 /*!------------------------------Lineacapilar----------------*/
@@ -1091,21 +1526,26 @@ header nav ul a{
     width: 400px;
     height: 247px;
     border: #c7c268 solid 1px;
+    transition: 0.5s;
+}
+.stockconteiner img:hover{
+    transform: scale(1.1)
 }
 
 .stockgrid{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: auto;
+    width: 100%;
 
 }
 
 .stockconteiner h2{
+    font-family: 'Inter', sans-serif;
     color: #f0edd7;
     text-align: center;
     font-size: 20px;
+    font-weight: 600;
     border-bottom: #c7c268 solid 1px;
     padding: 10px;
     margin-left: 60px;
@@ -1115,6 +1555,9 @@ header nav ul a{
 }
 
 .stock h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
     color: #f0edd7;
     text-align: center;
     padding: 20px;
@@ -1126,40 +1569,57 @@ header nav ul a{
 
 .stockconteiner{
     display: grid;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 247px 50px;
     grid-template-areas: 
     "jabonimg salimg shampooimg "
     "jabontit saltit shampootit";
-    padding: 60px;
-    gap: 40px;
+    gap: 20px;
     column-gap: 150px;
-    width: auto;
+    margin: 40px 0px 40px 0px;
     
 }
 
 .stockconteiner1{
     grid-area: jabonimg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stockconteiner2{
     grid-area: salimg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stockconteiner3{
     grid-area: shampooimg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stockconteiner4{
     grid-area: jabontit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stockconteiner5{
     grid-area: saltit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .stockconteiner6{
     grid-area: shampootit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .stock{
     margin-top: 60px;
@@ -1168,14 +1628,113 @@ header nav ul a{
     align-items: center;
 }
 
-@media screen and (max-width:1313px){
-    .stockgrid{
-        display: grid;
-        grid-template-columns: repeat(2,auto) ;
-        grid-template-rows: repeat(3,auto);
+
+/*!------Media querys -------*/
+@media screen and (max-width:1584px){
+    .stockconteiner{
+        gap: 20px;
+        column-gap: 70px;
+    } 
+}
+
+@media screen and (max-width:1400px){
+    .stockconteiner{
+        gap: 20px;
+        column-gap: 40px;
+    } 
+}
+
+@media screen and (max-width:1320px){
+    .stockconteiner{
+        gap: 20px;
+        column-gap: 20px;
+    } 
+    .stockconteiner img{
+        width: 300px;
+        height: 157;
     }
 }
 
+@media screen and (max-width:1000px){
+    .stock{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .stockconteiner{
+        gap: 10px;
+        column-gap: 10px;
+        margin: 30px 0px 30px 0px;
+        grid-template-rows: 150px 50px;
+    } 
+    .stockconteiner img{
+        width: 270px;
+        height: 147px;
+    }
+    .stockconteiner h2{
+        font-size: 17px;
+        border-bottom: #c7c268 solid 1px;
+        padding: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+
+    }
+    .stock h1{
+        font-size: 22px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .stockconteiner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 157px 50px 157px 50px;
+        grid-template-areas: 
+        "jabonimg salimg"
+        "jabontit saltit"
+        "shampooimg ."
+        "shampootit .";
+        gap: 20px;
+        column-gap: 80px;
+        margin: 40px 0px 40px 0px;
+        
+    }
+    .stockconteiner3{
+        grid-column: 1 / 3 ;
+    }
+    .stockconteiner6{
+        grid-column: 1 / 3 ;
+    }
+}
+
+@media screen and (max-width:660px){
+    .stock{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .stockconteiner{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 157px 50px 157px 50px 157px 50px;
+        grid-template-areas: 
+        "jabonimg"
+        "jabontit"
+        "salimg"
+        "saltit"
+        "shampooimg"
+        "shampootit";
+        gap: 20px;
+        margin: 40px 0px 40px 0px;   
+    }
+    .stockconteiner3{
+        grid-column: 1 / 2;
+    }
+    .stockconteiner6{
+        grid-column: 1 / 2 ;
+    }
+}   
 /*!------------------nosotros---------------*/
 .nosotros{
     color: #c7c268;
