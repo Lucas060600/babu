@@ -10,16 +10,27 @@
 
 /*?Inicioooooo*/
 
-.Contenedor{
-    background-color: black;
+body{
+    background-color: #020108;
+    /* background-color: black; */
     font-family: 'Inter', sans-serif;
 }
 
+main{
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
 /*!---------------------------Header------------------------------------*/
 
 header{
     z-index: 1;
-    background-color: #F9F5E4;
+    /* background: rgb(249,245,228);
+    background: linear-gradient(90deg, rgba(249,245,228,1) 23%, rgba(249,245,228,1) 78%, rgba(184,179,91,1) 98%); */
+    /* background: rgb(249,245,228);
+    background: linear-gradient(90deg, rgba(249,245,228,1) 29%, rgba(248,247,249,1) 35%, rgba(248,247,254,1) 49%, rgba(248,247,246,1) 61%, rgba(249,246,235,1) 68%); */
+    background: rgb(249,245,228);
+    background: linear-gradient(90deg, rgba(249,245,228,1) 0%, rgba(242,240,219,1) 44%, rgba(218,221,186,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +38,6 @@ header{
     top: 0;
     position: sticky;
 }
-
-
-
 
 header img{
     width: 100px;
@@ -50,6 +58,8 @@ header nav a:hover{
 header nav ul{
     display: flex;
     justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
 }
 
 .lista a{
@@ -89,27 +99,32 @@ header nav ul{
     }
     ul{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         align-items: center;
     }
     header img{ 
         margin-right: 100px;
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
     } 
     .lista{
-        margin: 5px 15px 5px 15px;
+        margin: 5px 25px 5px 25px;
     }
     .lista a{
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
     }
     nav{
         margin-bottom: 10px;
+
     }
 }
-
+@media screen and (max-width:422px){
+    .lista{
+        margin: 5px 10px 5px 10px;
+    }
+}
 
 /**-------------------------------*/
 /*!-------------------------Heroseccion--------------------------------------*/
@@ -132,6 +147,13 @@ header nav ul{
     font-family: 'Crimson Pro', serif;
     text-align: center;
 }
+
+span{
+    color: #c7c268;
+    font-style: italic;
+
+}
+
 
 .parrafo{
     align-items: center;
@@ -393,6 +415,7 @@ header nav ul{
     border-bottom: #c7c268 solid 2px;
     flex-wrap: wrap;
 
+
 }
 .video div{
     width: 50%;
@@ -455,7 +478,7 @@ header nav ul{
 /*!---------------------------Foooooter-------------------------------------------*/
 .footer{
     position: relative;
-    background-color: #524c4c;
+    background-color: #2d2e33!important;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -521,7 +544,7 @@ header nav ul{
     font-weight: 600;
     text-decoration: none;
     padding: 5px;
-    border-bottom: black solid 2px;
+    /* border-bottom: black solid 2px; */
     text-align: center;
     margin: 5px;
     transition: 1s;
@@ -770,6 +793,7 @@ header nav ul{
     background-repeat: no-repeat;
     width: 100%;
     height: 100px;
+    
 }
 
 .lineabienestarh2 div{
@@ -787,7 +811,7 @@ header nav ul{
 .lineabienestarh2 div h2{
     color: #f0edd7;
     padding: 10px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
     /* border: #c7c268 solid 1px;
@@ -809,6 +833,11 @@ header nav ul{
     width: 460px;
     height: 307px;
     border: #c7c268 solid 2px;
+    transition-duration: 0.5s;
+}
+
+.ProductosGrid .imagen img:hover{
+    transform: scale(1.3) ;
 }
 
 .ProductosGrid{
@@ -834,6 +863,7 @@ header nav ul{
     justify-content: center;
     align-content: center;
     font-size: 18px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .imagen{
@@ -948,13 +978,13 @@ header nav ul{
         grid-template-rows: 40px 247px 40px;
     }
     .titulo h3{
-        font-size: 19px;
+        font-size: 21px;
     }
     .parrafobienestar{
         font-size: 17px;
     }
     .comprarbienestar a button{
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -1034,6 +1064,11 @@ header nav ul{
     width: 460px;
     height: 307px;
     border: #c7c268 solid 2px;
+    transition: 0.5s;
+}
+
+.ProductosGrid2 .imagen2 img:hover{
+    transform: scale(1.3) ;
 }
 
 .ProductosGrid2{
@@ -1059,6 +1094,7 @@ header nav ul{
     justify-content: center;
     align-content: center;
     font-size: 18px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .imagen2{
@@ -1101,6 +1137,10 @@ header nav ul{
     border-bottom: #c7c268;
     font-size: 18px; 
 
+}
+
+.comprarbienestar2 a button:hover{
+    color: #c7c268;
 }
 
 .ProductosGrid2 .imagen2 img{  
@@ -1161,9 +1201,10 @@ header nav ul{
     }
     .parrafobienestar2{
         font-size: 17px;
+        padding: 0px;
     }
     .comprarbienestar2 a button{
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -1317,6 +1358,7 @@ header nav ul{
 
 .tituloC h3{
     border-bottom: #c7c268 solid 1px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .comprarcapilar{
@@ -1330,13 +1372,6 @@ header nav ul{
     font-size: 18px;
     
 }
-.comprarcapilar a{
-    text-decoration: none;
-    color: #f0edd7;
-    border: #c7c268 solid 1px;
-    padding: 5px;
-
-}
 
 .CapilarGrid .imagenC img{  
     width: 460px;
@@ -1348,6 +1383,161 @@ header nav ul{
     
 }
 
+.comprarcapilar a{
+    border: #c7c268 solid 1px;
+    border-radius: 30px;
+
+}
+
+.comprarcapilar a button{
+    text-decoration: none;
+    color: #f0edd7;
+    border-bottom: #c7c268;
+    font-size: 18px; 
+
+}
+
+.comprarcapilar a button:hover{
+    color: #c7c268;
+
+}
+
+/*!--------------------Media Querys----------------*/
+
+@media screen and (max-width:1350px){
+    .CapilarProductosGrid{
+        margin: 60px 100px 60px 100px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .CapilarProductosGrid{
+        margin: 60px 80px 60px 80px;
+    }
+    .CapilarGrid .imagenC img{
+        width: 400px;
+        height: 267px;
+    }
+    .CapilarGrid{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 40px 267px 40px;
+    }
+    .tituloC h3{
+        font-size: 23px;
+    }
+    .parrafocapilar{
+        font-size: 18px;
+    }
+    .comprarcapilar a button{
+        font-size: 18px;
+    }
+    .lineacapilarh2{
+        height: 80px;
+    }
+    .lineacapilarh2 div{
+        height: 80px;
+    }
+    .lineacapilarh2 div h2{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:849px){
+    .CapilarProductosGrid{
+        margin: 30px;
+    }
+    .CapilarGrid .imagenC img{
+        width: 370px;
+        height: 247px;
+    }
+    .CapilarGrid{
+        display: grid;
+        grid-template-columns: 370px 1fr;
+        grid-template-rows: 40px 247px 40px;
+    }
+    .tituloC h3{
+        font-size: 21px;
+    }
+    .parrafocapilar{
+        font-size: 17px;
+        padding: 0px;
+    }
+    .comprarcapilar a button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .CapilarProductosGrid{
+        margin: 30px 20px 30px 20px;;
+    }
+    .CapilarGrid .imagenC img{
+        width: 310px;
+        height: 217px;
+    }
+    .CapilarGrid{
+        display: grid;
+        grid-template-columns: 310px 1fr;
+        grid-template-rows: 40px 217px 40px;
+    }
+    .tituloC h3{
+        font-size: 20px;
+    }
+    .parrafocapilar{
+        font-size: 15px;
+    }
+    .comprarcapilar a button{
+        font-size: 15px;
+    }
+    .lineacapilarh2{
+        height: 60px;
+    }
+    .lineacapilarh2 div{
+        height: 60px;
+    }
+    .lineacapilarh2 div h2{
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width:619px){
+    .CapilarGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 217px 40px 100px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        grid-template-areas: 
+        "tituloC"
+        "imagenC"
+        "comprarcapilar"
+        "parrafocapilar";
+        row-gap: 20px;
+    }
+    .CapilarGrid .imagenC{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:465px){
+    .CapilarGrid{
+        grid-template-rows: 40px 217px 40px 150px;
+    }
+
+}
+@media screen and (max-width:389px){
+    .CapilarGrid{
+        grid-template-rows: 40px 217px 40px 170px;
+    }
+
+}
 /*?----------COLUMNSCAPILAR--------------*/
 .imagenCCol img{
     width: 460px;
@@ -1364,11 +1554,13 @@ header nav ul{
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap: 100px;
-    margin: 60px auto 100px auto;
-    border-bottom: #c7c2688c solid 20px;
-    border-top: #c7c2688c solid 20px;
+    grid-template-columns: repeat(2,460px);
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    margin: 60px 0px 100px 0px;
+    border-bottom: #c7c2688c solid 10px;
+    border-top: #c7c2688c solid 10px;
 
 }
 
@@ -1376,16 +1568,18 @@ header nav ul{
 
 .CapilarGridCol{
     display: grid;
+    justify-content: center;
+    justify-items: center;
     grid-template-columns: repeat(1,auto);
-    grid-auto-rows: repeat(4,307px);
+    grid-template-rows: 50px 307px 50px 150px;
     color: #f0edd7;
     grid-template-areas: 
     "tituloCCol"
     "imagenCCol"
     "comprarcapilarCol"
     "parrafocapilarCol";
-    gap: 30px;
-    margin: 30px;
+    gap: 25px;
+    margin: 30px 0px 30px 0px;
 }
 
 .tituloCCol{
@@ -1396,31 +1590,32 @@ header nav ul{
     justify-content: center;
     align-content: center;
     font-size: 18px;
+    width: 100%;
+    height: 50px;
 }
 
 .tituloCCol h3{
-    padding: 10px;
     border-bottom: #c7c268 solid 1px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .imagenCCol{
     grid-area: imagenCCol;
     display: flex;
     justify-content: center;
+    width: 460px;
+    height: 307px;
 }
 
 
 .parrafocapilarCol{
     grid-area: parrafocapilarCol;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    text-align: center;
 }
 
 .parrafocapilarCol p{
     font-size: 18px;
+    text-align: center;
 }
 
 .comprarcapilarCol{
@@ -1436,10 +1631,117 @@ header nav ul{
 
 
 .comprarcapilarCol a{
+    border: #c7c268 solid 1px;
+    border-radius: 30px;
+
+}
+
+.comprarcapilarCol a button{
     text-decoration: none;
     color: #f0edd7;
-    border: #c7c268 solid 1px;
-    padding: 5px;
+    border-bottom: #c7c268;
+    font-size: 18px; 
+
+}
+
+.comprarcapilarCol a button:hover{
+    color: #c7c268;
+}
+
+@media screen and (max-width:1050px) {
+    .ColumnCapilarCol{
+        row-gap: 30px;
+    }
+    
+}
+
+@media screen and (max-width:1000px){
+    .ColumnCapilarCol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        flex-wrap: wrap;
+        
+    }
+    .CapilarGridCol .imagenCCol img{
+        width: 400px;
+        height: 267px;
+    }
+    .CapilarGridCol{
+        grid-template-rows: 40px 267px 40px 100px;
+        margin: 30px 0px 30px 0px;
+    }
+    .tituloCCol h3{
+        font-size: 23px;
+    }
+    .parrafocapilarCol{
+        font-size: 18px;
+    }
+    .comprarcapilarCol a button{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:849px){
+    .CapilarGridCol .imagenCCol img{
+        width: 370px;
+        height: 247px;
+    }
+    .CapilarGridCol{
+        grid-template-rows: 40px 247px 40px 100px;
+    }
+    .tituloCCol h3{
+        font-size: 21px;
+    }
+    .parrafocapilarCol p{
+        font-size: 17px;
+        padding: 0px;
+    }
+    .comprarcapilarCol a button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .CapilarGridCol{
+        grid-template-rows: 30px 217px 30px 80px;
+
+    }
+    .CapilarGridCol .imagenCCol img{
+        width: 310px;
+        height: 217px;
+    }
+    .tituloCCol h3{
+        font-size: 20px;
+    }
+    .parrafocapilarCol p{
+        font-size: 15px;
+    }
+    .comprarcapilarCol a button{
+        font-size: 15px;
+    }
+    .imagenCCol{
+        width: 310px;
+
+    }
+}
+
+@media screen and (max-width:619px){
+    .CapilarGridCol{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 217px 40px 100px;
+        row-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:499px){
+    .CapilarGridCol{
+        grid-template-rows: 40px 217px 40px 120px;
+    }
 }
 
 /*!--------------Derechaaaaaaaaaaaaaaaa-----------------*/
@@ -1460,8 +1762,7 @@ header nav ul{
     grid-template-areas: 
     ". tituloC2"
     "parrafocapilar2 imagenC2"
-    ". comprarcapilar2"
-    ;
+    ". comprarcapilar2";
     gap: 20px;
 }
 
@@ -1490,6 +1791,7 @@ header nav ul{
 
 .tituloC2 h3{
     border-bottom: #c7c268 solid 1px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .comprarcapilar2{
@@ -1504,12 +1806,23 @@ header nav ul{
     
 }
 .comprarcapilar2 a{
-    text-decoration: none;
-    color: #f0edd7;
     border: #c7c268 solid 1px;
-    padding: 5px;
+    border-radius: 30px;
 
 }
+
+.comprarcapilar2 a button{
+    text-decoration: none;
+    color: #f0edd7;
+    border-bottom: #c7c268;
+    font-size: 18px; 
+
+}
+
+.comprarcapilar2 a button:hover{
+    color: #c7c268;
+}
+
 
 .CapilarGrid2 .imagenC2 img{  
     width: 460px;
@@ -1520,6 +1833,130 @@ header nav ul{
     -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
 }
 
+
+
+@media screen and (max-width:1000px){
+
+    .CapilarGrid2 .imagenC2 img{
+        width: 400px;
+        height: 267px;
+    }
+    .CapilarGrid2{
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: 40px 267px 40px;
+    }
+    .tituloC2 h3{
+        font-size: 23px;
+    }
+    .parrafocapilar2{
+        font-size: 18px;
+    }
+    .comprarcapilar2 a button{
+        font-size: 18px;
+    }
+    .lineacapilarh2{
+        height: 80px;
+    }
+    .lineacapilarh2 div{
+        height: 80px;
+    }
+    .lineacapilarh2 div h2{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:849px){
+    .CapilarGrid2 .imagenC2 img{
+        width: 370px;
+        height: 247px;
+    }
+    .CapilarGrid2{
+        display: grid;
+        grid-template-columns: 1fr 370px;
+        grid-template-rows: 40px 247px 40px;
+    }
+    .tituloC2 h3{
+        font-size: 21px;
+    }
+    .parrafocapilar2{
+        font-size: 17px;
+        padding: 0px;
+    }
+    .comprarcapilar2 a button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:699px){
+    .CapilarProductosGrid{
+        margin: 30px 20px 30px 20px;;
+    }
+    .CapilarGrid2 .imagenC2 img{
+        width: 310px;
+        height: 217px;
+    }
+    .CapilarGrid2{
+        display: grid;
+        grid-template-columns: 1fr 310px;
+        grid-template-rows: 40px 217px 40px;
+    }
+    .tituloC2 h3{
+        font-size: 20px;
+    }
+    .parrafocapilar2{
+        font-size: 15px;
+    }
+    .comprarcapilar2 a button{
+        font-size: 15px;
+    }
+    .lineacapilarh2{
+        height: 60px;
+    }
+    .lineacapilarh2 div{
+        height: 60px;
+    }
+    .lineacapilarh2 div h2{
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width:619px){
+    .CapilarGrid2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 217px 40px 100px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        grid-template-areas: 
+        "tituloC2"
+        "imagenC2"
+        "comprarcapilar2"
+        "parrafocapilar2";
+        row-gap: 20px;
+    }
+    .CapilarGrid2 .imagenC2{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:465px){
+    .CapilarGrid2{
+        grid-template-rows: 40px 217px 40px 150px;
+    }
+
+}
+@media screen and (max-width:389px){
+    .CapilarGrid2{
+        grid-template-rows: 40px 217px 40px 170px;
+    }
+
+}
 
 /*!------------------Stocklimitado---------------*/
 .stockconteiner img{
@@ -1555,8 +1992,8 @@ header nav ul{
 }
 
 .stock h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 40px;
     font-weight: 700;
     color: #f0edd7;
     text-align: center;
@@ -1624,7 +2061,8 @@ header nav ul{
 .stock{
     margin-top: 60px;
     margin-bottom: 60px;
-    background-color: #5e5d568f;
+    background-color: #252525;
+    /* background-color: #5e5d568f; */
     align-items: center;
 }
 
