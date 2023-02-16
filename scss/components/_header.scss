@@ -1,0 +1,42 @@
+/*!---------------------------Header------------------------------------*/
+header{
+    z-index: 1;
+    background-color: #f9f5e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+
+    img{
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin: 0px;
+            padding: 0px;
+
+            .lista{
+                list-style: none;
+                text-align: right;
+                margin: 40px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                    font-size: 18px;
+                    transition: 0.5s;
+                    &:hover{
+                        color:rgb(10, 168, 10);
+                    }
+                }
+
+            }
+        }
+    }
+}

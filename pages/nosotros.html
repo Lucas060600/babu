@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--!CSS-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -16,7 +17,25 @@
             <nav>
                 <ul>
                     <li class="lista"><a href="../index.html">Inicio</a></li>
-                    <li class="lista"><a href="../index.html #lineas">Productos</a>
+                    <li class="lista">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="../pages/lineabienestar.html">Linea bienestar</a></li>
+                                <li><a class="dropdown-item" href="../pages/lineacapilar.html">Linea capilar</a></li>
+                                <li><a class="dropdown-item" href="../pages/lineacorporal.html">Linea corporal</a></li>
+                                <li><a class="dropdown-item" href="../pages/lineadental.html">Linea dental</a></li>
+                                <li><a class="dropdown-item" href="../pages/lineafacial.html">Linea facial</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/lineafacial.html">Linea esencial</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="lista"><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="lista"><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
@@ -40,49 +59,70 @@
             </section>
         </main>
         <footer id="pie" class="footer">
-            <div class="redes">
-                <div>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+            <div class="imgfooter">
+                <a href="../index.html"><img src="../img/logos/logfooter.jpg" alt=""></a>
+            </div>
+            
+            <div class="contenido">
+                <!-- <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.097005081144!2d-58.68712408242754!3d-34.6856014651618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f4c0e57695%3A0x1b634ad7a8ef6b35!2sCalder%C3%B3n%20de%20la%20Barca%2C%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671721097594!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
+                <div class="textobloque">
+                    <div class="textofooter">
+                        <div>
+                        <a href="../pages/lineabienestar.html">Línea bienestar</a>
+                        </div>
+                        <div>
+                        <a href="../pages/lineacapilar.html">Línea capilar</a>
+                        </div>
+                        <div>
+                        <a href="../pages/lineacorporal.html">Línea corporal</a>
+                        </div>
+                        <div>
+                        <a href="../pages/lineadental.html">Línea dental</a>
+                        </div>
+                    </div>
+
+                    <div class="textofooter">
+                        
+                        <div>
+                        <a href="../pages/lineafacial.html">Línea facial</a>
+                        </div>
+                        <div>
+                        <a href="../pages/lineaesencial.html">Línea esencial</a>
+                        </div>
+                        <div>
+                        <a href="../pages/nosotros.html">Nosotros</a>
+                        </div>
+                        <div>
+                        <a href="#">Pagos y entregas</a>
+                        </div>  
+                    </div>
                 </div>
 
-                <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
+                <div class="redes">
+                    <div>
+                    <a href="https://www.instagram.com/babu.fitogina/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+                    </div>
+
+                    <div>
+                    <a href="https://www.facebook.com/babu.cosmetica.natural/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
+                    </div>
+
+                    <div>
+                    <a href="https://chat.whatsapp.com/Lue770oafQ75nbKhgaFB2Pi" target="_blank"><img src="../img/whatsapp.png" alt="Logo Whatsapp"></a>
+                    </div>
                 </div>
 
-                <div>
-                <a href="https://chat.whatsapp.com/EWbF2GeAsDE29ObYfWF3Li" target="_blank"><img src="../img/whatsapp.png" alt="Logo Whatsapp"></a>
-                </div>
             </div>
-            <div class="textofooter">
-                <div>
-                <a href="../pages/lineabienestar.html">Línea bienestar</a>
-                </div>
-                <div>
-                <a href="../pages/lineacapilar.html">Línea capilar</a>
-                </div>
-                <div>
-                <a href="../pages/lineacorporal.html">Línea corporal</a>
-                </div>
-                <div>
-                <a href="../pages/lineadental.html">Línea dental</a>
-                </div>
-                <div>
-                <a href="../pages/lineafacial.html">Línea facial</a>
-                </div>
-                <div>
-                <a href="../pages/lineaesencial.html">Línea esencial</a>
-                </div>
-                <div>
-                <a href="">Nosotros</a>
-                </div>
-                <div>
-                <a href="">Pagos y entregas</a>
-                </div>
+            <div class="copy">
+                <p>&copy; copyright  2023 sujeto a derechos de Babu</p>
             </div>
-            <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.097005081144!2d-58.68712408242754!3d-34.6856014651618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f4c0e57695%3A0x1b634ad7a8ef6b35!2sCalder%C3%B3n%20de%20la%20Barca%2C%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671721097594!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 </html>

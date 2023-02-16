@@ -1,0 +1,193 @@
+/*!---------------Header MEDIA QUERY------------*/
+
+@media screen and (max-width:834px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        img{ 
+        margin-right: 100px;
+        } 
+        nav{
+            ul{
+                .lista{
+                    margin: 20px 40px 20px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:626px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            margin-right: 100px;
+            width: 70px;
+            height: 70px;
+        }
+        nav{
+            margin-bottom: 10px;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+
+                .lista{
+                    margin: 5px 25px 5px 25px;
+
+                    a{
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:422px){
+    header{
+        nav{
+            .lista{
+                margin: 5px 10px 5px 10px;
+            }
+        }
+    }
+}
+
+/*-----HERO MEDIA QUERY-----*/
+@media screen and (max-width:834px){
+    .hero{
+        h1{
+            font-size: 70px
+        }
+        .parrafo{
+            margin-top: 4em;
+            p{
+                font-size: 25px
+            }
+        }
+    }
+}
+
+@media screen and (max-width:422px){
+    .hero{
+        h1{
+            font-size: 50px;
+        }
+        .parrafo p{
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width:422px){
+    .hero h1{
+        font-size: 50px;
+    }
+    .parrafo p{
+        font-size: 20px;
+    }
+}
+
+/*!--------Lineas Media Query-------*/
+@media screen and (max-width:1439px){
+    .lineas{
+        .lineas-contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .lineas{
+        .lineas-contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,auto);
+        }
+    }
+}
+
+@media screen and (max-width:626px){
+    .lineas{
+        .lineas-contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,auto);
+            width: auto;
+            padding: 0px;
+            margin: 0px;
+
+            div{
+                width: 100%;
+                height: auto;
+
+                a{
+                    width: auto;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:626px) and (min-width:446px){
+    .lineas{
+        .lineas-contenedor{
+            div{
+                h3{
+                    left: 150px;
+                    right: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:446px){
+    .lineas{
+        .lineas-contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,auto);
+            width: auto;
+            padding: 0px;
+            margin: 0px;
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3406px;
+                height: 300px;
+                padding: 0px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 340px;
+                    height: 300px;
+
+                    img{
+                        width: 330px;
+                        height: 227px;
+                    }
+                }
+            }
+        }
+    }
+}
+
