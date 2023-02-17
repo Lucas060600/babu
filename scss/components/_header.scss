@@ -1,38 +1,52 @@
 /*!---------------------------Header------------------------------------*/
 header{
+    @include flex (flex, space-between, center);
     z-index: 1;
     background-color: #f9f5e4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     top: 0;
     position: sticky;
-
     img{
-        width: 100px;
-        height: 100px;
+        @extend %WandH100;
         margin-left: 100px;
     }
     nav{
         ul{
-            display: flex;
-            justify-content: space-around;
-            margin: 0px;
-            padding: 0px;
-
+            @include flex (flex, space-around, center);
+            @extend %marginpad;
             .lista{
-                list-style: none;
-                text-align: right;
-                margin: 40px;
-
+                @extend %flex;
+                margin: 0px;
+                padding: 0px;
                 a{
+                    @include WandH100 (18PX, 900);
                     text-decoration: none;
                     color: black;
-                    font-weight: 900;
-                    font-size: 18px;
                     transition: 0.5s;
                     &:hover{
-                        color:rgb(10, 168, 10);
+                        color: nth($colores, 3);
+                    }
+                }
+                .dropdown{
+                    @extend %flex;
+                    @extend %letrasdeco;
+                    border: none;
+                    a{
+                        text-align: center;
+                        padding: 2px;
+                    }
+                    .dropdown-menu{
+                        @extend %letrasdeco;
+                        @include bgandcolor (nth($colores, 8), nth($colores, 5));
+                        border: none;
+                        li{
+                            a{
+                                color: nth($colores, 5);
+                                transition: 0.5s;
+                                &:hover{
+                                    color: nth($colores, 7)
+                                }
+                            }
+                        }
                     }
                 }
 

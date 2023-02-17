@@ -1,3 +1,71 @@
 .footer{
-    
+    @include flexdirection (flex, center, column, center);
+    position: relative;
+    background-color: #1f1f1f!important;
+    @include WandH100 (100%, 360px);
+
+    .imgfooter{
+        @extend %flex;
+        @extend %WandH100;  
+        a{
+            img{
+                @include WandH100 (200px, 100px);
+            }
+        }
+
+    }
+    .contenido{
+        @include flexdirection (flex, space-evenly, column, center);
+        @include WandH100 (100%, 200px);
+        .textobloque{
+            @include flexdirection (flex, center, column, center);
+
+            .textofooter{
+                @include flexdirection (flex, space-evenly, row, center);
+                @include WandH100 (100%, auto);
+
+                div{
+                    @include flex (flex, space-evenly, center);
+                    margin: 5px;
+
+                    a{
+                        @include tamañoletras (18px, 600);
+                        @include marginpad (5px, 5px);
+                        @extend %letrasdeco;
+                        transition: 1s;
+                        color: nth($colores, 5);
+                        &:hover{
+                            color: nth($colores, 3);
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .redes{
+        @include flexdirection (flex, space-evenly, row-reverse, center);
+        div{
+            a{
+                @include flex (flex, space-around, center);
+                margin: 10px;
+                img{
+                    @include WandH100 (41px, 41px);
+                    border-radius: 10px;
+                }
+            }
+        }
+
+    }
+
+    .copy{
+        @extend %flex;
+        @include WandH100 (100%, 40px);
+        @include bgandcolor (#37353d, #f0edd7bb);
+
+        p{
+            margin: 0px;
+        }
+
+    }
 }

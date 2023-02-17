@@ -10,7 +10,7 @@
     color: rgba(255, 255, 255, 0.781);
     
     h1{
-        font-size: 80px;
+        @include tamañoletras (80px, 600);
         padding: 30px;
         font-family: 'Crimson Pro', serif;
         text-align: center;
@@ -20,9 +20,7 @@
         }
     }
     .parrafo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         font-size: 30px;
         border: #00000067 solid 4px;
         margin-top: 10em;
@@ -54,20 +52,17 @@
     }
     .lineas-contenedor{
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-rows: repeat(3,auto);
+        @include grid (repeat(3,auto), repeat(3,auto));
         column-gap: 30px;
         justify-items: center;
         align-items: center;
         margin: 40px;
 
         div{
+            @extend %flex;
             padding: 20px;
             position: relative;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             transition: 0.5s;
             &:hover{
                 transform: scale(1.1);
@@ -75,20 +70,19 @@
             h3{
                 position: absolute;
                 border: #00000067 solid 3px;
-                left: 90px;
-                right: 90px;
+                left: 20%;
+                right: 20%;
                 backdrop-filter: blur(15px);
                 color: #c7c268;
                 text-align: center;
+                font-family: 'Crimson Pro', serif;
+                font-size: 25px;
             }
 
             a{
-                width: 406px;
-                height: 307px;
-
+                @include WandH100 (406px, 307px);
                 img{
-                    width: 406px;
-                    height: 307px;
+                    @include WandH100 (406px, 307px);
                     border: #c7c268 solid 1px;
                 }
             }
