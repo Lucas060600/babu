@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--!CSS-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -15,7 +16,9 @@
 <body>
     <div class="Contenedor">
         <header>
-            <img src="../img/logos/logogreen.png" alt="">
+            <div class="imgheader">
+                <img src="../img/logos/logogreen.png" alt="">
+            </div>
             <nav>
                 <ul>
                     <li class="lista"><a href="../index.html">Inicio</a></li>
@@ -26,7 +29,8 @@
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="../pages/lineabienestar.html">Linea bienestar</a></li>
+                                <li><a class="dropdown-item" href="../pages/lineabienestar.html">Linea bienestar</a>
+                                </li>
                                 <li><a class="dropdown-item" href="../pages/lineacapilar.html">Linea capilar</a></li>
                                 <li><a class="dropdown-item" href="../pages/lineacorporal.html">Linea corporal</a></li>
                                 <li><a class="dropdown-item" href="../pages/lineadental.html">Linea dental</a></li>
@@ -40,13 +44,17 @@
                     </li>
                     <li class="lista"><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="lista"><a href="../pages/contacto.html">Contacto</a></li>
-                    <li class="lista"><a href="../pages/contacto.html">Sing In</a></li>
+                    <li class="lista">
+                        <a class="alogo" href="../pages/contacto.html">
+                            <img class="logo" src="../img/logos/login.png" alt="">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
-            <!--!-----------------------SECCION STOCK------------------->
+        <!--!-----------------------SECCION STOCK------------------->
         <main>
-            <section class="stock">
+            <!-- <section class="stock">
                 <h1>Stock limitado</h1>
                 <div class="stockgrid">
                     <div class="stockconteiner">
@@ -87,13 +95,50 @@
                         <div>
                             <p>PROXIMAMENTE</p>
                         </div>
+            </section> -->
+            <section>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/Seleccionadas/jaboncarbon.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Seleccionadas/shampoomanzanilla.JPG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Sal de baño.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+
+
             </section>
+
+
         </main>
         <footer id="pie" class="footer">
             <div class="imgfooter">
                 <a href="../index.html"><img src="../img/logos/logfooter.jpg" alt=""></a>
             </div>
-            
+
             <div class="contenido">
                 <!-- <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.097005081144!2d-58.68712408242754!3d-34.6856014651618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc0f4c0e57695%3A0x1b634ad7a8ef6b35!2sCalder%C3%B3n%20de%20la%20Barca%2C%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671721097594!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -101,60 +146,64 @@
                 <div class="textobloque">
                     <div class="textofooter">
                         <div>
-                        <a href="../pages/lineabienestar.html">Línea bienestar</a>
+                            <a href="../pages/lineabienestar.html">Línea bienestar</a>
                         </div>
                         <div>
-                        <a href="../pages/lineacapilar.html">Línea capilar</a>
+                            <a href="../pages/lineacapilar.html">Línea capilar</a>
                         </div>
                         <div>
-                        <a href="../pages/lineacorporal.html">Línea corporal</a>
+                            <a href="../pages/lineacorporal.html">Línea corporal</a>
                         </div>
                         <div>
-                        <a href="../pages/lineadental.html">Línea dental</a>
+                            <a href="../pages/lineadental.html">Línea dental</a>
                         </div>
                     </div>
 
                     <div class="textofooter">
-                        
+
                         <div>
-                        <a href="../pages/lineafacial.html">Línea facial</a>
+                            <a href="../pages/lineafacial.html">Línea facial</a>
                         </div>
                         <div>
-                        <a href="../pages/lineaesencial.html">Línea esencial</a>
+                            <a href="../pages/lineaesencial.html">Línea esencial</a>
                         </div>
                         <div>
-                        <a href="../pages/nosotros.html">Nosotros</a>
+                            <a href="../pages/nosotros.html">Nosotros</a>
                         </div>
                         <div>
-                        <a href="#">Pagos y entregas</a>
-                        </div>  
+                            <a href="#">Pagos y entregas</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="redes">
                     <div>
-                    <a href="https://www.instagram.com/babu.fitogina/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+                        <a href="https://www.instagram.com/babu.fitogina/" target="_blank"><img
+                                src="../img/instagram.png" alt="Logo Instagram"></a>
                     </div>
 
                     <div>
-                    <a href="https://www.facebook.com/babu.cosmetica.natural/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
+                        <a href="https://www.facebook.com/babu.cosmetica.natural/" target="_blank"><img
+                                src="../img/facebook.png" alt="Logo Facebook"></a>
                     </div>
 
                     <div>
-                    <a href="https://chat.whatsapp.com/Lue770oafQ75nbKhgaFB2Pi" target="_blank"><img src="../img/whatsapp.png" alt="Logo Whatsapp"></a>
+                        <a href="https://chat.whatsapp.com/Lue770oafQ75nbKhgaFB2Pi" target="_blank"><img
+                                src="../img/whatsapp.png" alt="Logo Whatsapp"></a>
                     </div>
                 </div>
 
             </div>
             <div class="copy">
-                <p>&copy; copyright  2023 sujeto a derechos de Babu</p>
+                <p>&copy; copyright 2023 sujeto a derechos de Babu</p>
             </div>
 
         </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
 
 </body>
+
 </html>

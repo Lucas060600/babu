@@ -17,7 +17,7 @@ body{
 }
 
 main{
-    max-width: 1920px;
+    max-width: 2000px;
     margin: 0 auto;
 
 }
@@ -29,7 +29,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 100%; */
     top: 0;
     position: sticky;
 }
@@ -63,6 +62,21 @@ header nav ul{
     font-weight: 900;
     font-size: 18px;
     transition: 0.5s;
+    align-items: center;
+}
+
+.lista .alogo{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    height: 100%;
+}
+
+.lista .alogo .logo{
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
 }
 
 .lista a:hover{
@@ -122,16 +136,25 @@ header nav ul{
     .lista{
         margin: 20px 40px 20px 40px;
     }
+    .lista .alogo .logo{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width:834px){
     .lista{
-        margin: 5px 25px 5px 25px;
+        margin: 5px 25px 10px 25px;
     }
     .lista a{
         font-weight: 600;
         font-size: 17px;
     }
+    .lista .alogo .logo{
+        width: 25px;
+        height: 25px;
+    }
+    
 
 }
 @media screen and (max-width:626px){
@@ -152,25 +175,46 @@ header nav ul{
         width: 70px;
         height: 70px;
     } 
+    .lista .alogo .logo{
+        width: 20px;
+        height: 20px;
+    }
+
     .lista{
-        margin: 5px 25px 5px 25px;
+        margin: 5px 15px 5px 15px;
     }
     .lista a{
         font-weight: 600;
         font-size: 14px;
     }
     nav{
+        padding: 5px;
         margin-bottom: 10px;
 
     }
 }
 
-@media screen and (max-width:626px){
-    .lista{
-        margin: 5px 15px 5px 15px;
-    }
-}
+
 @media screen and (max-width:440px){
+    header{
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 0;
+    }
+    header .imgheader{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .imgheade img{
+        margin: 0;
+    }
+    nav{
+        margin-bottom: 0px;
+    }
     ul{
         flex-direction: column;
     }
@@ -372,13 +416,6 @@ span{
     }
 }
 
-@media screen and (max-width:626px) and (min-width:446px){
-    /* .lineas-contenedor div h3{
-        left: 150px;
-        right: 150px;
-    } */
-}
-
 @media screen and (max-width:446px){
     .lineas-contenedor{
         grid-template-columns: 1fr;
@@ -521,17 +558,18 @@ span{
 .video div{
     width: 50%;
     margin: 50px;
-    color: #f0edd7;
     text-align: center;
 }
 
 .video div h2{
-
+    color: #c7c268;
     margin: 10px;
     font-size: 30px;
+    font-weight: 700;
 }
 
 .video div p{
+    color: #f0edd7;
     padding: 20px;
     font-size: 25px;
 
@@ -562,15 +600,13 @@ span{
 
 /*?--------------------------Contacto------------------------*/
 .contacto{
-    /* background: rgb(236,238,220);
-    background: linear-gradient(90deg, rgba(236,238,220,1) 0%, rgba(232,235,213,1) 17%, rgba(172,181,113,1) 49%, rgba(229,231,208,1) 85%, rgba(234,236,217,1) 100%); */
+    font-family: 'Crimson Pro', serif;
     color: #f9f5e4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: black solid 30px;
+    border: black solid 24.5px;
     align-items: center;
-
 }
 
 .contacto .contcont{
@@ -584,11 +620,11 @@ span{
 }
 
 .contacto .contcont .textocontacto h1{
+    color: #c7c268 ;
     text-align: center;
     margin-top: 30px;
+    font-size: 40px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
-    
 }
 
 .contacto .contcont .textocontacto{
@@ -609,9 +645,8 @@ span{
     text-align: center;
     padding: 10px;
     margin: 0px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
 }
 
 .formulario{
@@ -664,6 +699,10 @@ span{
 }
 
 .formularioconteiner div h3{
+    
+    color: #c7c268 ;
+    font-weight: 600;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -694,34 +733,104 @@ span{
     padding: 6px;
     border: #020108 2px solid;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 
 @media screen and (max-width:1320px){
-    .contcont{
-        width: 80%;
-    }
-}
-    /* .formulario form{
+    .contacto .contcont{
         width: 70%;
     }
-    .contacto .contcont .textocontacto div p{
-        font-size: 18px;
-        font-weight: 600;
-    }
-    
-} */
+}
 
-/* @media screen and (max-width:720px){
+@media screen and (max-width:900px){
+    .contacto .contcont{
+        width: 90%;
+    }
     .formulario form{
         width: 80%;
     }
+    .textocontacto div{
+        width: 80%;
+    }
+    .enviar{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contacto .contcont{
+        width: 95%;
+    }
+    .formulario form{
+        width: 90%;
+    }
+    .textocontacto div{
+        width: 90%;
+    }
+    .enviar{
+        width: 90%;
+    }
+    .contacto{
+        border: black solid 25px;
+    }
+    .enviar div input{
+        font-size: 15px;
+    }
+    .formularioconteiner div h3{
+        font-size: 28px;
+
+    }
     .contacto .contcont .textocontacto div p{
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 22px;
+
+    }
+    .contacto .contcont .textocontacto h1{
+        font-size: 35px;
+
+    }
+}
+
+@media screen and (max-width:499px){
+    .contacto .contcont{
+        width: 100%;
+
+    }
+    .formulario form{
+        width: 100%;
+
+    }
+    .textocontacto div{
+        width: 100%;
+    }
+    .enviar{
+        width: 100%;
+    }
+    .contacto{
+        border: black solid 15px;
     }
     
-} */
+    .enviar div input{
+        font-size: 14px;
+
+    }
+    .formularioconteiner div h3{
+        font-size: 25px;
+
+    }
+    .contacto .contcont .textocontacto div p{
+        font-size: 19px;
+
+    }
+    .contacto .contcont .textocontacto h1{
+        font-size: 32px;
+
+    }
+    .formulario .formularioconteiner div textarea {
+        height: 210px;
+    }
+}
+
 
 
 
@@ -2529,4 +2638,26 @@ span{
         font-size: 12px;
     }
     
+}
+
+
+/*-------------------------------------------------------------*/
+
+.carousel{
+    width: 100%;
+    height: 70vh;
+    /* padding: 100px; */
+}
+.carousel-item{
+    width: 100%;
+    height: 70vh;
+}
+.carousel-inner{
+    width: 100%;
+    height: 70vh;
+}
+.carousel-inner div img{
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
 }
