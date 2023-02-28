@@ -2643,21 +2643,213 @@ span{
 
 /*-------------------------------------------------------------*/
 
+.lienacorporalh2{
+    background-image: url("../img/Seleccionadas/fondoh2.JPG");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    
+}
+
+.lienacorporalh2 div{
+    padding: 4px;
+    border: none solid 2px;
+    backdrop-filter: blur(2px);
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lienacorporalh2 div h2{
+    color: #f0edd7;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Crimson Pro', serif;
+}
+
+/*!------------Carrusel----------*/
+
+.carrusel_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #252525;
+    margin: 60px 0px 200px 0px;
+
+}
+
+.carrusel_div{
+    width: 700px;
+    height: 400px;
+    /* width: 40%; */
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion_stock{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
+}
+
+.descripcion_stock:hover{
+    transform: scale(1.1);
+    background-image: url("../img/Seleccionadas/logolocal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+
+.descripcion_stock .Stock_1{
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #c7c268;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+}
+
+.descripcion_stock .Stock_p{
+    padding: 30px;
+    text-align: center;
+    color: #f0edd7;
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.descripcion_stock .Stock_p .span_stock{
+    color: #c7c268;
+    font-style: italic;
+}
+
+
+.descripcion_stock div img{
+    width: 50px;
+    height: 50px;
+}
+
+
 .carousel{
-    width: 100%;
-    height: 70vh;
-    /* padding: 100px; */
+    width: 80%;
+
 }
-.carousel-item{
-    width: 100%;
-    height: 70vh;
-}
+
 .carousel-inner{
-    width: 100%;
-    height: 70vh;
+    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    border: #c7c268 solid 3px;
 }
-.carousel-inner div img{
-    width: 100%;
-    height: 70vh;
-    padding: 50px;
+
+.carousel-item .carousel-img img{
+    /* width: 100%;
+    height: 45vh; */
+    width: 700px;
+    height: 400px;
+
 }
+
+.carousel-item .carousel-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.carousel-item .carousel-caption .h3_stock{
+    margin-top: 2px;
+    border-bottom: #c7c268 solid 2px;
+    padding: 5px;
+    color: #f0edd7;
+
+}
+
+.carousel-item .carousel-caption .h3_stock h3{
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+    padding: 2px;
+    margin: 0;
+}
+
+.carousel-item .carousel-caption .comprar_stock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.carousel-item .carousel-caption .comprar_stock a{
+    background-color: #02010852;
+    color: #f0edd744;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: #c7c2686b solid 2px;
+    border-radius: 30px;
+}
+
+.carousel-item .carousel-caption .comprar_stock a:hover{
+    background-color: #f0edd7;
+    color: #c7c268;
+}
+.carousel-item .carousel-caption .comprar_stock a p{
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+
+@media screen and (max-width:1380px){
+    .descripcion_stock .Stock_1{
+        width: 90%;
+        padding: 5px;
+    }
+    .descripcion_stock{
+        padding: 20px;
+    }
+    .descripcion_stock .Stock_p{
+        padding: 0px;
+    }
+}
+
+/* .fixed{
+    position: fixed;
+} */
+
+
+.fixed{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.fixed .wpimg{
+    width: 40px;
+    height: 40px;
+}
+
