@@ -195,7 +195,7 @@ header nav ul{
 }
 
 
-@media screen and (max-width:440px) and (orientation: landscape){
+@media screen and (max-width:440px){
     header{
         flex-direction: row;
         justify-content: space-evenly;
