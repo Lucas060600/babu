@@ -248,7 +248,6 @@ header nav ul{
 
 span{
     color: #c7c268;
-    font-style: italic;
 
 }
 
@@ -2651,6 +2650,7 @@ span{
     width: 100%;
     height: 100px;
     margin-top: 60px;
+    margin-bottom: 60px;
     
 }
 
@@ -2680,23 +2680,115 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40vh;
+    height: 380px;
     background-color: #252525;
-    margin: 60px 0px 200px 0px;
+    margin-bottom: 150px;
 
 }
 
 .carrusel_div{
+    padding: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.carrusel_div .carousel{
     width: 700px;
     height: 400px;
-    /* width: 40%; */
+
+}
+
+.carousel .carousel-indicators{
+    margin-bottom: 0;
+}
+
+.carrusel_div .carousel .carousel-inner{
+    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+    border: #c7c268 solid 3px;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-item .carousel-img{
+    width: 700px;
+    height: 400px;
+}
+
+.carousel-item .carousel-img img{
+    width: 700px;
+    height: 400px;
+
+}
+
+.carousel-item .carousel-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3px;
+
+}
+
+.carousel-item .carousel-caption .h3_stock{
+    margin-top: 2px;
+    border-bottom: #c7c268 solid 1px;
+    padding: 5px;
+    color: #f0edd7;
+
+}
+
+.carousel-item .carousel-caption .h3_stock h3{
+    font-size: 25px;
+    font-family: 'Crimson Pro', serif;
+    padding: 2px;
+    margin: 0;
+}
+
+.carousel-item .carousel-caption .consultar_stock{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.carousel-item .carousel-caption .consultar_stock a{
+    background-color: #02010852;
+    color: #f0edd7a4;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: #c7c2686b solid 2px;
+    border-radius: 30px;
+}
+
+.carousel-item .carousel-caption .consultar_stock a:hover{
+    background-color: #f0edd7;
+    color: #c7c268;
+    border: #c7c268 solid 3px;
+}
+.carousel-item .carousel-caption .consultar_stock a p{
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    
+}
+
+/*!-----------Descripcion stock------------*/
 
 .descripcion_stock{
     height: 100%;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2706,16 +2798,15 @@ span{
 }
 
 .descripcion_stock:hover{
-    transform: scale(1.1);
+    width: 70%;
+    height: 108%;
     background-image: url("../img/Seleccionadas/logolocal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
 }
 
 
 .descripcion_stock .Stock_1{
-    padding: 10px;
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -2724,6 +2815,10 @@ span{
     color: #c7c268;
     font-family: 'Crimson Pro', serif;
     text-align: center;
+}
+
+.descripcion_stock .Stock_1 .stock_h1{
+    font-size: 40px;
 }
 
 .descripcion_stock .Stock_p{
@@ -2739,93 +2834,34 @@ span{
     font-style: italic;
 }
 
+.descripcion_stock .Stock_1 .div_img{
+    padding: 10px
+}
 
-.descripcion_stock div img{
+
+.descripcion_stock .Stock_1 .div_img img{
     width: 50px;
     height: 50px;
 }
 
 
-.carousel{
-    width: 80%;
+/**--------MediaQuerys-------*/
+
+@media screen and (max-width:1700px){
+    .carrusel_div{
+        width: 55%;
+        justify-content: center;
+    }
+    .descripcion_stock{
+        width: 45%;
+    }
+    .descripcion_stock .Stock_1{
+        width: 75%;
+    }
 
 }
 
-.carousel-inner{
-    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-    border: #c7c268 solid 3px;
-}
-
-.carousel-item .carousel-img img{
-    /* width: 100%;
-    height: 45vh; */
-    width: 700px;
-    height: 400px;
-
-}
-
-.carousel-item .carousel-caption{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-
-}
-
-.carousel-item .carousel-caption .h3_stock{
-    margin-top: 2px;
-    border-bottom: #c7c268 solid 2px;
-    padding: 5px;
-    color: #f0edd7;
-
-}
-
-.carousel-item .carousel-caption .h3_stock h3{
-    font-size: 25px;
-    font-family: 'Crimson Pro', serif;
-    padding: 2px;
-    margin: 0;
-}
-
-.carousel-item .carousel-caption .comprar_stock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.carousel-item .carousel-caption .comprar_stock a{
-    background-color: #02010852;
-    color: #f0edd744;
-    width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border: #c7c2686b solid 2px;
-    border-radius: 30px;
-}
-
-.carousel-item .carousel-caption .comprar_stock a:hover{
-    background-color: #f0edd7;
-    color: #c7c268;
-}
-.carousel-item .carousel-caption .comprar_stock a p{
-    font-size: 20px;
-    font-family: 'Crimson Pro', serif;
-    text-align: center;
-    margin-bottom: 5px;
-    
-}
-
-@media screen and (max-width:1380px){
+@media screen and (max-width:1500px){
     .descripcion_stock .Stock_1{
         width: 90%;
         padding: 5px;
@@ -2833,15 +2869,237 @@ span{
     .descripcion_stock{
         padding: 20px;
     }
+    .descripcion_stock .Stock_1{
+        width: 85%;
+    }
     .descripcion_stock .Stock_p{
-        padding: 0px;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width:1400px){
+    .carrusel_section{
+        height: 330px;
+    }
+    .carrusel_div .carousel{
+        width: 550px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img{
+        width: 550px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img img{
+        width: 550px;
+        height: 350px;
+    }
+    .descripcion_stock .Stock_1 .stock_h1{
+        font-size: 35px;
+    }
+    .descripcion_stock .Stock_p{
+        /* padding: 10px; */
+        font-size: 22px;
+    }
+    .descripcion_stock .Stock_1 .div_img img{
+        width: 40px;
+        height: 40px;
     }
 }
 
-/* .fixed{
-    position: fixed;
-} */
+@media screen and (max-width:1100px){
+    .carrusel_section{
+        height: 330px
+    }
+    .carrusel_div .carousel{
+        width: 480px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img{
+        width: 480px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img img{
+        width: 480px;
+        height: 350px;
+    }
+    .descripcion_stock .Stock_1 .stock_h1{
+        font-size: 30px;
+    }
+    .descripcion_stock .Stock_p{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .descripcion_stock .Stock_1 .div_img img{
+        width: 35px;
+        height: 35px;
+    }
+}
 
+@media screen and (max-width:1000px){
+    .carrusel_section{
+        flex-direction: column;
+        height: 650px;
+        margin-bottom: 60px;
+    }
+    .carrusel_div{
+        width: 80%;
+        align-items: center;
+    }
+    .carrusel_div .carousel{
+        width: 550px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img{
+        width: 550px;
+        height: 350px;
+    }
+    .carousel-item .carousel-img img{
+        width: 550px;
+        height: 350px;
+    }
+    .descripcion_stock{
+        width: 90%;
+        height: 300px;
+    }
+    .descripcion_stock .Stock_1{
+        width: 90%;
+        justify-content: center;
+    }
+    .descripcion_stock .Stock_1 .div_img{
+        padding: 20px;
+
+    }
+
+}
+
+@media screen and (max-width:626px){
+    .carrusel_section{
+        height: 600px;
+    }
+    .carrusel_div .carousel{
+        width: 450px;
+        height: 300px;
+    }
+    .carousel-item .carousel-img{
+        width: 450px;
+        height: 300px;
+    }
+    .carousel-item .carousel-img img{
+        width: 450px;
+        height: 300px;
+    }
+    .descripcion_stock .Stock_1{
+        width: 95%;
+    }
+    .descripcion_stock .Stock_p{
+        font-size: 18px;
+    }
+    .descripcion_stock .Stock_1 .stock_h1{
+        font-size: 28px;
+    }
+    .descripcion_stock .Stock_1 .div_img img{
+        width: 30px;
+        height: 30px;
+    }
+    .descripcion_stock{
+        width: 95%;
+        height: 250px;
+    }
+    .carousel-item .carousel-caption .consultar_stock a{
+        width: 75px;
+        height: 30px;
+    }
+    .carousel-item .carousel-caption .consultar_stock a p{
+        font-size: 15px;
+    }
+    .carousel-item .carousel-caption .h3_stock h3{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .carrusel_section{
+        height: 550px;
+    }
+    .carrusel_div .carousel{
+        width: 380px;
+        height: 260px;
+    }
+    .carousel-item .carousel-img{
+        width: 380px;
+        height: 260px;
+    }
+    .carousel-item .carousel-img img{
+        width: 380px;
+        height: 260px;
+    }
+    .descripcion_stock{
+        padding: 5px;
+        width: 95%;
+        height: 250px;
+    }
+    .carousel-item .carousel-caption .consultar_stock a{
+        width: 70px;
+        height: 25px;
+    }
+    .carousel-item .carousel-caption .consultar_stock a p{
+        font-size: 13px;
+    }
+    .carousel-item .carousel-caption .h3_stock h3{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width:420px){
+    .carrusel_section{
+        height: 550px;
+    }
+    .carrusel_div .carousel{
+        width: 340px;
+        height: 240px;
+    }
+    .carousel-item .carousel-img{
+        width: 340px;
+        height: 240px;
+    }
+    .carousel-item .carousel-img img{
+        width: 340px;
+        height: 240px;
+    }
+    .descripcion_stock{
+        padding: 5px;
+        width: 95%;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    .carrusel_section{
+        height: 600px;
+    }
+    .carrusel_div .carousel{
+        width: 300px;
+        height: 220px;
+    }
+    .carousel-item .carousel-img{
+        width: 300px;
+        height: 220px;
+    }
+    .carousel-item .carousel-img img{
+        width: 300px;
+        height: 220px;
+    }
+    .descripcion_stock{
+        padding: 5px;
+        width: 100%;
+    }
+    
+}
+/*!---Fixed---*/
 
 .fixed{
     position: fixed;
