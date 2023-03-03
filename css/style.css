@@ -194,8 +194,13 @@ header nav ul{
     }
 }
 
+@media screen and (max-width:416px){
+    .lista{
+        margin: 5px 8px 8px 10px;
+    }
+}
 
-@media screen and (max-width:391px){
+@media screen and (max-width:363px){
     header{
         flex-direction: row;
         justify-content: space-evenly;
