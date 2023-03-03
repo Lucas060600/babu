@@ -1036,7 +1036,7 @@ span{
 }
 
 .BienestarProductos{
-    margin: 60px 200px 60px 200px;
+    margin: 60px 150px 60px 150px;
 }
 
 .ProductosBien1{
@@ -1045,7 +1045,7 @@ span{
     grid-template-rows: 40px 307px 40px;
     color: #f0edd7;
     margin-top: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     grid-template-areas: 
     "titulo parrafobienestar"
     "imagen parrafobienestar"
@@ -1093,7 +1093,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoBienestar p{
@@ -1179,8 +1180,9 @@ span{
     text-align: center;
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: center;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoBienestar2 p{
@@ -1231,7 +1233,10 @@ span{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
+    .BienestarProductos{
+        margin: 30px;
+    }
     .LineaBienestarH2{
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1243,7 +1248,7 @@ span{
         height: 80px;
     }
     .LineaBienestarH2 div h2{
-        font-size: 35px;
+        font-size: 40px;
     }
     .ProductosBien1{
         display: grid;
@@ -1270,16 +1275,16 @@ span{
         font-size: 25px;
     }
     .ParrafobBienestar{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ParrafobBienestar2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ComprarBienestar a button{
-        font-size: 18px;
+        font-size: 17px;
     }
     .ComprarBienestar2 a button{
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -1313,10 +1318,10 @@ span{
     }
     .ParrafoBienestar{
         padding: 10px;
-        font-size: 17px;
+        font-size: 19px;
     }
     .ParrafoBienestar2{
-        font-size: 17px;
+        font-size: 19px;
         padding: 10px;
     }
     .ComprarBienestar a button{
@@ -1327,7 +1332,7 @@ span{
     }
 }
 
-@media screen and (max-width:729px){
+@media screen and (max-width:800px){
     .LineaBienestarH2{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1337,7 +1342,7 @@ span{
         height: 60px;
     }
     .LineaBienestarH2 div h2{
-        font-size: 29px;
+        font-size: 35px;
     }
     .BienestarProductos{
         margin: 30px 20px 30px 20px;;
@@ -1367,10 +1372,10 @@ span{
         font-size: 22px;
     }
     .ParrafoBienestar{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ParrafoBienestar2{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ComprarBienestar a button{
         font-size: 15px;
@@ -1381,6 +1386,9 @@ span{
 }
 
 @media screen and (max-width:619px){
+    .LineaBienestarH2 div h2{
+        font-size: 33px;
+    }
     .ProductosBien1{
         display: grid;
         grid-template-columns: 1fr;
@@ -1519,6 +1527,7 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoCapilar p{
@@ -1628,10 +1637,11 @@ span{
 .ParrafoCapilarCol{
     grid-area: parrafocapilarCol;
     justify-content: center;
+    font-size: 20px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoCapilarCol p{
-    font-size: 18px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -1695,10 +1705,10 @@ span{
         height: 267px;
     }
     .ParrafoCapilarCol{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ComprarCapilarCol a button{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -1718,7 +1728,7 @@ span{
         font-size: 21px;
     }
     .ParrafoCapilarCol p{
-        font-size: 17px;
+        font-size: 19px;
         padding: 0px;
     }
     .ComprarCapilarCol a button{
@@ -1743,7 +1753,7 @@ span{
         font-size: 20px;
     }
     .ParrafoCapilarCol p{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ComprarCapilarCol a button{
         font-size: 15px;
@@ -1810,6 +1820,7 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoCapilar2 p{
@@ -1855,16 +1866,18 @@ span{
 }
 
 @media screen and (max-width:1000px){
-    .lLineaCapilarH2{
+    .LineaCapilarH2{
         margin-top: 30px;
         margin-bottom: 30px;
         height: 80px;
     }
     .LineaCapilarH2 div{
         height: 80px;
+        margin-bottom: 30px;
+        height: 80px;
     }
     .LineaCapilarH2 div h2{
-        font-size: 35px;
+        font-size: 40px;
     }
     .ProductosCap1{
         display: grid;
@@ -1891,10 +1904,10 @@ span{
         font-size: 25px;
     }
     .ParrafoCapilar{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ParrafoCapilar2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ComprarCapilar a button{
         font-size: 18px;
@@ -1933,11 +1946,11 @@ span{
         height: 247px;
     }
     .ParrafoCapilar{
-        font-size: 17px;
+        font-size: 19px;
         padding: 0px;
     }
     .ParrafoCapilar2{
-        font-size: 17px;
+        font-size: 19px;
         padding: 0px;
     }
     .ComprarCapilar a button{
@@ -1958,7 +1971,7 @@ span{
         height: 60px;
     }
     .LineaCapilarh2 div h2{
-        font-size: 29px;
+        font-size: 35px;
     }
     .CapilarProductos{
         margin: 30px 20px 30px 20px;;
@@ -1988,10 +2001,10 @@ span{
         font-size: 22px;
     }
     .ParrafoCapilar{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ParrafoCapilar2{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ComprarCapilar a button{
         font-size: 15px;
@@ -2002,6 +2015,9 @@ span{
 }
 
 @media screen and (max-width:619px){
+    .LineaCapilarH2 div h2{
+        font-size: 33px;
+    }
     .ProductosCap1{
         display: grid;
         grid-template-columns: 1fr;
@@ -2539,6 +2555,7 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoCorporal p{
@@ -2632,6 +2649,7 @@ span{
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    font-family: 'Crimson Pro', serif;
 }
 
 .ParrafoCorporal2 p{
@@ -2716,10 +2734,10 @@ span{
         font-size: 25px;
     }
     .ParrafobCorporal{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ParrafobCorporal2{
-        font-size: 18px;
+        font-size: 20px;
     }
     .ComprarCorporal a button{
         font-size: 18px;
@@ -2759,10 +2777,10 @@ span{
     }
     .ParrafoCorporal{
         padding: 10px;
-        font-size: 17px;
+        font-size: 19px;
     }
     .ParrafoCorporal2{
-        font-size: 17px;
+        font-size: 19px;
         padding: 10px;
     }
     .ComprarCorporal a button{
@@ -2813,10 +2831,10 @@ span{
         font-size: 22px;
     }
     .ParrafoCorporal{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ParrafoCorporal2{
-        font-size: 15px;
+        font-size: 18px;
     }
     .ComprarCorporal a button{
         font-size: 15px;
