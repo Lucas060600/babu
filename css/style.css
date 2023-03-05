@@ -4576,3 +4576,17 @@ header nav ul{
     color: #c7c268;
 
 }
+
+@media screen and (max-width:1000px){
+    .fixed{
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+    }
+    .fixed .wpimg{
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+}
