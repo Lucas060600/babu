@@ -6,24 +6,24 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*?Inicioooooo*/
 body {
   background-color: #020108;
-  /* background-color: black; */
   font-family: 'Inter', sans-serif; }
 
-/*listas*/
-/*--Operaraciones
-    +-*    */
-/*Mapas*/
-/*!Extend---siempra para traerlo @extend %flex*/
-/*%placeholder*/
-header nav ul .lista, header nav ul .lista .dropdown, .hero .parrafo, .lineas .lineas-contenedor div, .lineabienestarh2 div, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .titulo, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .parrafobienestar, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .comprarbienestar, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .titulo2, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .parrafobienestar2, .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .comprarbienestar2, .lineacapilarh2 div, .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .parrafocapilar, .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .compracapilar, .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .tituloCCol, .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .imagenCCol, .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .comprarcapilarCol, .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .tituloC2, .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .parrafocapilar2, .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .compracapilar2, .footer .imgfooter, .footer .copy {
+.fixed {
+  position: fixed;
+  right: 40px;
+  bottom: 40px; }
+  .fixed .fixed .wpimg {
+    width: 40px;
+    height: 40px; }
+
+header nav ul .lista .alogo, header nav ul .lista .dropdown, .hero .parrafo, .lineas .lineas_h2, .lineas .lineas-contenedor div, .carrusel_section, .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .consultar_stock, .LineaBienestarH1 div, .LineaBienestar .BienestarProductos .ProductosBien1 .TituloBienestar, .LineaBienestar .BienestarProductos .ProductosBien1 .ParrafoBienestar, .LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar, .LineaBienestar .BienestarProductos .ProductosBien2 .TituloBienestar2, .LineaBienestar .BienestarProductos .ProductosBien2 .ParrafoBienestar2, .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2, .LineaCapilarH1 div, .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar, .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar, .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar, .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2, .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2, .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar, .LineaCapilar .CapilarProductos .ProductosCapCol .TituloCapilarCol, .LineaCapilar .CapilarProductos .ProductosCapCol .ImagenCapilarCol, .LineaCapilar .CapilarProductos .ProductosCapCol .ComprarCapilar, .lineaCorporalh1 div, .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal, .LineaCorporal .CorporalProductos .ParrafoCorporal, .LineaCorporal .CorporalProductos .ComprarCorporal, .LineaCorporal .CorporalProductos .ProductosCorp2 .TituloCorporal2, .LineaCorporal .CorporalProductos .ProductosCorp2 .ComprarCorporal2, .LineaDentalH1 div, .LineaDental .DentalProductos, .LineaFacialH1 div, .LineaEsencialH1 div, .LineaEsencial .EsencialDiv .Hidrolatos, .LineaEsencial .EsencialDiv .HidrolatosB, .footer .imgfooter, .footer .copy {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header img, .footer .imgfooter {
+header .imgheader img, .lineas, .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption, .footer .imgfooter {
   width: 100%;
   height: 100%; }
 
@@ -31,60 +31,111 @@ header nav ul .lista .dropdown, header nav ul .lista .dropdown .dropdown-menu, .
   list-style: none;
   text-decoration: none; }
 
-header nav ul {
+header nav ul, header nav ul .lista .alogo .logo {
   margin: 0px;
   padding: 0px; }
 
-/*!---------------------------Header------------------------------------*/
+.LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar a, .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 a, .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a, .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a, .LineaCapilar .CapilarProductos .ProductosCapCol .ComprarCapilar a, .LineaCorporal .CorporalProductos .ComprarCorporal a, .LineaCorporal .CorporalProductos .ProductosCorp2 .ComprarCorporal2 a, .LineaDental .DentalProductos .ProductosDen .ComprarDental a, .LineaFacial .FacialProductos .ComprarFacial a, .LineaFacial .ComprarFacialCol a {
+  border: #c7c268 solid 1px;
+  border-radius: 30px; }
+
+.LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar a button, .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 a button, .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a button, .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a button, .LineaCapilar .CapilarProductos .ProductosCapCol .ComprarCapilar a button, .LineaCorporal .CorporalProductos .ComprarCorporal a button, .LineaCorporal .CorporalProductos .ProductosCorp2 .ComprarCorporal2 a button, .LineaDental .DentalProductos .ProductosDen .ComprarDental a button, .LineaFacial .FacialProductos .ComprarFacial a button, .LineaFacial .ComprarFacialCol a button {
+  text-decoration: none;
+  color: #f0edd7;
+  border-bottom: #c7c268;
+  font-size: 18px;
+  border: #c7c268 solid 1px;
+  border-radius: 30px; }
+
+.LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar a button:hover, .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 a button:hover, .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a button:hover, .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a button:hover, .LineaCapilar .CapilarProductos .ProductosCapCol .ComprarCapilar a button:hover, .LineaCorporal .CorporalProductos .ComprarCorporal a button:hover, .LineaCorporal .CorporalProductos .ProductosCorp2 .ComprarCorporal2 a button:hover, .LineaDental .DentalProductos .ProductosDen .ComprarDental a button:hover, .LineaFacial .FacialProductos .ComprarFacial a button:hover, .LineaFacial .ComprarFacialCol a button:hover {
+  background-color: #16161a;
+  color: #c7c268; }
+
+.LineaBienestar .BienestarProductos .ProductosBien1, .LineaCapilar .CapilarProductos .ProductosCap1, .LineaCorporal .CorporalProductos .ProductosCorp1, .LineaCorporal .CorporalProductos .ProductosCorp2, .LineaFacial .FacialProductos .ProductosFac1 {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  grid-template-rows: 40px 307px 40px; }
+
+.LineaBienestar .BienestarProductos .ProductosBien2, .LineaCapilar .CapilarProductos .ProductosCap2 {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: 40px 307px 40px; }
+
+.LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar img, .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 img, .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img, .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img, .LineaCapilar .CapilarProductos .ProductosCapCol .ImagenCapilarCol img, .LineaCorporal .CorporalProductos .ImagenCorporal img, .LineaCorporal .CorporalProductos .ProductosCorp2 .ImagenCorporal2 img, .LineaFacial .FacialProductos .ImagenFacial img, .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 div img {
+  width: 460px;
+  height: 307px; }
+
+.LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar img, .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 img, .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img, .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img, .LineaCapilar .CapilarProductos .ProductosCapCol .ImagenCapilarCol img, .LineaCorporal .CorporalProductos .ImagenCorporal img, .LineaCorporal .CorporalProductos .ProductosCorp2 .ImagenCorporal2 img, .LineaDental .DentalProductos .ProductosDen .ImagenDental img, .LineaFacial .FacialProductos .ImagenFacial img, .LineaFacial .ImagenFacialCol img, .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 div img, .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 div img {
+  border: #c7c268 solid 2px;
+  box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+  -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+  -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+  transition-duration: 0.5s; }
+
+.LineaDental .DentalProductos .ProductosDen .TituloDental, .LineaDental .DentalProductos .ProductosDen .ParrafoDental, .LineaDental .DentalProductos .ProductosDen .ComprarDental, .LineaFacial .FacialProductos .TituloFacial, .LineaFacial .FacialProductos .ParrafoFacial, .LineaFacial .FacialProductos .ComprarFacial, .LineaFacial .TituloFacialCol, .LineaFacial .ParrafoFacialCol, .LineaFacial .ComprarFacialCol, .LineaEsencial .EsencialDiv .DesEsencial {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 header {
+  z-index: 1;
+  background-color: #f9f5e4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
-  background-color: #f9f5e4;
   top: 0;
   position: sticky; }
-  header img {
-    margin-left: 100px; }
   header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center; }
     header nav ul .lista {
-      margin: 0px;
-      padding: 0px; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      text-align: right;
+      margin: 40px; }
       header nav ul .lista a {
-        width: 18PX;
-        height: 900;
+        font-size: 18px;
+        font-weight: 900;
         text-decoration: none;
         color: black;
+        align-items: center;
         transition: 0.5s; }
-        header nav ul .lista a:hover {
+        header nav ul .lista ahover {
           color: #0aa80a; }
+      header nav ul .lista .alogo {
+        height: 100%; }
+        header nav ul .lista .alogo .logo {
+          width: 35px;
+          height: 35px; }
       header nav ul .lista .dropdown {
         border: none; }
-        header nav ul .lista .dropdown a {
+        header nav ul .lista .dropdown .btn {
           text-align: center;
           padding: 2px; }
         header nav ul .lista .dropdown .dropdown-menu {
-          background-color: black;
+          background-color: #1f1f1f;
           color: #f0edd7bb;
           border: none; }
-          header nav ul .lista .dropdown .dropdown-menu li a {
+          header nav ul .lista .dropdown .dropdown-menu li .dropdown-item {
             color: #f0edd7bb;
-            transition: 0.5s; }
-            header nav ul .lista .dropdown .dropdown-menu li a:hover {
+            transition: 0.5s;
+            text-align: center; }
+            header nav ul .lista .dropdown .dropdown-menu li .dropdown-item:hover {
               color: #c7c268; }
 
 .hero {
-  background-image: url("../img/Seleccionadas/planta1.JPG");
-  text-align: center;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  background-image: url("../img/Seleccionadas/planta1.JPG");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  text-align: center;
   color: rgba(255, 255, 255, 0.781); }
   .hero h1 {
     font-size: 80px;
@@ -92,7 +143,7 @@ header {
     padding: 30px;
     font-family: 'Crimson Pro', serif;
     text-align: center; }
-    .hero h1 span {
+    .hero h1 .SpanHero {
       color: #c7c268;
       font-style: italic; }
   .hero .parrafo {
@@ -101,32 +152,31 @@ header {
     margin-top: 10em;
     backdrop-filter: blur(15px); }
     .hero .parrafo p {
-      text-align: center; }
+      text-align: center;
+      margin: 0px; }
 
-/*!---------Lineas------------*/
 .lineas {
-  width: 100%;
-  height: 100%;
   border-bottom: #c7c268 solid 2px;
   margin-top: 40px; }
-  .lineas h2 {
-    color: #f0edd7;
-    text-align: center;
+  .lineas .lineas_h2 h2 {
     margin: 30px;
+    padding: 20px;
+    width: 60%;
+    color: #f0edd7;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
     border-bottom: #c7c268 solid 1px;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 20px; }
+    font-size: 45px; }
   .lineas .lineas-contenedor {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    margin: 40px; }
+    row-gap: 40px;
+    margin: 0;
+    padding: 40px; }
     .lineas .lineas-contenedor div {
-      padding: 20px;
       position: relative;
       text-align: center;
       transition: 0.5s; }
@@ -150,318 +200,787 @@ header {
           height: 307px;
           border: #c7c268 solid 1px; }
 
-.lineabienestarh2 {
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  border-bottom: #c7c268 solid 2px;
+  flex-wrap: wrap; }
+  .video video {
+    width: 600px;
+    height: 500px; }
+  .video div {
+    width: 50%;
+    height: 50px; }
+    .video div h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #c7c268;
+      margin: 10px; }
+    .video div p {
+      color: #f0edd7;
+      padding: 20px;
+      font-size: 25px; }
+
+.carrusel_section {
+  width: 100%;
+  height: 380PX;
+  background-color: #252525;
+  margin-bottom: 100px; }
+  .carrusel_section .carrusel_div {
+    padding: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end; }
+    .carrusel_section .carrusel_div .carousel {
+      width: 700px;
+      height: 400px; }
+      .carrusel_section .carrusel_div .carousel .carousel-indicators {
+        margin-bottom: 0; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner {
+        box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+        -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+        -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
+        border: #c7c268 solid 3px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item {
+          height: 100%; }
+          .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+            width: 700px;
+            height: 400px; }
+            .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+              width: 700px;
+              height: 400px; }
+          .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            left: 0;
+            right: 0;
+            padding-bottom: 3px; }
+            .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .h2_stock {
+              margin-top: 2px;
+              border-bottom: #c7c268 solid 1px;
+              padding: 5px;
+              color: #f0edd7; }
+              .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .h2_stock h3 {
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                margin: 0;
+                padding: 2px; }
+            .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .consultar_stock a {
+              width: 100px;
+              height: 40px;
+              background-color: #02010852;
+              color: #f0edd7a4;
+              border: #c7c2686b solid 2px;
+              border-radius: 30px;
+              text-decoration: none; }
+              .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .consultar_stock a:hover {
+                background-color: #f0edd7;
+                color: #c7c268;
+                border: #c7c268 solid 3px; }
+              .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .consultar_stock a p {
+                font-size: 20px;
+                font-family: 'Crimson Pro', serif;
+                text-align: center; }
+  .carrusel_section .descripcion_stock {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
+    color: #f0edd7; }
+    .carrusel_section .descripcion_stock:hover {
+      width: 70%;
+      height: 108%;
+      background-image: url("../img/Seleccionadas/logolocal.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: black; }
+    .carrusel_section .descripcion_stock .Stock_1 {
+      width: 60%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      color: #c7c268;
+      font-family: 'Crimson Pro', serif;
+      text-align: center; }
+      .carrusel_section .descripcion_stock .Stock_1 .div_img {
+        padding: 10px; }
+        .carrusel_section .descripcion_stock .Stock_1 .div_img img {
+          width: 50px;
+          height: 50px; }
+      .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+        font-size: 40px; }
+    .carrusel_section .descripcion_stock .Stock_p {
+      padding: 30px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Crimson Pro', serif; }
+      .carrusel_section .descripcion_stock .Stock_p p .SpanStock {
+        color: #c7c268;
+        font-style: italic; }
+
+.LineaBienestarH1 {
   width: 100%;
   height: 100px;
   background-image: url("../img/Seleccionadas/fondoh2.JPG");
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center; }
-  .lineabienestarh2 div {
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .LineaBienestarH1 div {
     width: auto;
     height: 100px;
-    border: none solid 2px;
     backdrop-filter: blur(2px);
     padding: 4px; }
-    .lineabienestarh2 div h2 {
+    .LineaBienestarH1 div h1 {
       font-size: 50px;
       font-weight: 900;
       font-family: 'Crimson Pro', serif;
       color: #f0edd7;
       padding: 10px; }
 
-.LineaBienestarGrid {
+.LineaBienestar {
   width: auto;
   height: auto; }
-  .LineaBienestarGrid .BienestarProductosGrid {
-    margin: 60px 200px 60px 200px; }
-    .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid {
-      display: grid;
-      grid-template-columns: 460px 1fr;
-      grid-template-rows: 40px 307px 40px;
+  .LineaBienestar .BienestarProductos {
+    margin: 60px 150px 60px 150px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 {
+      grid-template-areas: "titulo parrafobienestar" "imagen parrafobienestar" "comprarbienestar parrafobienestar";
       color: #f0edd7;
       margin-top: 60px;
-      margin-bottom: 80px;
-      grid-template-areas: "titulo ." "imagen parrafobienestar" "comprarbienestar .";
-      gap: 20px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .titulo {
+      margin-bottom: 100px; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .TituloBienestar {
         grid-area: titulo;
-        align-content: center;
-        font-size: 18px;
-        font-family: 'Crimson Pro', serif; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .titulo h3 {
-          border-bottom: #c7c268 solid 1px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .imagen {
+        text-align: center; }
+        .LineaBienestar .BienestarProductos .ProductosBien1 .TituloBienestar h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-size: 28px;
+          font-family: 'Crimson Pro', serif; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar {
         grid-area: imagen; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .imagen img {
-          width: 460px;
-          height: 307px;
-          border: #c7c268 solid 2px;
-          box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          transition-duration: 0.5s; }
-          .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .imagen img:hover {
-            transform: scale(1.3); }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .parrafobienestar {
+        .LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar img:hover {
+          transform: scale(1.3); }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ParrafoBienestar {
         grid-area: parrafobienestar;
         text-align: center;
         padding: 30px;
-        font-size: 20px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .comprarbienestar {
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaBienestar .BienestarProductos .ProductosBien1 .ParrafoBienestar p {
+          margin-bottom: 0; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar {
         grid-area: comprarbienestar;
         text-align: center;
         text-decoration: none; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .comprarbienestar a {
-          border: #c7c268 solid 1px;
-          border-radius: 30px; }
-          .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .comprarbienestar a button {
-            text-decoration: none;
-            color: #f0edd7;
-            border-bottom: #c7c268;
-            font-size: 18px; }
-            .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid .comprarbienestar a button:hover {
-              background-color: #16161a;
-              color: #c7c268; }
-    .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 {
-      display: grid;
-      grid-template-columns: 1fr 460px;
-      grid-template-rows: 40px 307px 40px;
+    .LineaBienestar .BienestarProductos .ProductosBien2 {
+      grid-template-areas: "parrafobienestar2 titulo2" "parrafobienestar2 imagen2" "parrafobienestar2 comprarbienestar2";
       color: #f0edd7;
       margin-top: 60px;
       margin-bottom: 80px;
-      grid-template-areas: ". titulo2" "parrafobienestar2 imagen2" ". comprarbienestar2";
       gap: 20px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .titulo2 {
+      .LineaBienestar .BienestarProductos .ProductosBien2 .TituloBienestar2 {
         grid-area: titulo2;
-        font-size: 18px;
-        font-family: 'Crimson Pro', serif;
         text-align: center; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .titulo2 h3 {
-          border-bottom: #c7c268 solid 1px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .imagen2 {
+        .LineaBienestar .BienestarProductos .ProductosBien2 .TituloBienestar2 h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-size: 28px;
+          font-family: 'Crimson Pro', serif; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 {
         grid-area: imagen2; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .imagen2 img {
-          width: 460px;
-          height: 307px;
-          border: #c7c268 solid 2px;
-          box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          transition: 0.5s; }
-          .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .imagen2 img:hover {
-            transform: scale(1.3); }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .parrafobienestar2 {
+        .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 img:hover {
+          transform: scale(1.3); }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ParrafoBienestar2 {
         grid-area: parrafobienestar2;
         text-align: center;
         padding: 30px;
-        font-size: 20px; }
-      .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .comprarbienestar2 {
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaBienestar .BienestarProductos .ProductosBien2 .ParrafoBienestar2 p {
+          margin-bottom: 0; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 {
         grid-area: comprarbienestar2;
         text-align: center;
-        font-size: 18px;
         text-decoration: none; }
-        .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .comprarbienestar2 a {
-          border: #c7c268 solid 1px;
-          border-radius: 30px; }
-          .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .comprarbienestar2 a button {
-            text-decoration: none;
-            color: #f0edd7;
-            border-bottom: #c7c268;
-            font-size: 18px; }
-            .LineaBienestarGrid .BienestarProductosGrid .ProductosGrid2 .comprarbienestar2 a button:hover {
-              background-color: #16161a;
-              color: #c7c268; }
 
-.lineacapilarh2 {
+.LineaCapilarH1 {
   width: 100%;
   height: 100px;
   background-image: url("../img/Seleccionadas/capilarh22.JPG");
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center; }
-  .lineacapilarh2 div {
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .LineaCapilarH1 div {
     width: auto;
     height: 100px;
-    border: none solid 2px;
     backdrop-filter: blur(2px);
     padding: 4px; }
-    .lineacapilarh2 div h2 {
+    .LineaCapilarH1 div h1 {
       font-size: 50px;
       font-weight: 900;
       font-family: 'Crimson Pro', serif;
       color: #f0edd7;
       padding: 10px; }
 
-.LineaCapilarGrid {
+.LineaCapilar {
   width: auto;
   height: auto; }
-  .LineaCapilarGrid .CapilarProductosGrid {
+  .LineaCapilar .CapilarProductos {
     margin: 60px 200px 60px 200px; }
-    .LineaCapilarGrid .CapilarProductosGrid .capilarGrid {
-      display: grid;
-      grid-template-columns: 460px 1fr;
-      grid-template-rows: 40px 307px 40px;
+    .LineaCapilar .CapilarProductos .ProductosCap1 {
+      grid-template-areas: "tituloC parrafocapilar" "imagenC parrafocapilar" "comprarcapilar parrafocapilar";
       color: #f0edd7;
       margin-top: 60px;
       margin-bottom: 80px;
-      grid-template-areas: "tituloC ." "imagenC parrafocapilar" "comprarcapilar .";
       gap: 20px; }
-      .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .tituloC h3 {
-        border-bottom: #c7c268 solid 1px;
-        font-family: 'Crimson Pro', serif; }
-      .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .imagenC {
+      .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar {
+        grid-area: tituloC;
+        text-align: center; }
+        .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-family: 'Crimson Pro', serif;
+          font-size: 28px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar {
         grid-area: imagenC; }
-        .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .imagenC img {
-          width: 460px;
-          height: 307px;
-          border: #c7c268 solid 2px;
-          box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          transition: 0.5s; }
-          .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .imagenC img:hover {
-            transform: scale(1.3); }
-      .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .parrafocapilar {
+        .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img:hover {
+          transform: scale(1.3); }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar {
         grid-area: parrafocapilar;
         text-align: center;
-        font-size: 20px; }
-      .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .compracapilar {
+        padding: 30px;
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar p {
+          margin-bottom: 0; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar {
         grid-area: comprarcapilar;
         text-align: center;
-        text-decoration: none;
-        font-size: 18px; }
-        .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .compracapilar a {
-          border: #c7c268 solid 1px;
-          border-radius: 30px; }
-          .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .compracapilar a button {
-            text-decoration: none;
-            color: #f0edd7;
-            border-bottom: #c7c268;
-            font-size: 18px; }
-            .LineaCapilarGrid .CapilarProductosGrid .capilarGrid .compracapilar a button:hover {
-              background-color: #16161a;
-              color: #c7c268; }
-    .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol {
-      width: auto;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 460px);
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 50px;
-      margin: 60px 0px 100px 0px;
-      border-bottom: #c7c2688c solid 10px;
-      border-top: #c7c2688c solid 10px; }
-      .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol {
-        width: auto;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: 50px 307px 50px 150px;
-        color: #f0edd7;
-        grid-template-areas: "tituloCCol" "imagenCCol" "comprarcapilarCol" "parrafocapilarCol";
-        gap: 25px;
-        margin: 30px 0px 30px 0px; }
-        .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .tituloCCol {
-          grid-area: tituloCCol;
-          width: 100%;
-          height: 50px;
-          text-align: center;
-          font-size: 18px; }
-          .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .tituloCCol h3 {
-            border-bottom: #c7c268 solid 1px;
-            font-family: 'Crimson Pro', serif; }
-        .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .imagenCCol {
-          grid-area: imagenCCol;
-          width: 460px;
-          height: 307px; }
-          .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .imagenCCol img {
-            width: 460px;
-            height: 307px;
-            border: #c7c268 solid 2px;
-            box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-            -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-            -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-            transition: 0.5s; }
-            .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .imagenCCol img:hover {
-              transform: scale(1.3); }
-        .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .parrafocapilarCol {
-          grid-area: parrafocapilarCol;
-          justify-content: center; }
-          .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .parrafocapilarCol p {
-            font-size: 18px;
-            text-align: center; }
-        .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .comprarcapilarCol {
-          grid-area: comprarcapilarCol;
-          text-align: center;
-          text-decoration: none;
-          font-size: 18px; }
-          .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .comprarcapilarCol a {
-            border: #c7c268 solid 1px;
-            border-radius: 30px; }
-            .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .comprarcapilarCol a button {
-              text-decoration: none;
-              color: #f0edd7;
-              border-bottom: #c7c268;
-              font-size: 18px;
-              border: #c7c268 solid 1px;
-              border-radius: 30px;
-              transition: 0.5s; }
-              .LineaCapilarGrid .CapilarProductosGrid .ColumnCapilarCol .CapilarGridCol .comprarcapilarCol a button:hover {
-                background-color: #16161a;
-                color: #c7c268; }
-    .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 {
-      display: grid;
-      grid-template-columns: 1fr 460px;
-      grid-template-rows: 40px 307px 40px;
+        text-decoration: none; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 {
+      grid-template-areas: ". tituloC2" "parrafocapilar2 imagenC2" ". comprarcapilar2";
       color: #f0edd7;
       margin-top: 60px;
       margin-bottom: 80px;
-      grid-template-areas: ". tituloC2" "parrafocapilar2 imagenC2" ". comprarcapilar2";
       gap: 20px; }
-      .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .tituloC2 {
+      .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2 {
         grid-area: tituloC2;
+        text-align: center; }
+        .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2 h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-family: 'Crimson Pro', serif;
+          font-size: 28px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 {
+        grid-area: imagenC2; }
+        .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img:hover {
+          transform: scale(1.3); }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2 {
+        grid-area: parrafocapilar2;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2 p {
+          margin-bottom: 0; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar {
+        grid-area: comprarcapilar2;
+        text-align: center;
+        text-decoration: none; }
+    .LineaCapilar .CapilarProductos .ProductosCapCol {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: 50px 307px 50px 240px;
+      grid-template-areas: "tituloCCol" "imagenCCol" "comprarcapilarCol" "parrafocapilarCol";
+      justify-content: center;
+      justify-items: center;
+      color: #f0edd7;
+      gap: 25px;
+      margin: 30px 0px 30px 0px; }
+      .LineaCapilar .CapilarProductos .ProductosCapCol .TituloCapilarCol {
+        grid-area: tituloCCol;
+        width: 100px;
+        height: 50px;
         text-align: center;
         font-size: 18px; }
-        .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .tituloC2 h3 {
+        .LineaCapilar .CapilarProductos .ProductosCapCol .TituloCapilarCol h3 {
           border-bottom: #c7c268 solid 1px;
           font-family: 'Crimson Pro', serif; }
-      .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .imagenC2 {
-        grid-area: imagenC2; }
-        .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .imagenC2 img {
-          grid-template-columns: 460px;
-          grid-template-rows: 307px;
-          border: #c7c268 solid 2px;
-          box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -webkit-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          -moz-box-shadow: 1px 1px 38px -8px rgba(255, 255, 255, 0.57);
-          transition: 0.5s; }
-          .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .imagenC2 img:hover {
-            transform: scale(1.3); }
-      .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .parrafocapilar2 {
-        grid-area: parrafocapilar2;
-        padding: 30px;
-        font-size: 20px;
+      .LineaCapilar .CapilarProductos .ProductosCapCol .ImagenCapilarCol {
+        grid-area: imagenCCol;
+        width: 460px;
+        height: 307px; }
+        .LineaCapilar .CapilarProductos .ProductosCapCol .ImagenCapilarCol img:hover {
+          transform: scale(1.3); }
+      .LineaCapilar .CapilarProductos .ProductosCapCol .ParrafoCapilarCol {
+        grid-area: parrafocapilarCol;
+        justify-content: center;
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaCapilar .CapilarProductos .ProductosCapCol .ParrafoCapilarCol p {
+          text-align: center;
+          margin-bottom: 0; }
+      .LineaCapilar .CapilarProductos .ProductosCapCol .ComprarCapilar {
+        grid-area: comprarcapilarCol;
+        text-align: center;
+        text-decoration: none; }
+
+.lineaCorporalh1 {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/Seleccionadas/corporalh2.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .lineaCorporalh1 div {
+    width: auto;
+    height: 100px;
+    backdrop-filter: blur(2px);
+    padding: 4px; }
+    .lineaCorporalh1 div h1 {
+      font-size: 50px;
+      font-weight: 900;
+      font-family: 'Crimson Pro', serif;
+      color: #f0edd7;
+      padding: 10px; }
+
+.LineaCorporal {
+  width: auto;
+  height: auto; }
+  .LineaCorporal .CorporalProductos {
+    margin: 60px 200px 60px 200px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 {
+      color: #f0edd7;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      grid-template-areas: "titulocorp parrafocorp" "imagencorp parrafocorp" "comprarcorp parrafocorp";
+      gap: 20px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal {
+        grid-area: titulocorp;
         text-align: center; }
-      .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .compracapilar2 {
-        grid-area: comprarcapilar2;
-        text-decoration: none;
-        font-size: 18px; }
-        .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .compracapilar2 a {
-          border: #c7c268 solid 1px;
-          border-radius: 30px; }
-          .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .compracapilar2 a button {
-            text-decoration: none;
-            color: #f0edd7;
-            border-bottom: #c7c268;
-            font-size: 18px;
-            border: #c7c268 solid 1px;
-            border-radius: 30px; }
-            .LineaCapilarGrid .CapilarProductosGrid .CapilarGrid2 .compracapilar2 a button:hover {
-              background-color: #16161a;
-              color: #c7c268; }
+        .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-size: 28px;
+          font-family: 'Crimson Pro', serif; }
+    .LineaCorporal .CorporalProductos .ImagenCorporal {
+      grid-area: imagencorp; }
+      .LineaCorporal .CorporalProductos .ImagenCorporal img:hover {
+        transform: scale(1.3); }
+    .LineaCorporal .CorporalProductos .ParrafoCorporal {
+      grid-area: parrafocorp;
+      padding: 30px;
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Crimson Pro', serif; }
+      .LineaCorporal .CorporalProductos .ParrafoCorporal p {
+        margin-bottom: 0; }
+    .LineaCorporal .CorporalProductos .ComprarCorporal {
+      grid-area: comprarcorp;
+      text-align: center;
+      text-decoration: none; }
+    .LineaCorporal .CorporalProductos .ProductosCorp2 {
+      grid-template-areas: "parrafocorp2 titulocorp2" "parrafocorp2 imagencorp2" "parrafocorp2 comprarcorp2";
+      color: #f0edd7;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      gap: 20px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp2 .TituloCorporal2 {
+        grid-area: titulocorp2;
+        text-align: center; }
+        .LineaCorporal .CorporalProductos .ProductosCorp2 .TituloCorporal2 h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-size: 28px;
+          font-family: 'Crimson Pro', serif; }
+      .LineaCorporal .CorporalProductos .ProductosCorp2 .ImagenCorporal2 {
+        grid-area: imagencorp2; }
+        .LineaCorporal .CorporalProductos .ProductosCorp2 .ImagenCorporal2 img:hover {
+          transform: scale(1.3); }
+      .LineaCorporal .CorporalProductos .ProductosCorp2 .ComprarCorporal2 {
+        grid-area: comprarcorp2;
+        text-align: center;
+        text-decoration: none; }
+
+.LineaDentalH1 {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/Seleccionadas/DentalH22.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .LineaDentalH1 div {
+    width: auto;
+    height: 100px;
+    backdrop-filter: blur(2px);
+    padding: 4px; }
+    .LineaDentalH1 div h1 {
+      font-size: 50px;
+      font-weight: 900;
+      font-family: 'Crimson Pro', serif;
+      color: #f0edd7;
+      padding: 10px; }
+
+.LineaDental {
+  width: auto;
+  height: auto; }
+  .LineaDental .DentalProductos {
+    margin: 30px 200px 30px 200px; }
+    .LineaDental .DentalProductos .ProductosDen {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 40px 327px auto 40px;
+      color: #f0edd7;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      grid-template-areas: "titulodental" "imagendental" "parrafodental" "comprardental";
+      gap: 20px; }
+      .LineaDental .DentalProductos .ProductosDen .TituloDental {
+        grid-area: titulodental; }
+        .LineaDental .DentalProductos .ProductosDen .TituloDental h3 {
+          border-bottom: #c7c268 solid 1px;
+          font-size: 28px;
+          font-family: 'Crimson Pro', serif; }
+      .LineaDental .DentalProductos .ProductosDen .ImagenDental {
+        grid-area: imagendental;
+        display: flex;
+        justify-content: center; }
+        .LineaDental .DentalProductos .ProductosDen .ImagenDental img {
+          width: 500px;
+          height: 327px; }
+          .LineaDental .DentalProductos .ProductosDen .ImagenDental img:hover {
+            transform: scale(1.3); }
+      .LineaDental .DentalProductos .ProductosDen .ParrafoDental {
+        grid-area: parrafodental;
+        font-size: 25px;
+        font-family: 'Crimson Pro', serif; }
+        .LineaDental .DentalProductos .ProductosDen .ParrafoDental p {
+          margin-bottom: 0;
+          padding: 10px; }
+      .LineaDental .DentalProductos .ProductosDen .ComprarDental {
+        grid-area: comprardental;
+        text-decoration: none; }
+
+.LineaFacialH1 {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/Seleccionadas/FacialH22.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .LineaFacialH1 div {
+    width: auto;
+    height: 100px;
+    backdrop-filter: blur(2px);
+    padding: 4px; }
+    .LineaFacialH1 div h1 {
+      font-size: 50px;
+      font-weight: 900;
+      font-family: 'Crimson Pro', serif;
+      color: #f0edd7;
+      padding: 10px; }
+
+.LineaFacial {
+  width: auto;
+  height: auto; }
+  .LineaFacial .FacialProductos {
+    margin: 60px 200px 60px 200px; }
+    .LineaFacial .FacialProductos .ProductosFac1 {
+      color: #f0edd7;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      grid-template-areas: "titulofac parrafofac" "imagenfac parrafofac" "comprarfac parrafofac";
+      gap: 20px; }
+    .LineaFacial .FacialProductos .TituloFacial {
+      grid-area: titulofac; }
+      .LineaFacial .FacialProductos .TituloFacial h3 {
+        border-bottom: #c7c268 solid 1px;
+        font-size: 28px;
+        font-family: 'Crimson Pro', serif; }
+    .LineaFacial .FacialProductos .ImagenFacial {
+      grid-area: imagenfac; }
+      .LineaFacial .FacialProductos .ImagenFacial img:hover {
+        transform: scale(1.3); }
+    .LineaFacial .FacialProductos .ParrafoFacial {
+      grid-area: parrafofac;
+      padding: 30px;
+      font-size: 24px;
+      font-family: 'Crimson Pro', serif; }
+      .LineaFacial .FacialProductos .ParrafoFacial p {
+        margin-bottom: 0; }
+    .LineaFacial .FacialProductos .ComprarFacial {
+      grid-area: comprarfac;
+      text-decoration: none; }
+  .LineaFacial .ProductosFacialCol {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 327px 40px auto;
+    color: #f0edd7;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-template-areas: "titulofacial" "imagenfacial" "comprarfacial" "parrafofacial";
+    gap: 20px; }
+  .LineaFacial .TituloFacialCol {
+    grid-area: titulofacial; }
+    .LineaFacial .TituloFacialCol h3 {
+      border-bottom: #c7c268 solid 1px;
+      font-size: 28px;
+      font-family: 'Crimson Pro', serif; }
+  .LineaFacial .ImagenFacialCol {
+    grid-area: imagenfacial;
+    display: flex;
+    justify-content: center; }
+    .LineaFacial .ImagenFacialCol img {
+      width: 500px;
+      height: 327px; }
+      .LineaFacial .ImagenFacialCol img:hover {
+        transform: scale(1.3); }
+  .LineaFacial .ParrafoFacialCol {
+    grid-area: parrafofacial;
+    font-size: 24px;
+    font-family: 'Crimson Pro', serif; }
+    .LineaFacial .ParrafoFacialCol p {
+      margin-bottom: 0;
+      padding: 10px; }
+      .LineaFacial .ParrafoFacialCol p .SpanParrafos:hover {
+        color: #c7c268; }
+  .LineaFacial .ComprarFacialCol {
+    grid-area: comprarfacial;
+    text-decoration: none; }
+
+.LineaEsencialH1 {
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/Seleccionadas/Hidrolatos/7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 60px 0px 60px 0px; }
+  .LineaEsencialH1 div {
+    width: auto;
+    height: 100px;
+    backdrop-filter: blur(2px);
+    padding: 4px; }
+    .LineaEsencialH1 div h1 {
+      font-size: 50px;
+      font-weight: 900;
+      font-family: 'Crimson Pro', serif;
+      color: #f0edd7;
+      padding: 10px; }
+
+.LineaEsencial {
+  width: 100%;
+  border-top: #c7c268 solid 2px;
+  border-bottom: #c7c268 solid 2px;
+  background-image: url("../img/Seleccionadas/HidrolatoNaranja.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .LineaEsencial .EsencialDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px); }
+    .LineaEsencial .EsencialDiv .DesEsencial {
+      width: 80%;
+      height: 250px;
+      color: #f0edd7;
+      font-family: 'Crimson Pro', serif;
+      font-size: 30px;
+      padding: 10px; }
+      .LineaEsencial .EsencialDiv .DesEsencial p {
+        margin-bottom: 0; }
+    .LineaEsencial .EsencialDiv .Hidrolatos {
+      width: 100%; }
+      .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 {
+        display: grid;
+        grid-template-columns: repeat(4, 307px);
+        grid-template-rows: 460px 40px;
+        grid-template-areas: "primera segunda tercera cuarta" "comprarfac comprarfac comprarfac comprarfac";
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        padding: 10px; }
+        .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 div img {
+          width: 307px;
+          height: 460px; }
+          .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 div img:hover {
+            transform: scale(1.3); }
+    .LineaEsencial .EsencialDiv .HidrolatosB {
+      width: 100%;
+      margin-bottom: 20px; }
+      .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 {
+        display: grid;
+        grid-template-columns: repeat(3, 460px);
+        grid-template-rows: 307px;
+        grid-template-areas: "quinta sexta septima";
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        padding: 10px; }
+        .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 div img:hover {
+          transform: scale(1.3); }
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Crimson Pro', serif;
+  color: #f9f5e4;
+  border: black solid 24.5px; }
+  .contacto .contcont {
+    border: #D4AF37 solid 3px;
+    border-radius: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-color: #1f1f1f; }
+    .contacto .contcont .textocontacto {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px; }
+      .contacto .contcont .textocontacto h1 {
+        color: #c7c268;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+        font-weight: 600; }
+      .contacto .contcont .textocontacto div {
+        width: 70%; }
+        .contacto .contcont .textocontacto div p {
+          align-items: center;
+          text-align: center;
+          padding: 10px;
+          margin: 0px;
+          font-size: 25px;
+          font-weight: 600; }
+  .contacto .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; }
+    .contacto .formulario form {
+      width: 70%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .contacto .formulario form .formularioconteiner {
+        width: 100%; }
+        .contacto .formulario form .formularioconteiner div {
+          margin: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .contacto .formulario form .formularioconteiner div input {
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 6px;
+            text-align: center;
+            background-color: #f9f5e4;
+            color: black; }
+          .contacto .formulario form .formularioconteiner div h3 {
+            color: #c7c268;
+            font-weight: 600;
+            font-size: 30px;
+            font-weight: 600; }
+          .contacto .formulario form .formularioconteiner div textarea {
+            width: 100%;
+            height: 300px;
+            background-color: #f9f5e4;
+            border: 5px solid #c7c268;
+            border-radius: 6px;
+            background-image: url("../img/logos/Perfil-2.png");
+            background-position: center;
+            background-repeat: no-repeat; }
+      .contacto .formulario form .enviar {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 10px;
+        transition: 1s; }
+        .contacto .formulario form .enviar div {
+          transition: 1s;
+          padding: 3px; }
+          .contacto .formulario form .enviar div input {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            padding: 6px;
+            border: #020108 2px solid;
+            border-radius: 10px;
+            font-weight: 600; }
+            .contacto .formulario form .enviar div input:hover {
+              background-color: #37353d;
+              color: #f0edd7;
+              border-bottom: #c7c268 solid 2px; }
+
+.nosotros {
+  margin: 40px;
+  background-image: url("../img/Seleccionadas/localcompleto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .nosotros .filtrer {
+    backdrop-filter: blur(5px); }
+    .nosotros .filtrer .Pnosotros {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 30px;
+      width: 100%; }
+      .nosotros .filtrer .Pnosotros .nosotros_img {
+        width: 520px;
+        height: 640px;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        margin: 0px 60px 0px 60px; }
+        .nosotros .filtrer .Pnosotros .nosotros_img img {
+          width: 520px;
+          height: 640px; }
+      .nosotros .filtrer .Pnosotros .nosotros_p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: #f9f5e4;
+        background-image: url("../img/logos/Perfil-2.png");
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 400px;
+        background-position: center;
+        border: #c7c268 5px solid;
+        border-radius: 5px;
+        margin: 20px; }
+        .nosotros .filtrer .Pnosotros .nosotros_p p {
+          padding: 20px;
+          font-family: 'Crimson Pro', serif;
+          font-size: 22px;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 0; }
+    .nosotros .filtrer .row div img {
+      align-items: center; }
+      .nosotros .filtrer .row div img:hover {
+        transform: scale(1.5); }
 
 .footer {
   display: flex;
@@ -530,118 +1049,213 @@ header {
     .footer .copy p {
       margin: 0px; }
 
-/*!---------------Header MEDIA QUERY------------*/
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1000px) {
   header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap; }
-    header img {
+    header .imgheader img {
       margin-right: 100px; }
     header nav ul .lista {
-      margin: 20px 40px 20px 40px; } }
+      margin: 20px 40px 20px 40px; }
+      header nav ul .lista .alogo .logo {
+        width: 30px;
+        height: 30px; } }
+
+@media screen and (max-width: 834px) {
+  .lista {
+    margin: 5px 25px 10px 25px; }
+    .lista a {
+      font-size: 17px;
+      font-weight: 600; }
+    .lista .alogo .logo {
+      width: 25px;
+      height: 25px; } }
 
 @media screen and (max-width: 626px) {
   header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center; }
-    header img {
+    header .imgheader img {
       margin-right: 100px;
       width: 70px;
       height: 70px; }
     header nav {
+      padding: 5px;
       margin-bottom: 10px; }
       header nav ul {
         display: flex;
+        justify-content: center;
         flex-direction: row;
-        text-align: center;
         align-items: center; }
         header nav ul .lista {
-          margin: 5px 25px 5px 25px; }
+          margin: 5px 12px 5px 12px; }
           header nav ul .lista a {
-            font-weight: 600;
-            font-size: 14px; } }
+            font-size: 14px;
+            font-weight: 600; }
+          header nav ul .lista .alogo .logo {
+            width: 20px;
+            height: 20px; } }
 
-@media screen and (max-width: 422px) {
-  header nav .lista {
-    margin: 5px 10px 5px 10px; } }
+@media screen and (max-width: 416px) {
+  .lista {
+    margin: 5px 8px 8px 10px; } }
 
-/*-----HERO MEDIA QUERY-----*/
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 363px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 0; }
+    header .imgheader {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .imgheader img {
+        margin: 0; }
+    header nav {
+      margin-bottom: 0px; }
+      header nav ul {
+        flex-direction: column; }
+        header nav ul .lista {
+          margin: 5px 10px 5px 10px; } }
+
+@media screen and (max-width: 1359px) {
+  .parrafo {
+    margin-top: 4em; } }
+
+@media screen and (max-width: 926px) {
   .hero h1 {
     font-size: 70px; }
-  .hero .parrafo {
-    margin-top: 4em; }
-    .hero .parrafo p {
+  .parrafo p {
+    font-size: 25px; } }
+
+@media screen and (max-width: 834px) {
+  .hero h1 {
+    padding: 10px; }
+  .parrafo {
+    margin-top: 6em; }
+    .parrafo p {
       font-size: 25px; } }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 626px) {
   .hero h1 {
-    font-size: 50px; }
-  .hero .parrafo p {
-    font-size: 20px; } }
+    padding: 10px;
+    font-size: 60px; }
+  .parrafo {
+    margin-top: 6em; }
+    .parrafo p {
+      font-size: 25px; } }
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 531px) {
   .hero h1 {
     font-size: 50px; }
   .parrafo p {
     font-size: 20px; } }
 
-/*!--------Lineas Media Query-------*/
-@media screen and (max-width: 1439px) {
-  .lineas .lineas-contenedor {
+@media screen and (max-width: 449px) {
+  .hero h1 {
+    font-size: 50px; }
+  .parrafo p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 364px) {
+  .hero h1 {
+    font-size: 36px; }
+  .parrafo p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 1399px) {
+  .lineas-contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px; }
+  .lineas-contenedor div {
+    padding: 20px; } }
+
+@media screen and (max-width: 1399px) {
+  .lineas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px; }
+    .lineas-contenedor .lineas-contenedor div {
+      padding: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .lineas .lineas_h2 h2 {
+    font-size: 30px; }
+  .lineas .lineas-contenedor div h3 {
+    font-size: 22px;
+    left: 25%;
+    right: 25%; } }
 
 @media screen and (max-width: 700px) {
-  .lineas .lineas-contenedor {
+  .lineas-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto); } }
 
 @media screen and (max-width: 626px) {
-  .lineas .lineas-contenedor {
+  .lineas-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     width: auto;
     padding: 0px;
     margin: 0px; }
-    .lineas .lineas-contenedor div {
+    .lineas-contenedor div {
       width: 100%;
       height: auto; }
-      .lineas .lineas-contenedor div a {
-        width: auto; } }
-
-@media screen and (max-width: 626px) and (min-width: 446px) {
-  .lineas .lineas-contenedor div h3 {
-    left: 150px;
-    right: 150px; } }
+      .lineas-contenedor div a {
+        width: auto; }
+      .lineas-contenedor div h3 {
+        font-size: 20px;
+        left: 25%;
+        right: 25%; } }
 
 @media screen and (max-width: 446px) {
-  .lineas .lineas-contenedor {
+  .lineas-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     width: auto;
     padding: 0px;
-    margin: 0px; }
-    .lineas .lineas-contenedor div {
+    margin: 0px;
+    row-gap: 10px; }
+    .lineas-contenedor div {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 3406px;
       height: 300px;
       padding: 0px; }
-      .lineas .lineas-contenedor div a {
+      .lineas-contenedor div a {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 340px;
         height: 300px; }
-        .lineas .lineas-contenedor div a img {
+        .lineas-contenedor div a img {
           width: 330px;
-          height: 227px; } }
+          height: 227px; }
+      .lineas-contenedor div h3 {
+        font-size: 18px; } }
+
+@media screen and (max-width: 1200px) {
+  .video div {
+    width: 80%; } }
+
+@media screen and (max-width: 626px) {
+  .video div h2 {
+    font-size: 28px; }
+  .video div p {
+    font-size: 20px; } }

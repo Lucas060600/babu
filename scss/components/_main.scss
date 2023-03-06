@@ -1,12 +1,11 @@
 .hero{
+    @include WandH100(100%, 100vh);
     background-image: url("../img/Seleccionadas/planta1.JPG");
-    text-align: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh; 
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
     color: rgba(255, 255, 255, 0.781);
     
     h1{
@@ -14,7 +13,7 @@
         padding: 30px;
         font-family: 'Crimson Pro', serif;
         text-align: center;
-        span{
+        .SpanHero{
             color: #c7c268;
             font-style: italic;
         }
@@ -28,39 +27,40 @@
 
         p{
             text-align: center;
+            margin: 0px;
         }
     }
 }
 
-/*!---------Lineas------------*/
+//!------------Seccion-Lineas------------//
 
 .lineas{
-    width: 100%;
-    height: 100%;
-    border-bottom:  #c7c268 solid 2px ;
+    @extend %WandH100;
+    border-bottom: #c7c268 solid 2px ;
     margin-top: 40px;
 
-    h2{
-        color: #f0edd7;
-        text-align: center;
-        margin: 30px;
-        border-bottom: #c7c268 solid 1px;
-        margin-left: 30%;
-        margin-right: 30%;
-        padding: 20px;
-
+    .lineas_h2{
+        @extend %flex;
+        
+        h2{
+            @include marginpad(30px, 20px);
+            width: 60%;
+            color: #f0edd7;
+            font-family: 'Crimson Pro', serif;
+            text-align: center;
+            border-bottom: #c7c268 solid 1px;
+            font-size: 45px;
+        }
     }
     .lineas-contenedor{
-        display: grid;
-        @include grid (repeat(3,auto), repeat(3,auto));
-        column-gap: 30px;
+        @include grid(grid, repeat(3,1fr), repeat(2,1fr));
         justify-items: center;
         align-items: center;
-        margin: 40px;
+        row-gap: 40px;
+        @include marginpad(0, 40px);
 
         div{
             @extend %flex;
-            padding: 20px;
             position: relative;
             text-align: center;
             transition: 0.5s;
@@ -80,7 +80,8 @@
             }
 
             a{
-                @include WandH100 (406px, 307px);
+                @include WandH100(406px, 307px);
+
                 img{
                     @include WandH100 (406px, 307px);
                     border: #c7c268 solid 1px;
@@ -91,23 +92,169 @@
     }
 }
 
-                   //*Linea bienestar*//
+//!-------Seccion-video-------//
+
+.video{
+    @include flexdirection (flex, center, row-reverse, center); 
+    width: 100%;
+    border-bottom: #c7c268 solid 2px;
+    flex-wrap: wrap;
+
+    video{
+        @include WandH100(600px, 500px);
+    }
+
+    div{
+        @include WandH100(50%, 50px);
+
+        h2{
+            @include tamañoletras(20px, 700);
+            color: #c7c268;
+            margin: 10px
+        }
+
+        p{
+            color: #f0edd7;
+            padding: 20px;
+            font-size: 25px;
+        }
+    }
+    
+}
+//!Seccion Stock//
+
+.carrusel_section{
+    @extend %flex;
+    @include WandH100(100%, 380PX);
+    background-color: #252525;
+    margin-bottom: 100px;
+    .carrusel_div{
+        padding: 20px;
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        .carousel{
+            @include WandH100(700px, 400px);
+            .carousel-indicators{
+                margin-bottom: 0;
+            }
+            .carousel-inner{
+                box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+                -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+                -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
+                border: #c7c268 solid 3px;
+                .carousel-item{
+                    height: 100%;
+                    .carousel-img{
+                        @include WandH100(700px, 400px);
+                        img{
+                            @include WandH100(700px, 400px);
+                        }
+                    }
+                    .carousel-caption{
+                        @include flexdirection(flex, space-between, column, center);
+                        @extend %WandH100;
+                        left: 0;
+                        right: 0;
+                        padding-bottom: 3px;
+                        .h2_stock{
+                            margin-top: 2px;
+                            border-bottom: #c7c268 solid 1px;
+                            padding: 5px;
+                            color: #f0edd7;
+                            h3{
+                                font-size: 25px;
+                                font-family: 'Crimson Pro', serif;
+                                @include marginpad(0, 2px);
+                            }
+                        }
+                        .consultar_stock{
+                            @extend %flex;
+                            a{
+                                @include WandH100(100px, 40px);
+                                @include bgandcolor(#02010852, #f0edd7a4);
+                                border: #c7c2686b solid 2px;
+                                border-radius: 30px;
+                                text-decoration: none;
+                                &:hover{
+                                    @include bgandcolor(#f0edd7, #c7c268);
+                                    border: #c7c268 solid 3px;
+                                }
+                                p{
+                                    font-size: 20px;
+                                    font-family: 'Crimson Pro', serif;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .descripcion_stock{
+        @include WandH100(100%, 55%);
+        @include flexdirection(flex, center, column, center);
+        padding: 10px;
+        transition: 1s;
+        color: #f0edd7;
+        &:hover{
+            @include WandH100(70%, 108%);
+            background-image: url("../img/Seleccionadas/logolocal.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+        }
+        .Stock_1{
+            width: 60%;
+            @include flexdirection(flex, space-evenly, row, center);
+            color: #c7c268;
+            font-family: 'Crimson Pro', serif;
+            text-align: center;
+            .div_img{
+                padding: 10px;
+                img{
+                    @include WandH100(50px, 50px);
+                }
+            }
+            .stock_h2{
+                font-size: 40px;
+            }
+        }
+        .Stock_p{
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Crimson Pro', serif;
+            p{
+                .SpanStock{
+                    color: #c7c268;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+
+//*Linea bienestar*//
+
 //!seccion titulo//
-.lineabienestarh2{
+.LineaBienestarH1{
     @include WandH100 (100%, 100px);
     background-image: url("../img/Seleccionadas/fondoh2.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    margin: 60px 0px 60px 0px;
 
     div{
         @extend %flex;
         @include WandH100 (auto, 100px);
-        border: none solid 2px;
         backdrop-filter: blur(2px);
         padding: 4px;
 
-        h2{
+        h1{
             @include tamañoletras (50px, 900);
             font-family: 'Crimson Pro', serif;
             color: #f0edd7;
@@ -118,182 +265,144 @@
 }
 
 //!seccion prodcutos//
-
-.LineaBienestarGrid{
+.LineaBienestar{
     @include WandH100 (auto, auto);
-
-    .BienestarProductosGrid{
-        margin: 60px 200px 60px 200px;
-
-        .ProductosGrid{
-            display: grid;
-            @include grid (460px 1fr, 40px 307px 40px);
+    .BienestarProductos{
+        margin: 60px 150px 60px 150px;
+        .ProductosBien1{
+            @extend %gridproductos1;
+            grid-template-areas: 
+            "titulo parrafobienestar"
+            "imagen parrafobienestar"
+            "comprarbienestar parrafobienestar";
             color: #f0edd7;
             margin-top: 60px;
-            margin-bottom: 80px;
-            grid-template-areas: 
-            "titulo ."
-            "imagen parrafobienestar"
-            "comprarbienestar .";
-            gap: 20px;
-
-            .titulo{
+            margin-bottom: 100px;
+            .TituloBienestar{
                 grid-area: titulo;
+                text-align: center;
                 @extend %flex;
-                align-content: center;
-                font-size: 18px;
-                font-family: 'Crimson Pro', serif;
-
                 h3{
                     border-bottom: #c7c268 solid 1px;
+                    font-size: 28px;
+                    font-family: 'Crimson Pro', serif;
                 }
             }
-            .imagen{
+            .ImagenBienestar{
                 grid-area: imagen;
-
                 img{
-                    @include WandH100 (460px, 307px);
-                    border: #c7c268 solid 2px;
-                    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    transition-duration: 0.5s;
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
                     &:hover{
-                        transform: scale(1.3);
+                        transform: scale(1.3) ;
                     }
                 }
-
             }
-            .parrafobienestar{
+            .ParrafoBienestar{
                 grid-area: parrafobienestar;
                 @extend %flex;
                 text-align: center;
                 padding: 30px;
-                font-size: 20px;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    margin-bottom: 0;
+                }
             }
-            .comprarbienestar{
+            .ComprarBienestar{
                 grid-area: comprarbienestar;
                 @extend %flex;
                 text-align: center;
                 text-decoration: none;
-                
                 a{
-                    border: #c7c268 solid 1px;
-                    border-radius: 30px;
-
+                    @extend %abutton;
                     button{
-                        text-decoration: none;
-                        color: #f0edd7;
-                        border-bottom: #c7c268;
-                        font-size: 18px; 
+                        @extend %button;
                         &:hover{
-                            background-color: #16161a;
-                            color: #c7c268;
+                            @extend %buttonhover;
                         }
-
                     }
                 }
             }
-
         }
-
-        .ProductosGrid2{
-            display: grid;
-            @include grid (1fr 460px, 40px 307px 40px);
+        .ProductosBien2{
+            @extend %gridproductos2;
+            grid-template-areas: 
+            "parrafobienestar2 titulo2"
+            "parrafobienestar2 imagen2"
+            "parrafobienestar2 comprarbienestar2"
+            ;
             color: #f0edd7;
             margin-top: 60px;
             margin-bottom: 80px;
-            grid-template-areas: 
-            ". titulo2"
-            "parrafobienestar2 imagen2"
-            ". comprarbienestar2";
             gap: 20px;
-            
-            .titulo2{
+            .TituloBienestar2{
                 grid-area: titulo2;
                 @extend %flex;
-                font-size: 18px;
-                font-family: 'Crimson Pro', serif;
                 text-align: center;
-
                 h3{
                     border-bottom: #c7c268 solid 1px;
+                    font-size: 28px;
+                    font-family: 'Crimson Pro', serif;
                 }
-
             }
-
-        .imagen2{
-            grid-area: imagen2;
-
-            img{
-                @include WandH100 (460px, 307px);
-                border: #c7c268 solid 2px;
-                box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57); 
-                transition: 0.5s;
-                &:hover{
-                    transform: scale(1.3) ;
-                }
-            
-            }
-        }
-
-        .parrafobienestar2{
-            grid-area: parrafobienestar2;
-            @extend %flex;
-            text-align: center;
-            padding: 30px;
-            font-size: 20px;
-        }
-
-        .comprarbienestar2{
-            grid-area: comprarbienestar2;
-            @extend %flex;
-            text-align: center;
-            font-size: 18px;
-            text-decoration: none;
-
-            a{
-                border: #c7c268 solid 1px;
-                border-radius: 30px;
-
-                button{
-                    text-decoration: none;
-                    color: #f0edd7;
-                    border-bottom: #c7c268;
-                    font-size: 18px; 
+            .ImagenBienestar2{
+                grid-area: imagen2;
+                img{
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
                     &:hover{
-                        background-color: #16161a;
-                        color: #c7c268;
+                        transform: scale(1.3) ;
+                    }
+                }
+            }
+            .ParrafoBienestar2{
+                grid-area: parrafobienestar2;
+                @extend %flex;
+                text-align: center;
+                padding: 30px;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .ComprarBienestar2{
+                grid-area: comprarbienestar2;
+                @extend %flex;
+                text-align: center;
+                text-decoration: none;
+                a{
+                    @extend %abutton;
+                    button{
+                        @extend %button;
+                        &:hover{
+                            @extend %buttonhover;
+                        }
                     }
                 }
             }
         }
-        }
-
-
     }
 }
 
-                   //*Linea capilar*//
+//*Linea capilar*//
 //!seccion titulo//
-.lineacapilarh2{
+.LineaCapilarH1{
     @include WandH100 (100%, 100px);
     background-image: url("../img/Seleccionadas/capilarh22.JPG");
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
     text-align: center;
+    margin: 60px 0px 60px 0px;
 
     div{
         @extend %flex;
         @include WandH100 (auto, 100px);
-        border: none solid 2px;
         backdrop-filter: blur(2px);
         padding: 4px;
 
-        h2{
+        h1{
             @include tamañoletras (50px, 900);
             font-family: 'Crimson Pro', serif;
             color: #f0edd7;
@@ -301,250 +410,843 @@
         }
     }
 }
-
 //!seccion prodcutos//
-
-.LineaCapilarGrid{
-    @include WandH100 (auto, auto);
-
-    .CapilarProductosGrid{
+.LineaCapilar{
+    width: auto;
+    height: auto; 
+    .CapilarProductos{
         margin: 60px 200px 60px 200px;
-
-        .capilarGrid{
-            display: grid;
-            @include grid (460px 1fr, 40px 307px 40px);
+        .ProductosCap1{
+            @extend %gridproductos1;
+            grid-template-areas: 
+            "tituloC parrafocapilar"
+            "imagenC parrafocapilar"
+            "comprarcapilar parrafocapilar"
+            ;
             color: #f0edd7;
             margin-top: 60px;
             margin-bottom: 80px;
-            grid-template-areas: 
-            "tituloC ."
-            "imagenC parrafocapilar"
-            "comprarcapilar .";
-            
             gap: 20px;
-            .tituloC{
-
+            .TituloCapilar{
+                grid-area: tituloC;
+                @extend %flex;
+                text-align: center;
                 h3{
                     border-bottom: #c7c268 solid 1px;
                     font-family: 'Crimson Pro', serif;
+                    font-size: 28px;
                 }
             }
-
-            .imagenC{
+            .ImagenCapilar{
                 grid-area: imagenC;
-
                 img{
-                    @include WandH100 (460px, 307px);
-                    border: #c7c268 solid 2px;
-                    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    transition: 0.5s;
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
                     &:hover{
                         transform: scale(1.3) ;
                     }
                 }
             }
-
-            .parrafocapilar{
+            .ParrafoCapilar{
                 grid-area: parrafocapilar;
                 @extend %flex;
                 text-align: center;
-                font-size: 20px;
-
+                padding: 30px;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    margin-bottom: 0;
+                }
             }
-            
-            .compracapilar{
+            .ComprarCapilar{
                 grid-area: comprarcapilar;
                 @extend %flex;
                 text-align: center;
                 text-decoration: none;
-                font-size: 18px;
-
                 a{
-                    border: #c7c268 solid 1px;
-                    border-radius: 30px;
-
+                    @extend %abutton;
                     button{
-                        text-decoration: none;
-                        color: #f0edd7;
-                        border-bottom: #c7c268;
-                        font-size: 18px; 
+                        @extend %button;
                         &:hover{
-                            background-color: #16161a;
-                            color: #c7c268;
-                        }
-
-                    }
-                }
-            }
-        }
-
-        .ColumnCapilarCol{
-            @include WandH100 (auto, auto);
-            display: grid;
-            grid-template-columns: repeat(2,460px);
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 50px;
-            margin: 60px 0px 100px 0px;
-            border-bottom: #c7c2688c solid 10px;
-            border-top: #c7c2688c solid 10px;
-
-            .CapilarGridCol{
-                @include WandH100 (auto, auto);
-                display: grid;
-                @include grid (repeat(1,auto),  50px 307px 50px 150px);
-                color: #f0edd7;
-                grid-template-areas: 
-                "tituloCCol"
-                "imagenCCol"
-                "comprarcapilarCol"
-                "parrafocapilarCol";
-                gap: 25px;
-                margin: 30px 0px 30px 0px;
-
-                .tituloCCol{
-                    grid-area: tituloCCol;
-                    @extend %flex;
-                    @include WandH100 (100%, 50px);
-                    text-align: center;
-                    font-size: 18px;
-
-                    h3{
-                        border-bottom: #c7c268 solid 1px;
-                        font-family: 'Crimson Pro', serif;
-                    }
-                }
-                
-                .imagenCCol{
-                    grid-area: imagenCCol;
-                    @extend %flex;
-                    @include WandH100 (460px, 307px);
-
-                    img{
-                        @include WandH100 (460px, 307px);
-                        border: #c7c268 solid 2px;
-                        box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                        -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                        -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                        transition: 0.5s;
-                        &:hover{
-                            transform: scale(1.3) ;
-                        }
-                    }
-                }
-
-                .parrafocapilarCol{
-                    grid-area: parrafocapilarCol;
-                    justify-content: center;
-                
-                    p{
-                        font-size: 18px;
-                        text-align: center;
-                    }
-                }
-
-                .comprarcapilarCol{
-                    grid-area: comprarcapilarCol;
-                    @extend %flex;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 18px;
-
-                    a{
-                        border: #c7c268 solid 1px;
-                        border-radius: 30px;
-
-                        button{
-                            text-decoration: none;
-                            color: #f0edd7;
-                            border-bottom: #c7c268;
-                            font-size: 18px; 
-                            border: #c7c268 solid 1px;
-                            border-radius: 30px;
-                            transition: 0.5s;
-                            &:hover{
-                                background-color: #16161a;
-                                color: #c7c268;
-                            }                    
+                            @extend %buttonhover;
                         }
                     }
                 }
             }
         }
-        
-        .CapilarGrid2{
-            display: grid;
-            @include grid (1fr 460px, 40px 307px 40px);
-            color: #f0edd7;
-            margin-top: 60px;
-            margin-bottom: 80px;
+        .ProductosCap2{
+            @extend %gridproductos2;
             grid-template-areas: 
             ". tituloC2"
             "parrafocapilar2 imagenC2"
             ". comprarcapilar2";
+            color: #f0edd7;
+            margin-top: 60px;
+            margin-bottom: 80px;
             gap: 20px;
-
-            .tituloC2{
+            .TituloCapilar2{
                 grid-area: tituloC2;
                 @extend %flex;
                 text-align: center;
+                h3{
+                    border-bottom: #c7c268 solid 1px;
+                    font-family: 'Crimson Pro', serif;
+                    font-size: 28px;
+                }
+            }
+            .ImagenCapilar2{
+                grid-area: imagenC2;
+                img{
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
+                    &:hover{
+                        transform: scale(1.3) ;
+                    }
+                }
+            }
+            .ParrafoCapilar2{
+                grid-area: parrafocapilar2;
+                @extend %flex;
+                text-align: center;
+                padding: 30px;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .ComprarCapilar{
+                grid-area: comprarcapilar2;
+                @extend %flex;
+                text-align: center;
+                text-decoration: none;
+                a{
+                    @extend %abutton;
+                    button{
+                        @extend %button;
+                        &:hover{
+                            @extend %buttonhover;
+                        }
+                    }
+                }
+            }
+        }
+        .ProductosCapCol{
+            @include grid(grid, repeat(1,auto), 50px 307px 50px 240px);
+            grid-template-areas: 
+            "tituloCCol"
+            "imagenCCol"
+            "comprarcapilarCol"
+            "parrafocapilarCol";
+            justify-content: center;
+            justify-items: center;
+            color: #f0edd7;
+            gap: 25px;
+            margin: 30px 0px 30px 0px;
+            .TituloCapilarCol{
+                grid-area: tituloCCol;
+                @extend %flex;
+                @include WandH100(100px,50px);
+                text-align: center;
                 font-size: 18px;
-
                 h3{
                     border-bottom: #c7c268 solid 1px;
                     font-family: 'Crimson Pro', serif;
                 }
             }
-
-            .imagenC2{
-                grid-area: imagenC2;
-
+            .ImagenCapilarCol{
+                grid-area: imagenCCol;
+                @extend %flex;
+                @include WandH100(460px, 307px);
                 img{
-                    @include grid (460px, 307px);
-                    border: #c7c268 solid 2px;
-                    box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -webkit-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    -moz-box-shadow: 1px 1px 38px -8px rgba(255,255,255,0.57);
-                    transition: 0.5s;
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
                     &:hover{
                         transform: scale(1.3) ;
                     }
+                }
+            }
+            .ParrafoCapilarCol{
+                grid-area: parrafocapilarCol;
+                justify-content: center;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+            .ComprarCapilar{
+                grid-area: comprarcapilarCol;
+                @extend %flex;
+                text-align: center;
+                text-decoration: none;
+                a{
+                    @extend %abutton;
+                    button{
+                        @extend %button;
+                        &:hover{
+                            @extend %buttonhover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+//*Linea corporal*//
+//!seccion titulo//
+.lineaCorporalh1{
+    @include WandH100 (100%, 100px);
+    background-image: url("../img/Seleccionadas/corporalh2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+
+    div{
+        @extend %flex;
+        @include WandH100 (auto, 100px);
+        backdrop-filter: blur(2px);
+        padding: 4px;
+
+        h1{
+            @include tamañoletras (50px, 900);
+            font-family: 'Crimson Pro', serif;
+            color: #f0edd7;
+            padding: 10px;
+        }
+    }
+}
+//!seccion prodcutos//
+.LineaCorporal{
+    width: auto;
+    height: auto;
+    .CorporalProductos{
+        margin: 60px 200px 60px 200px;
+        .ProductosCorp1{
+            @extend %gridproductos1;
+            color: #f0edd7;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            grid-template-areas: 
+            "titulocorp parrafocorp"
+            "imagencorp parrafocorp"
+            "comprarcorp parrafocorp"
+            ;
+            gap: 20px;
+            .TituloCorporal{
+                grid-area: titulocorp;
+                text-align: center;
+                @extend %flex;
+                h3{
+                    border-bottom: #c7c268 solid 1px;
+                    font-size: 28px;
+                    font-family: 'Crimson Pro', serif;
+                }
+            }
+        }
+        .ImagenCorporal{
+            grid-area: imagencorp;
+            img{
+                @extend %WHimgpages;
+                @extend %imgshadowtrans;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+        .ParrafoCorporal{
+            grid-area: parrafocorp;
+            @extend %flex;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Crimson Pro', serif;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .ComprarCorporal{
+            grid-area: comprarcorp;
+            @extend %flex;
+            text-align: center;
+            text-decoration: none;
+            a{
+                @extend %abutton;
+                button{
+                    @extend %button;
+                    &:hover{
+                        @extend %buttonhover;
+                    }
+                }
+            }
+        }
+        .ProductosCorp2{
+            @extend %gridproductos1;
+            grid-template-areas: 
+            "parrafocorp2 titulocorp2"
+            "parrafocorp2 imagencorp2"
+            "parrafocorp2 comprarcorp2"
+            ;
+            color: #f0edd7;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            gap: 20px;
+            .TituloCorporal2{
+                grid-area: titulocorp2;
+                text-align: center;
+                @extend %flex;
+                h3{
+                    border-bottom: #c7c268 solid 1px;
+                    font-size: 28px;
+                    font-family: 'Crimson Pro', serif;
+                }
+            }
+            .ImagenCorporal2{
+                grid-area: imagencorp2;
+                img{
+                    @extend %WHimgpages;
+                    @extend %imgshadowtrans;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
+            }
+            .ComprarCorporal2{
+                grid-area: comprarcorp2;
+                @extend %flex;
+                text-align: center;
+                text-decoration: none;
+                a{
+                    @extend %abutton;
+                    button{
+                        @extend %button;
+                        &:hover{
+                            @extend %buttonhover;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//*Linea Dental*//
+//!seccion titulo//
+.LineaDentalH1{
+    @include WandH100 (100%, 100px);
+    background-image: url("../img/Seleccionadas/DentalH22.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+
+    div{
+        @extend %flex;
+        @include WandH100 (auto, 100px);
+        backdrop-filter: blur(2px);
+        padding: 4px;
+
+        h1{
+            @include tamañoletras (50px, 900);
+            font-family: 'Crimson Pro', serif;
+            color: #f0edd7;
+            padding: 10px;
+        }
+    }
+}
+//!seccion prodcutos//
+.LineaDental{
+    width: auto;
+    height: auto; 
+    .DentalProductos{
+        @extend %flex;
+        margin: 30px 200px 30px 200px;
+        .ProductosDen{
+            @include grid(grid, 100%, 40px 327px auto 40px);
+            color: #f0edd7;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            grid-template-areas: 
+            "titulodental"
+            "imagendental"
+            "parrafodental"
+            "comprardental"
+            ;
+            gap: 20px;
+            .TituloDental{
+                grid-area: titulodental;
+                @extend %titulopages;
+                h3{
+                    border-bottom: #c7c268 solid 1px;
+                    font-size: 28px;
+                    font-family: 'Crimson Pro', serif;
+                }
+            }
+            .ImagenDental{
+                grid-area: imagendental;
+                display: flex;
+                justify-content: center;
+                img{
+                    @include WandH100(500px, 327px);
+                    @extend %imgshadowtrans;
+                    &:hover{
+                        transform: scale(1.3) ;
+                    }
+                }
+                
+            }
+            .ParrafoDental{
+                grid-area: parrafodental;
+                @extend %titulopages;
+                font-size: 25px;
+                font-family: 'Crimson Pro', serif;
+                p{
+                    margin-bottom: 0;
+                    padding: 10px;
+                }
+            }
+            .ComprarDental{
+                grid-area: comprardental;
+                @extend %titulopages;
+                text-decoration: none;
+                a{
+                    @extend %abutton;
+                    button{
+                        @extend %button;
+                        &:hover{
+                            @extend %buttonhover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//*Linea facial*//
+//!seccion titulo//
+.LineaFacialH1{
+    @include WandH100 (100%, 100px);
+    background-image: url("../img/Seleccionadas/FacialH22.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+
+    div{
+        @extend %flex;
+        @include WandH100 (auto, 100px);
+        backdrop-filter: blur(2px);
+        padding: 4px;
+
+        h1{
+            @include tamañoletras (50px, 900);
+            font-family: 'Crimson Pro', serif;
+            color: #f0edd7;
+            padding: 10px;
+        }
+    }
+}
+//!seccion prodcutos//
+.LineaFacial{
+    width: auto;
+    height: auto; 
+    .FacialProductos{
+        margin: 60px 200px 60px 200px;
+        .ProductosFac1{
+            @extend %gridproductos1;
+            color: #f0edd7;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            grid-template-areas: 
+            "titulofac parrafofac"
+            "imagenfac parrafofac"
+            "comprarfac parrafofac"
+            ;
+            gap: 20px;
+        }
+        .TituloFacial{
+            grid-area: titulofac;
+            @extend %titulopages;
+            h3{
+                border-bottom: #c7c268 solid 1px;
+                font-size: 28px;
+                font-family: 'Crimson Pro', serif;
+            }
+        }
+        .ImagenFacial{
+            grid-area: imagenfac;
+            img{
+                @extend %WHimgpages;
+                @extend %imgshadowtrans;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+        .ParrafoFacial{
+            grid-area: parrafofac;
+            @extend %titulopages;
+            padding: 30px;
+            font-size: 24px;
+            font-family: 'Crimson Pro', serif;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .ComprarFacial{
+            @extend %titulopages;
+            grid-area: comprarfac;
+            text-decoration: none;
+            a{
+                @extend %abutton;
+                button{
+                    @extend %button;
+                    &:hover{
+                        @extend %buttonhover;
+                    }
+                }
+            }
+        }
+    }
+    .ProductosFacialCol{
+        @include grid(grid, 100%, 40px 327px 40px auto );
+        color: #f0edd7;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        grid-template-areas: 
+        "titulofacial"
+        "imagenfacial"
+        "comprarfacial"
+        "parrafofacial"
+        ;
+        gap: 20px;
+    }
+    .TituloFacialCol{
+        grid-area: titulofacial;
+        @extend %titulopages;
+        h3{
+            border-bottom: #c7c268 solid 1px;
+            font-size: 28px;
+            font-family: 'Crimson Pro', serif;
+        }
+    }
+    .ImagenFacialCol{
+        grid-area: imagenfacial;
+        display: flex;
+        justify-content: center;
+        img{
+            @include WandH100(500px, 327px);
+            @extend %imgshadowtrans;
+            &:hover{
+                transform: scale(1.3) ;
+            }
+        }
+    }
+    .ParrafoFacialCol{
+        grid-area: parrafofacial;
+        @extend %titulopages;
+        font-size: 24px;
+        font-family: 'Crimson Pro', serif;
+        p{
+            margin-bottom: 0;
+            padding: 10px;
+            .SpanParrafos:hover{
+                color: #c7c268;
+            }
+        }
+    }
+    .ComprarFacialCol{
+        grid-area: comprarfacial;
+        @extend %titulopages;
+        text-decoration: none;
+        a{
+            @extend %abutton;
+            button{
+                @extend %button;
+                &:hover{
+                    @extend %buttonhover;
+                }
+            }
+        }
+    }
+}
+
+//*Linea esencial*//
+//!seccion titulo//
+.LineaEsencialH1{
+    @include WandH100 (100%, 100px);
+    background-image: url("../img/Seleccionadas/Hidrolatos/7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+
+    div{
+        @extend %flex;
+        @include WandH100 (auto, 100px);
+        backdrop-filter: blur(2px);
+        padding: 4px;
+
+        h1{
+            @include tamañoletras (50px, 900);
+            font-family: 'Crimson Pro', serif;
+            color: #f0edd7;
+            padding: 10px;
+        }
+    }
+}
+//!seccion prodcutos//
+.LineaEsencial{
+    width: 100%;
+    border-top: #c7c268 solid 2px;
+    border-bottom: #c7c268 solid 2px;
+    background-image: url("../img/Seleccionadas/HidrolatoNaranja.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .EsencialDiv{
+        @include flexdirection(flex, center, column, center);
+        backdrop-filter: blur(4px);
+        .DesEsencial{
+            @extend %titulopages;
+            @include WandH100(80%, 250px);
+            color: #f0edd7;
+            font-family: 'Crimson Pro', serif;
+            font-size: 30px;
+            padding: 10px;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .Hidrolatos{
+            @extend %flex;
+            width: 100%;
+            .HidroDiv1{
+                @include grid(grid, repeat(4,307px), 460px 40px);
+                grid-template-areas: 
+                "primera segunda tercera cuarta"
+                "comprarfac comprarfac comprarfac comprarfac";
+                gap: 20px;
+                justify-items: center;
+                align-items: center;
+                padding: 10px;
+                div{
+                    img{
+                        @include WandH100(307px, 460px);
+                        @extend %imgshadowtrans;
+                        &:hover{
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+            
+        }
+        .HidrolatosB{
+            @extend %flex;
+            width: 100%;
+            margin-bottom: 20px;
+            .HidroDiv2{
+                @include grid(grid, repeat(3,460px), 307px);
+                grid-template-areas: 
+                "quinta sexta septima";
+                gap: 20px;
+                justify-items: center;
+                align-items: center;
+                padding: 10px;
+                div{
+                    img{
+                        @extend %WHimgpages;
+                        @extend %imgshadowtrans;
+                        &:hover{
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//!-------Seccion-contacto-------//
+.contacto{
+    @include flexdirection(flex, center, column, center);
+    font-family: 'Crimson Pro', serif;
+    color: #f9f5e4;
+    border: black solid 24.5px;
+    .contcont{
+        border: #D4AF37 solid 3px;
+        border-radius: 40px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 50%;
+        background-color: #1f1f1f;
+        .textocontacto{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            h1{
+                color: #c7c268 ;
+                text-align: center;
+                margin-top: 30px;
+                font-size: 40px;
+                font-weight: 600;
+            }
+            div{
+                width: 70%;
+                p{
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px;
+                    margin: 0px;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        form{
+            width: 70%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .formularioconteiner{
+                width: 100%;
+                div{
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    input{
+                        width: 100%;
+                        border: 1px solid black;
+                        border-radius: 6px;
+                        text-align: center;
+                        background-color: #f9f5e4;
+                        color: black;
+                    }
+                    h3{
+                        color: #c7c268 ;
+                        font-weight: 600;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    textarea{
+                        width: 100%;
+                        height: 300px;
+                        background-color: #f9f5e4;
+                        border: 5px solid #c7c268;
+                        border-radius: 6px;
+                        background-image: url("../img/logos/Perfil-2.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .enviar{
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content:  space-evenly;
+                text-align: center;
+                margin-bottom: 10px;
+                transition: 1s;
+                div{
+                    transition: 1s;
+                    padding: 3px;
+                    input{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 300;
+                        padding: 6px;
+                        border: #020108 2px solid;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        &:hover{
+                            background-color: #37353d;
+                            color: #f0edd7;
+                            border-bottom: #c7c268 solid 2px;
+                        }
+                    }
                 }
             }
 
-            .parrafocapilar2{
-                grid-area: parrafocapilar2;
-                @extend %flex;
-                padding: 30px;
-                font-size: 20px;
-                text-align: center;
+        }
+    }
+}
+
+//*Nosotros//
+.nosotros{
+    margin: 40px;
+    background-image: url("../img/Seleccionadas/localcompleto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .filtrer{
+        backdrop-filter: blur(5px);
+        .Pnosotros{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            width: 100%;
+            .nosotros_img{
+                width: 520px;
+                height: 640px;
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                margin: 0px 60px 0px 60px;
+                img{
+                    width: 520px;
+                    height: 640px;
+                }
             }
-
-            .compracapilar2{
-                grid-area: comprarcapilar2;
-                @extend %flex;
-                text-decoration: none;
-                font-size: 18px;
-                
-                a{
-                    border: #c7c268 solid 1px;
-                    border-radius: 30px;
-
-                    button{
-                        text-decoration: none;
-                        color: #f0edd7;
-                        border-bottom: #c7c268;
-                        font-size: 18px;
-                        border: #c7c268 solid 1px;
-                        border-radius: 30px;
-                        
-                        &:hover{
-                            background-color: #16161a;
-                            color: #c7c268;
-                        }
+            .nosotros_p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                background-color: #f9f5e4;
+                background-image: url("../img/logos/Perfil-2.png");
+                background-repeat: no-repeat;
+                width: 80%;
+                height: 400px;
+                background-position: center;
+                border: #c7c268 5px solid;
+                border-radius: 5px;
+                margin: 20px;
+                p{
+                    padding: 20px;
+                    font-family: 'Crimson Pro', serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .row{
+            div{
+                img{
+                    align-items: center;
+                    &:hover{
+                        transform: scale(1.5);
                     }
                 }
             }

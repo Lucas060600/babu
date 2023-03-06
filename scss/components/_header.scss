@@ -1,56 +1,77 @@
-/*!---------------------------Header------------------------------------*/
 header{
-    @include flex (flex, space-between, center);
     z-index: 1;
     background-color: #f9f5e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     position: sticky;
-    img{
-        @extend %WandH100;
-        margin-left: 100px;
+
+    .imgheader{
+        img{
+            @extend %WandH100;
+        }
     }
     nav{
         ul{
             @include flex (flex, space-around, center);
             @extend %marginpad;
+
             .lista{
-                @extend %flex;
-                margin: 0px;
-                padding: 0px;
+                @include flex (flex, center, center);
+                list-style: none;
+                text-align: right;
+                margin: 40px;
+
                 a{
-                    @include WandH100 (18PX, 900);
+                    @include tamañoletras (18px, 900);
                     text-decoration: none;
                     color: black;
+                    align-items: center;
                     transition: 0.5s;
-                    &:hover{
-                        color: nth($colores, 3);
+                    &hover {
+                        color:rgb(10, 168, 10);
+                    }
+                }
+                .alogo{
+                    @extend %flex;
+                    height: 100%;
+                    .logo{
+                        @include WandH100(35px, 35px);
+                        @extend %marginpad;
                     }
                 }
                 .dropdown{
                     @extend %flex;
                     @extend %letrasdeco;
                     border: none;
-                    a{
+
+                    .btn{
                         text-align: center;
                         padding: 2px;
                     }
+                    
                     .dropdown-menu{
                         @extend %letrasdeco;
-                        @include bgandcolor (nth($colores, 8), nth($colores, 5));
+                        @include bgandcolor (#1f1f1f, #f0edd7bb);
+                        @extend %letrasdeco;
                         border: none;
+
                         li{
-                            a{
-                                color: nth($colores, 5);
+                            .dropdown-item{
+                                color: #f0edd7bb;
                                 transition: 0.5s;
+                                text-align: center;
                                 &:hover{
-                                    color: nth($colores, 7)
+                                    color:#c7c268;
                                 }
                             }
                         }
                     }
                 }
-
             }
+
         }
     }
 }
+
