@@ -517,8 +517,6 @@ header nav ul{
     align-items: center;
     border-bottom: #c7c268 solid 2px;
     flex-wrap: wrap;
-
-
 }
 
 .video video{
@@ -759,22 +757,20 @@ header nav ul{
 }
 
 @media screen and (max-width:499px){
+    .contacto{
+        border: black solid 15px;
+    }
     .contacto .contcont{
         width: 100%;
-
     }
     .formulario form{
         width: 100%;
-
     }
     .textocontacto div{
         width: 100%;
     }
     .enviar{
         width: 100%;
-    }
-    .contacto{
-        border: black solid 15px;
     }
     
     .enviar div input{
@@ -832,11 +828,10 @@ header nav ul{
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    /* flex-direction: row; */
     width: 100%;
     height: 220px;
-
 }
+
 .footer .copy{
     display: flex;
     justify-content: center;
@@ -845,13 +840,10 @@ header nav ul{
     color: #f0edd7bb;
     width: 100%;
     height: 40px;
-
 }
 
 .footer .copy p{
     margin: 0px;
-
-
 }
 
 .redes{
@@ -860,8 +852,6 @@ header nav ul{
     justify-content: center;
     align-items: center;
     width: 200px;
-
-    
 }
 
 .redes a{
@@ -907,7 +897,6 @@ header nav ul{
     text-decoration: none;
     list-style: none;
     padding: 5px;
-    /* border-bottom: black solid 2px; */
     text-align: center;
     margin: 5px;
     transition: 1s;
@@ -1032,6 +1021,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 /*?------------------Lineabienestar-page------------------*/
 
@@ -1244,13 +1234,13 @@ header nav ul{
         margin: 30px;
     }
     .LineaBienestarH1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaBienestarH1 div{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaBienestarH1 div h1{
@@ -1280,10 +1270,10 @@ header nav ul{
     .TituloBienestar2 h3{
         font-size: 25px;
     }
-    .ParrafobBienestar{
+    .ParrafoBienestar{
         font-size: 20px;
     }
-    .ParrafobBienestar2{
+    .ParrafoBienestar2{
         font-size: 20px;
     }
     .ComprarBienestar a button{
@@ -1295,9 +1285,6 @@ header nav ul{
 }
 
 @media screen and (max-width:900px){
-    .BienestarProductos{
-        margin: 30px;
-    }
     .ProductosBien1{
         display: grid;
         grid-template-columns: 370px auto;
@@ -1317,10 +1304,10 @@ header nav ul{
         height: 247px;
     }
     .TituloBienestar h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .TituloBienestar2 h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .ParrafoBienestar{
         padding: 10px;
@@ -1351,7 +1338,7 @@ header nav ul{
         font-size: 35px;
     }
     .BienestarProductos{
-        margin: 30px 20px 30px 20px;;
+        margin: 30px 20px 30px 20px;
     }
     .ProductosBien1{
         display: grid;
@@ -1391,7 +1378,7 @@ header nav ul{
     }
 }
 
-@media screen and (max-width:619px){
+@media screen and (max-width:700px){
     .LineaBienestarH1 div h1{
         font-size: 33px;
     }
@@ -1466,6 +1453,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 
 /*?--------------*/
@@ -1686,7 +1674,7 @@ header nav ul{
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
     .CapilarCol{
         display: flex;
         flex-direction: column;
@@ -1715,11 +1703,14 @@ header nav ul{
         font-size: 20px;
     }
     .ComprarCapilarCol a button{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media screen and (max-width:900px){
+    .ProductosCapCol{
+        grid-template-rows: 40px 247px 40px auto;
+    }
     .ImagenCapilarCol{
         width: 370px;
         height: 247px;
@@ -1728,14 +1719,13 @@ header nav ul{
         width: 370px;
         height: 247px;
     }
-    .ProductosCapCol{
-        grid-template-rows: 40px 247px 40px auto;
-    }
     .TituloCapilarCol h3{
-        font-size: 21px;
+        font-size: 24px;
+    }
+    .ParrafoCapilarCol {
+        font-size: 19px;
     }
     .ParrafoCapilarCol p{
-        font-size: 19px;
         padding: 0px;
     }
     .ComprarCapilarCol a button{
@@ -1757,16 +1747,13 @@ header nav ul{
         height: 217px;
     }
     .TituloCapilarCol h3{
-        font-size: 20px;
+        font-size: 22px;
     }
-    .ParrafoCapilarCol p{
+    .ParrafoCapilarCol{
         font-size: 18px;
     }
     .ComprarCapilarCol a button{
         font-size: 15px;
-    }
-    .ImagenCapilarCol{
-        width: 310px;
     }
 }
 
@@ -1872,15 +1859,15 @@ header nav ul{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
     .LineaCapilarH1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaCapilarH1 div{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaCapilarH1 div h1{
@@ -1893,7 +1880,7 @@ header nav ul{
     }
     .ProductosCap2{
         display: grid;
-        grid-template-columns: 400px auto;
+        grid-template-columns: auto 400px;
         grid-template-rows: 40px 267px 40px;
     }
     .ImagenCapilar img{
@@ -1939,10 +1926,10 @@ header nav ul{
         grid-template-rows: 40px 247px 40px;
     }
     .TituloCapilar h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .TituloCapilar2 h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .ImagenCapilar img{
         width: 370px;
@@ -1969,15 +1956,15 @@ header nav ul{
 }
 
 @media screen and (max-width:729px){
-    .LineaCapilarh1{
+    .LineaCapilarH1{
         margin-top: 20px;
         margin-bottom: 20px;
         height: 60px;
     }
-    .LineaCapilarh1 div{
+    .LineaCapilarH1 div{
         height: 60px;
     }
-    .LineaCapilarh1 div h1{
+    .LineaCapilarH1 div h1{
         font-size: 35px;
     }
     .CapilarProductos{
@@ -2022,15 +2009,6 @@ header nav ul{
 }
 
 @media screen and (max-width:619px){
-    .LineaCapilarH1{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 60px;
-    }
-    .LineaCapilarH1 div{
-        height: 60px;
-    }
-
     .LineaCapilarH1 div h1{
         font-size: 33px;
     }
@@ -2075,191 +2053,7 @@ header nav ul{
 }
 
 
-/*!------------------nosotros---------------*/
-.nosotros{
-    margin: 40px;
-    background-image: url("../img/Seleccionadas/localcompleto.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-}
-.nosotros .row div img{
-    align-items: center;
-
-}
-
-.nosotros .row div img:hover{
-    transform: scale(1.5);
-
-}
-
-.Pnosotros{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 30px;
-    width: 100%;
-
-}
-
-.filtrer{
-    backdrop-filter: blur(5px);
-}
-
-.nosotros_img{
-    width: 520px;
-    height: 640px;
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    margin: 0px 60px 0px 60px;
-}
-
-.nosotros_img img{
-    width: 520px;
-    height: 640px;   
-}
-
-
-.nosotros_p p{
-    padding: 20px;
-    font-family: 'Crimson Pro', serif;
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.nosotros_p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #f9f5e4;
-    background-image: url("../img/logos/Perfil-2.png");
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 400px;
-    background-position: center;
-    border: #c7c268 5px solid;
-    border-radius: 5px;
-    margin: 20px;
-
-}
-
-
-
-@media screen and (max-width:1500px){
-    .nosotros_p{
-        height: 550px;
-    }
-}
-
-@media screen and (max-width:1263px){
-    .nosotros{
-        margin: 25px;
-    }
-    .nosotros_img{
-        width: 460px;
-        height: 580px;
-        margin: 0px;
-    }
-    .nosotros_img img{
-        width: 460px;
-        height: 580px;   
-    }
-    .nosotros_p{
-        height: 450px;
-    }
-    .nosotros_p p{
-        font-size: 20px;
-        
-    }
-}
-
-@media screen and (max-width:1263px){
-    .nosotros_p{
-        height: 480px;
-    }
-    .nosotros_p p{
-        font-size: 18px;
-        
-    }
-}
-
-
-@media screen and (max-width:1000px){
-    .Pnosotros{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    .nosotros_p {
-        width: 100%;
-        height: 350px;
-        
-    }
-    .nosotros_img{
-        width: 340px;
-        height: 460px;   
-    }
-    .nosotros_img img{
-        width: 340px;
-        height: 460px;   
-    }
-    .nosotros_p p{
-        font-size: 17px;
-        
-    }
-
-}
-
-
-@media screen and (max-width:626px){
-    .Pnosotros{
-        padding: 15px;
-    }
-    .nosotros_p {
-        margin: 10px 0px 0px 0px;
-        height: 350px;
-        
-    }
-    .nosotros_p p{
-        padding: 15px;
-        font-size: 14px;
-    }  
-
-}
-
-@media screen and (max-width:500px){
-    .nosotros{
-        margin: 10px;
-    }
-    .Pnosotros{
-        padding: 15px;
-    }
-    .nosotros_p {
-        margin: 10px 0px 0px 0px;
-        height: 400px;
-        
-    }
-    .nosotros_p p{
-        padding: 15px;
-        font-size: 14px;
-    }  
-    .nosotros_img{
-        width: 320px;
-        height: 420px;   
-    }
-    .nosotros_img img{
-        width: 320px;
-        height: 420px;     
-    }
-
-}
 /*-------------------------------------------------------------*/
 
 .LineaCorporalH1{
@@ -2291,6 +2085,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 
 /*!--------PageCorporal-----*/
@@ -2490,7 +2285,7 @@ header nav ul{
 
 }
 
-/*?------------Media QuerysBienestar------*/
+/*?--------Media QuerysCorporal------*/
 
 
 @media screen and (max-width:1350px){
@@ -2499,19 +2294,19 @@ header nav ul{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
     .LineaCorporalH1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaCorporalH1 div{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaCorporalH1 div h1{
-        font-size: 35px;
+        font-size: 40px;
     }
     .ProductosCorp1{
         display: grid;
@@ -2537,10 +2332,10 @@ header nav ul{
     .TituloCorporal2 h3{
         font-size: 25px;
     }
-    .ParrafobCorporal{
+    .ParrafoCorporal{
         font-size: 20px;
     }
-    .ParrafobCorporal2{
+    .ParrafoCorporal2{
         font-size: 20px;
     }
     .ComprarCorporal a button{
@@ -2574,10 +2369,10 @@ header nav ul{
         height: 247px;
     }
     .TituloCorporal h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .TituloCorporal2 h3{
-        font-size: 25px;
+        font-size: 24px;
     }
     .ParrafoCorporal{
         padding: 10px;
@@ -2605,10 +2400,10 @@ header nav ul{
         height: 60px;
     }
     .LineaCorporalH1 div h1{
-        font-size: 29px;
+        font-size: 33px;
     }
     .CorporalProductos{
-        margin: 30px 20px 30px 20px;;
+        margin: 30px 20px 30px 20px;
     }
     .ProductosCorp1{
         display: grid;
@@ -2786,7 +2581,6 @@ header nav ul{
         font-size: 23px;
     
     }
-    
 }
 
 @media screen and (max-width:900px){
@@ -2834,13 +2628,6 @@ header nav ul{
 @media screen and (max-width:700px){
     .VideoContenedor{
         margin: 10px;
-    }
-    .VideoVid video{
-        width: 600px;
-        height: 380px;
-    }
-    .VideoDes{
-        padding: 5px;
     }
     .VideoDes h2{
         font-size: 21px;
@@ -2904,6 +2691,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 /*?------------------Lineabienestar-page------------------*/
 
@@ -3017,13 +2805,13 @@ header nav ul{
 
 @media screen and (max-width:1200px){
     .LineaDentalH1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaDentalH1 div{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaDentalH1 div h1{
@@ -3042,10 +2830,9 @@ header nav ul{
     }
     .TituloDental h3{
         font-size: 25px;
-
     }
     .ParrafoDental{
-        font-size: 20px;
+        font-size: 22px;
     }
     .ComprarDental a button{
         font-size: 19px;
@@ -3075,7 +2862,7 @@ header nav ul{
         height: 267px;
     }
     .TituloDental h3{
-        font-size: 25px;
+        font-size: 24px;
 
     }
     .ParrafoDental{
@@ -3113,9 +2900,6 @@ header nav ul{
 }
 
 @media screen and (max-width:500px){
-    .DentalProductos{
-        margin: 30px 20px 30px 20px;
-    }
     .ProductosDen{
         margin-bottom: 5px;
         grid-template-rows: 40px 217px auto 40px;
@@ -3168,6 +2952,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 
 /*?----SeccionProductos---*/
@@ -3178,7 +2963,7 @@ header nav ul{
 }
 
 .FacialProductos{
-    margin: 60px 200px 60px 200px;
+    margin: 60px 100px 60px 100px;
 }
 
 .ProductosFac1{
@@ -3235,7 +3020,7 @@ header nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Crimson Pro', serif;
 }
 
@@ -3331,7 +3116,7 @@ header nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Crimson Pro', serif;
 }
 
@@ -3381,17 +3166,17 @@ header nav ul{
 
 @media screen and (max-width:1200px){
     .LineaFacialH1{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaFacialH1 div{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         height: 80px;
     }
     .LineaFacialH1 div h1{
-        font-size: 35px;
+        font-size: 40px;
     }
     .ProductosFac1{
         display: grid;
@@ -3403,10 +3188,10 @@ header nav ul{
         height: 267px;
     }
     .TituloFacial h3{
-        font-size: 24px;
+        font-size: 25px;
     }
     .ParrafoFacial{
-        font-size: 21px;
+        font-size: 22px;
     }
     .ComprarFacial a button{
         font-size: 17px;
@@ -3423,7 +3208,7 @@ header nav ul{
 
     }
     .ParrafoFacialCol{
-        font-size: 20px;
+        font-size: 22px;
     }
     .ComprarFacialCol a button{
         font-size: 19px;
@@ -3446,9 +3231,6 @@ header nav ul{
         width: 370px;
         height: 247px;
     }
-    .TituloFacial h3{
-        font-size: 25px;
-    }
     .ParrafoFacial{
         padding: 10px;
         font-size: 19px;
@@ -3460,20 +3242,11 @@ header nav ul{
         width: 400px;
         height: 267px;
     }
-    .TituloFacialCol h3{
-        font-size: 25px;
-    }
     .ParrafoFacialCol{
         font-size: 19px;
     }
     .ComprarFacialCol a button{
         font-size: 17px;
-    }
-    .ImagenFacial{  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 }
 
@@ -3504,20 +3277,17 @@ header nav ul{
         row-gap: 20px;
     }
     .FacialProductos{
-        margin: 30px 20px 30px 20px;;
+        margin: 30px 20px 30px 20px;
+    }
+    .ImagenFacial{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .ImagenFacial img{
         width: 400px;
         height: 267px;
-    }
-    .TituloFacial h3{
-        font-size: 22px;
-    }
-    .ParrafoFacial{
-        font-size: 18px;
-    }
-    .ComprarFacial a button{
-        font-size: 15px;
     }
 }
 
@@ -3528,7 +3298,6 @@ header nav ul{
     }
     .ProductosFacialCol{
         grid-template-rows: 40px 217px 40px auto;
-
     }
     .ImagenFacial img{
         width: 310px;
@@ -3537,6 +3306,24 @@ header nav ul{
     .ImagenFacialCol img{
         width: 310px;
         height: 217px;
+    }
+    .TituloFacial h3{
+    font-size: 22px;
+    }
+    .TituloFacialCol h3{
+        font-size: 22px;
+        }
+    .ParrafoFacial{
+        font-size: 18px;
+    }
+    .ComprarFacial a button{
+        font-size: 15px;
+    }
+    .ParrafoFacialCol{
+        font-size: 18px;
+    }
+    .ComprarFacialCol a button{
+        font-size: 15px;
     }
     
 }
@@ -3573,6 +3360,7 @@ header nav ul{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Crimson Pro', serif;
+    margin-bottom: 0;
 }
 
 /*?-----SeccionDescripcion---*/
@@ -3773,11 +3561,12 @@ header nav ul{
     .LineaEsencialH1 div h1{
         font-size: 44px;
     }
-
+    .DesEsencial{
+        font-size: 28px;
+    }
     .HidroDiv1{
         grid-template-columns: repeat(4,247px);
         grid-template-rows: 370px 40px;
-
     }
     
     .HidroDiv1 img{
@@ -3794,15 +3583,16 @@ header nav ul{
         width: 370px;
         height: 247px;
     }
-    .DesEsencial{
-        font-size: 28px;
-    }
     .ComprarEsencial a button{
         font-size: 16px;
     }
 }
 
 @media screen and (max-width:1170px){
+    .DesEsencial{
+        height: 280px;
+        font-size: 26px;
+    }
     .HidroDiv1{
         grid-template-columns: repeat(4,217px);
         grid-template-rows: 310px 40px;
@@ -3826,17 +3616,16 @@ header nav ul{
         width: 310px;
         height: 217px;
     }
-
-    .DesEsencial{
-        height: 280px;
-        font-size: 26px;
-    }
     .ComprarEsencial a button{
         font-size: 14px;
     }
 }
 
 @media screen and (max-width:950px){
+    .DesEsencial{
+        width: 90%;
+        font-size: 24px;
+    }
     .HidroDiv1{
     grid-template-columns: repeat(2,217px);
     grid-template-rows: 310px 310px 40px;
@@ -3844,11 +3633,6 @@ header nav ul{
     "primera segunda"
     "tercera cuarta"
     "comprarfac comprarfac";
-    }
-
-    .DesEsencial{
-        width: 90%;
-        font-size: 24px;
     }
 }
 
@@ -3864,7 +3648,11 @@ header nav ul{
     .LineaEsencialH1 div h1{
         font-size: 33px;
     }
-
+    .DesEsencial{
+        width: 90%;
+        font-size: 22px;
+        height: 300px;
+    }
     .HidroDiv2{
         grid-template-columns: 310px;
         grid-template-rows: repeat(3,217px);
@@ -3874,15 +3662,14 @@ header nav ul{
         "septima"
         ;
     }
-
-    .DesEsencial{
-        width: 90%;
-        font-size: 22px;
-        height: 300px;
-    }
 }
 
 @media screen and (max-width:479px){
+    .DesEsencial{
+        width: 100%;
+        font-size: 20px;
+        height: 330px;
+    }
     .HidroDiv1{
         grid-template-columns: 217px;
         grid-template-rows: 310px 310px 310px 310px 40px;
@@ -3894,16 +3681,190 @@ header nav ul{
         "comprarfac"
         ;
     }
-
-    .DesEsencial{
-        width: 100%;
-        font-size: 20px;
-        height: 330px;
-    }
 }
     
 
+/*!------------------nosotros---------------*/
+.nosotros{
+    margin: 40px;
+    background-image: url("../img/Seleccionadas/localcompleto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+}
+.nosotros .row div img{
+    align-items: center;
+
+}
+
+.nosotros .row div img:hover{
+    transform: scale(1.5);
+
+}
+
+.Pnosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 100%;
+
+}
+
+.filtrer{
+    backdrop-filter: blur(5px);
+}
+
+.nosotros_img{
+    width: 520px;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0px 60px 0px 60px;
+}
+
+.nosotros_img img{
+    width: 520px;
+    height: 640px;   
+}
+
+
+.nosotros_p p{
+    padding: 20px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.nosotros_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #f9f5e4;
+    background-image: url("../img/logos/Perfil-2.png");
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 400px;
+    background-position: center;
+    border: #c7c268 5px solid;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+
+@media screen and (max-width:1500px){
+    .nosotros_p{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:1263px){
+    .nosotros{
+        margin: 25px;
+    }
+    .nosotros_img{
+        width: 460px;
+        height: 580px;
+        margin: 0px;
+    }
+    .nosotros_img img{
+        width: 460px;
+        height: 580px;   
+    }
+    .nosotros_p{
+        height: 480px;
+    }
+    .nosotros_p p{
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (max-width:1100px){
+    .nosotros_p{
+        height: 480px;
+    }
+    .nosotros_p p{
+        font-size: 18px;
+        
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .Pnosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .nosotros_p {
+        width: 100%;
+        height: 350px;
+        
+    }
+    .nosotros_img{
+        width: 340px;
+        height: 460px;   
+    }
+    .nosotros_img img{
+        width: 340px;
+        height: 460px;   
+    }
+    .nosotros_p p{
+        font-size: 17px;
+        
+    }
+
+}
+
+
+@media screen and (max-width:626px){
+    .Pnosotros{
+        padding: 15px;
+    }
+    .nosotros_p{
+        margin: 10px 0px 0px 0px;
+        height: 350px;
+        
+    }
+    .nosotros_p p{
+        padding: 15px;
+        font-size: 14px;
+    }  
+
+}
+
+@media screen and (max-width:500px){
+    .nosotros{
+        margin: 10px;
+    }
+    .nosotros_p {
+        margin: 10px 0px 0px 0px;
+        height: 400px;
+        
+    }
+    .nosotros_p p{
+        padding: 15px;
+        font-size: 14px;
+    }  
+    .nosotros_img{
+        width: 320px;
+        height: 420px;   
+    }
+    .nosotros_img img{
+        width: 320px;
+        height: 420px;     
+    }
+
+}
 
 
 
@@ -4098,15 +4059,12 @@ header nav ul{
 }
 
 @media screen and (max-width:1500px){
-    .descripcion_stock .Stock_1{
-        width: 90%;
-        padding: 5px;
-    }
     .descripcion_stock{
         padding: 20px;
     }
     .descripcion_stock .Stock_1{
         width: 85%;
+        padding: 5px;
     }
     .descripcion_stock .Stock_p{
         padding: 5px;
@@ -4134,7 +4092,6 @@ header nav ul{
         font-size: 35px;
     }
     .descripcion_stock .Stock_p{
-        /* padding: 10px; */
         font-size: 22px;
     }
     .descripcion_stock .Stock_1 .div_img img{
@@ -4335,11 +4292,10 @@ header nav ul{
         height: 220px;
     }
     .descripcion_stock{
-        padding: 5px;
         width: 100%;
     }
-    
 }
+
 /*!---Fixed---*/
 
 .fixed{

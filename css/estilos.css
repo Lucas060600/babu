@@ -1259,3 +1259,1165 @@ header {
     font-size: 28px; }
   .video div p {
     font-size: 20px; } }
+
+@media screen and (max-width: 1700px) {
+  .carrusel_secciion .carrusel_div {
+    width: 55%;
+    justify-content: center; }
+  .descripcion_stock {
+    width: 45%; }
+    .descripcion_stock .stock_1 {
+      width: 75%; } }
+
+@media screen and (max-width: 1500px) {
+  .descripcion_stock {
+    padding: 20px; }
+    .descripcion_stock .Stock_1 {
+      width: 85%;
+      padding: 5px; }
+    .descripcion_stock .Stock_p {
+      padding: 5px; } }
+
+@media screen and (max-width: 1400px) {
+  .carrusel_section {
+    height: 330px; }
+    .carrusel_section .carrusel_div .carousel {
+      width: 550px;
+      height: 350px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+        width: 550px;
+        height: 350px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+          width: 550px;
+          height: 350px; }
+    .carrusel_section .descripcion_stock .Stock_1 .div_img img {
+      width: 40px;
+      height: 40px; }
+    .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+      font-size: 35px; }
+    .carrusel_section .descripcion_stock .Stock_p {
+      font-size: 22px; } }
+
+@media screen and (max-width: 1100px) {
+  .carrusel_section {
+    height: 330px; }
+    .carrusel_section .carrusel_div .carousel {
+      width: 480px;
+      height: 350px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+        width: 480px;
+        height: 350px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+          width: 480px;
+          height: 350px; }
+    .carrusel_section .descripcion_stock .Stock_1 .div_img img {
+      width: 35px;
+      height: 35px; }
+    .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+      font-size: 30px; }
+    .carrusel_section .descripcion_stock .Stock_p {
+      font-size: 22px; } }
+
+@media screen and (max-width: 1000px) {
+  .carrusel_section {
+    flex-direction: column;
+    height: 650px;
+    margin-bottom: 60px; }
+    .carrusel_section .carrusel_div {
+      width: 80%;
+      align-items: center; }
+      .carrusel_section .carrusel_div .carousel {
+        width: 550px;
+        height: 350px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+          width: 550px;
+          height: 350px; }
+          .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+            width: 550px;
+            height: 350px; }
+    .carrusel_section .descripcion_stock {
+      width: 90%;
+      height: 300px; }
+      .carrusel_section .descripcion_stock:hover {
+        width: 80%;
+        height: 300px; }
+      .carrusel_section .descripcion_stock .Stock_1 {
+        width: 90%;
+        justify-content: center; }
+        .carrusel_section .descripcion_stock .Stock_1 .div_img {
+          padding: 20px; }
+        .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+          font-size: 30px; }
+      .carrusel_section .descripcion_stock .Stock_p {
+        font-size: 22px; } }
+
+@media screen and (max-width: 626px) {
+  .carrusel_section {
+    height: 610px; }
+    .carrusel_section .carrusel_div .carousel {
+      width: 450px;
+      height: 300px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+        width: 450px;
+        height: 300px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+          width: 450px;
+          height: 300px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .consultar_stock a {
+        width: 75px;
+        height: 30px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .consultar_stock a p {
+          font-size: 15px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .h2_stock h2 {
+        font-size: 20px; }
+    .carrusel_section .descripcion_stock {
+      width: 95%;
+      height: 250px; }
+      .carrusel_section .descripcion_stock:hover {
+        width: 80%;
+        height: 300px; }
+      .carrusel_section .descripcion_stock .Stock_1 {
+        width: 95%; }
+        .carrusel_section .descripcion_stock .Stock_1 .div_img {
+          padding: 20px; }
+          .carrusel_section .descripcion_stock .Stock_1 .div_img img {
+            width: 30px;
+            height: 30px; }
+        .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+          font-size: 28px; }
+      .carrusel_section .descripcion_stock .Stock_p {
+        font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  .carrusel_section {
+    height: 560px; }
+    .carrusel_section .carrusel_div .carousel {
+      width: 380px;
+      height: 260px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+        width: 380px;
+        height: 260px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+          width: 380px;
+          height: 260px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .consultar_stock a {
+        width: 70px;
+        height: 20px; }
+        .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .consultar_stock a p {
+          font-size: 13px; }
+      .carrusel_section .carrusel_div .carousel .carousel-inner .carousel-item .carousel-caption .h2_stock h2 {
+        font-size: 18px; }
+    .carrusel_section .descripcion_stock {
+      width: 95%;
+      height: 250px; }
+      .carrusel_section .descripcion_stock:hover {
+        width: 80%;
+        height: 300px; }
+      .carrusel_section .descripcion_stock .Stock_1 {
+        width: 95%; }
+        .carrusel_section .descripcion_stock .Stock_1 .div_img {
+          padding: 20px; }
+          .carrusel_section .descripcion_stock .Stock_1 .div_img img {
+            width: 30px;
+            height: 30px; }
+        .carrusel_section .descripcion_stock .Stock_1 .stock_h2 {
+          font-size: 28px; }
+      .carrusel_section .descripcion_stock .Stock_p {
+        font-size: 18px; } }
+
+@media screen and (max-width: 420px) {
+  .carrusel_secciion .carrusel_div .carousel {
+    width: 340px;
+    height: 240px; }
+    .carrusel_secciion .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+      width: 340px;
+      height: 240px; }
+      .carrusel_secciion .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+        width: 340px;
+        height: 240px; }
+  .carrusel_secciion .descripcion_stock {
+    padding: 5px;
+    width: 95%;
+    height: 250px; } }
+
+@media screen and (max-width: 360px) {
+  .carrusel_secciion {
+    height: 610px; }
+    .carrusel_secciion .carrusel_div .carousel {
+      width: 300px;
+      height: 220px; }
+      .carrusel_secciion .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img {
+        width: 300px;
+        height: 220px; }
+        .carrusel_secciion .carrusel_div .carousel .carousel-inner .carousel-item .carousel-img img {
+          width: 300px;
+          height: 220px; }
+    .carrusel_secciion .descripcion_stock {
+      width: 100%; } }
+
+@media screen and (max-width: 1350px) {
+  .BienestarProductos {
+    margin: 60px; } }
+
+@media screen and (max-width: 1100px) {
+  .LineaBienestarH1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px; }
+    .LineaBienestarH1 div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 80px; }
+      .LineaBienestarH1 div h1 {
+        font-size: 40px; }
+  .LineaBienestar .BienestarProductos {
+    margin: 30px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 {
+      display: grid;
+      grid-template-columns: 400px auto;
+      grid-template-rows: 40px 267px 40px; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar img {
+        width: 400px;
+        height: 267px; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .TituloBienestar h3 {
+        font-size: 25px; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ParrafobBienestar {
+        font-size: 20px; }
+      .LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar a button {
+        font-size: 17px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 {
+      display: grid;
+      grid-template-columns: auto 400px;
+      grid-template-rows: 40px 267px 40px; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 img {
+        width: 400px;
+        height: 267px; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .TituloBienestar2 h3 {
+        font-size: 25px; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ParrafobBienestar2 {
+        font-size: 20px; }
+      .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 a button {
+        font-size: 17px; } }
+
+@media screen and (max-width: 900px) {
+  .LineaBienestar .BienestarProductos .ProductosBien1 {
+    display: grid;
+    grid-template-columns: 370px auto;
+    grid-template-rows: 40px 247px 40px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar img {
+      width: 370px;
+      height: 247px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 .TituloBienestar h3 {
+      font-size: 22px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 .ParrafobBienestar {
+      padding: 10px;
+      font-size: 19px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 .ComprarBienestar a button {
+      font-size: 16px; }
+  .LineaBienestar .BienestarProductos .ProductosBien2 {
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 img {
+      width: 370px;
+      height: 247px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 .TituloBienestar2 h3 {
+      font-size: 24px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 .ParrafobBienestar2 {
+      padding: 10px;
+      font-size: 19px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 .ComprarBienestar2 a button {
+      font-size: 16px; } }
+
+@media screen and (max-width: 800px) {
+  .LineaBienestarH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+  .LineaBienestarH1 div {
+    height: 60px; }
+  .LineaBienestarH1 div h1 {
+    font-size: 35px; }
+  .BienestarProductos {
+    margin: 30px 20px 30px 20px; }
+  .ProductosBien1 {
+    display: grid;
+    grid-template-columns: 310px auto;
+    grid-template-rows: 40px 217px 40px; }
+  .ProductosBien2 {
+    display: grid;
+    grid-template-columns: auto 310px;
+    grid-template-rows: 40px 217px 40px; }
+  .ImagenBienestar img {
+    width: 310px;
+    height: 217px; }
+  .ImagenBienestar2 img {
+    width: 310px;
+    height: 217px; }
+  .TituloBienestar h3 {
+    font-size: 22px; }
+  .TituloBienestar2 h3 {
+    font-size: 22px; }
+  .ParrafoBienestar {
+    font-size: 18px; }
+  .ParrafoBienestar2 {
+    font-size: 18px; }
+  .ComprarBienestar2 a button {
+    font-size: 15px; }
+  .ComprarBienestar2 a button {
+    font-size: 15px; } }
+
+@media screen and (max-width: 700px) {
+  .LineaBienestarH1 div h1 {
+    font-size: 33px; }
+  .LineaBienestar .BienestarProductos .ProductosBien1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "titulo" "imagen" "comprarbienestar" "parrafobienestar";
+    row-gap: 20px; }
+    .LineaBienestar .BienestarProductos .ProductosBien1 .ImagenBienestar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+  .LineaBienestar .BienestarProductos .ProductosBien2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "titulo2" "imagen2" "comprarbienestar2" "parrafobienestar2";
+    row-gap: 20px; }
+    .LineaBienestar .BienestarProductos .ProductosBien2 .ImagenBienestar2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; } }
+
+@media screen and (max-width: 1350px) {
+  .CapilarProductos {
+    margin: 60px; } }
+
+@media screen and (max-width: 1100px) {
+  .LineaCapilarH1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px; }
+    .LineaCapilarH1 div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 80px; }
+      .LineaCapilarH1 div h1 {
+        font-size: 40px; }
+  .LineaCapilar .CapilarProductos .ProductosCap1 {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img {
+      width: 400px;
+      height: 267px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar h3 {
+      font-size: 25px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar {
+      font-size: 20px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a button {
+      font-size: 18px; }
+  .LineaCapilar .CapilarProductos .ProductosCap2 {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img {
+      width: 400px;
+      height: 267px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2 h3 {
+      font-size: 25px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2 {
+      font-size: 20px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a button {
+      font-size: 18px; } }
+
+@media screen and (max-width: 900px) {
+  .LineaCapilar .CapilarProductos {
+    margin: 30px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 {
+      display: grid;
+      grid-template-columns: 370px auto;
+      grid-template-rows: 40px 247px 40px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img {
+        width: 370px;
+        height: 247px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar h3 {
+        font-size: 24px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar {
+        font-size: 19px;
+        padding: 0px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a button {
+        font-size: 16px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 {
+      display: grid;
+      grid-template-columns: auto 370px;
+      grid-template-rows: 40px 247px 40px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img {
+        width: 370px;
+        height: 247px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2 h3 {
+        font-size: 24px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2 {
+        font-size: 19px;
+        padding: 0px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a button {
+        font-size: 16px; } }
+
+@media screen and (max-width: 729px) {
+  .LineaCapilarH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+    .LineaCapilarH1 div {
+      height: 60px; }
+      .LineaCapilarH1 div h1 {
+        font-size: 35px; }
+  .LineaCapilar .CapilarProductos {
+    margin: 30px 20px 30px 20px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 {
+      display: grid;
+      grid-template-columns: 310px auto;
+      grid-template-rows: 40px 217px 40px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar img {
+        width: 310px;
+        height: 217px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .TituloCapilar h3 {
+        font-size: 22px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ParrafoCapilar {
+        font-size: 18px; }
+      .LineaCapilar .CapilarProductos .ProductosCap1 .ComprarCapilar a button {
+        font-size: 15px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 {
+      display: grid;
+      grid-template-columns: auto 310px;
+      grid-template-rows: 40px 217px 40px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 img {
+        width: 310px;
+        height: 217px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .TituloCapilar2 h3 {
+        font-size: 22px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ParrafoCapilar2 {
+        font-size: 18px; }
+      .LineaCapilar .CapilarProductos .ProductosCap2 .ComprarCapilar a button {
+        font-size: 15px; } }
+
+@media screen and (max-width: 619px) {
+  .LineaCapilarH1 div h1 {
+    font-size: 33px; }
+  .LineaCapilar .CapilarProductos .ProductosCap1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "tituloC" "imagenC" "comprarcapilar" "parrafocapilar";
+    row-gap: 20px; }
+    .LineaCapilar .CapilarProductos .ProductosCap1 .ImagenCapilar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+  .LineaCapilar .CapilarProductos .ProductosCap2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "tituloC2" "imagenC2" "comprarcapilar2" "parrafocapilar2";
+    row-gap: 20px; }
+    .LineaCapilar .CapilarProductos .ProductosCap2 .ImagenCapilar2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; } }
+
+@media screen and (max-width: 1000px) {
+  .CapilarCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap; }
+    .CapilarCol .ProductosCapCol {
+      grid-template-rows: 40px 267px 40px 100px;
+      margin: 30px 0px 30px 0px; }
+      .CapilarCol .ProductosCapCol .TituloCapilarCol h3 {
+        font-size: 25px; }
+      .CapilarCol .ProductosCapCol .ImagenCapilarCol {
+        width: 400px;
+        height: 267px; }
+        .CapilarCol .ProductosCapCol .ImagenCapilarCol img {
+          width: 400px;
+          height: 267px; }
+      .CapilarCol .ProductosCapCol .ParrafoCapilarCol {
+        font-size: 20px; }
+      .CapilarCol .ProductosCapCol .ComprarCapilarCol a button {
+        font-size: 18px; } }
+
+@media screen and (max-width: 900px) {
+  .CapilarCol .ProductosCapCol {
+    grid-template-rows: 40px 247px 40px auto; }
+    .CapilarCol .ProductosCapCol .TituloCapilarCol h3 {
+      font-size: 24px; }
+    .CapilarCol .ProductosCapCol .ImagenCapilarCol {
+      width: 370px;
+      height: 247px; }
+      .CapilarCol .ProductosCapCol .ImagenCapilarCol img {
+        width: 370px;
+        height: 247px; }
+    .CapilarCol .ProductosCapCol .ParrafoCapilarCol {
+      font-size: 19px; }
+      .CapilarCol .ProductosCapCol .ParrafoCapilarCol p {
+        padding: 0px; }
+    .CapilarCol .ProductosCapCol .ComprarCapilarCol a button {
+      font-size: 16px; } }
+
+@media screen and (max-width: 729px) {
+  .CapilarCol .ProductosCapCol {
+    grid-template-rows: 40px 217px 30px auto; }
+    .CapilarCol .ProductosCapCol .TituloCapilarCol h3 {
+      font-size: 24px; }
+    .CapilarCol .ProductosCapCol .ImagenCapilarCol {
+      width: 310px;
+      height: 217px; }
+      .CapilarCol .ProductosCapCol .ImagenCapilarCol img {
+        width: 310px;
+        height: 217px; }
+    .CapilarCol .ProductosCapCol .ParrafoCapilarCol {
+      font-size: 18px; }
+    .CapilarCol .ProductosCapCol .ComprarCapilarCol a button {
+      font-size: 15px; } }
+
+@media screen and (max-width: 1100px) {
+  .LineaCorporalH1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px; }
+    .LineaCorporalH1 div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 80px; }
+      .LineaCorporalH1 div h1 {
+        font-size: 40px; }
+  .LineaCorporal .CorporalProductos .ProductosCorp1 {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal {
+      width: 400px;
+      height: 267px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal img {
+        width: 400px;
+        height: 267px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal h3 {
+      font-size: 25px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal {
+      font-size: 20px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal a button {
+      font-size: 18px; }
+  .LineaCorporal .CorporalProductos .ProductosCorp1 {
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 {
+      width: 400px;
+      height: 267px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 img {
+        width: 400px;
+        height: 267px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal2 h3 {
+      font-size: 25px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal2 {
+      font-size: 20px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal2 a button {
+      font-size: 18px; } }
+
+@media screen and (max-width: 900px) {
+  .LineaCorporal .CorporalProductos {
+    margin: 30px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 {
+      display: grid;
+      grid-template-columns: 370px auto;
+      grid-template-rows: 40px 247px 40px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal {
+        width: 370px;
+        height: 247px; }
+        .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal img {
+          width: 370px;
+          height: 247px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal h3 {
+        font-size: 24px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal {
+        padding: 10px;
+        font-size: 19px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal a button {
+        font-size: 16px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 {
+      display: grid;
+      grid-template-columns: auto 400px;
+      grid-template-rows: 40px 267px 40px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 {
+        width: 370px;
+        height: 247px; }
+        .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 img {
+          width: 370px;
+          height: 247px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal2 h3 {
+        font-size: 24px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal2 {
+        padding: 10px;
+        font-size: 19px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal2 a button {
+        font-size: 16px; } }
+
+@media screen and (max-width: 729px) {
+  .LineaCorporalH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+    .LineaCorporalH1 div {
+      height: 60px; }
+      .LineaCorporalH1 div h1 {
+        font-size: 33px; }
+  .LineaCorporal .CorporalProductos {
+    margin: 30px 20px 30px 20px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 {
+      display: grid;
+      grid-template-columns: 310px auto;
+      grid-template-rows: 40px 217px 40px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal img {
+        width: 310px;
+        height: 217px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal h3 {
+        font-size: 22px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal {
+        font-size: 18px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal a button {
+        font-size: 15px; }
+    .LineaCorporal .CorporalProductos .ProductosCorp1 {
+      display: grid;
+      grid-template-columns: auto 310px;
+      grid-template-rows: 40px 217px 40px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 {
+        width: 370px;
+        height: 247px; }
+        .LineaCorporal .CorporalProductos .ProductosCorp1 .ImagenCorporal2 img {
+          width: 310px;
+          height: 217px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .TituloCorporal2 h3 {
+        font-size: 22px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ParrafoCorporal2 {
+        font-size: 18px; }
+      .LineaCorporal .CorporalProductos .ProductosCorp1 .ComprarCorporal2 a button {
+        font-size: 15px; } }
+
+@media screen and (max-width: 619px) {
+  .ProductosCorp1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "titulocorp" "imagencorp" "comprarcorp" "parrafocorp";
+    row-gap: 20px; }
+    .ProductosCorp1 .ImagenCorporal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+  .ProductosCorp2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 217px 40px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-areas: "titulocorp2" "imagencorp2" "comprarcorp2" "parrafocorp2";
+    row-gap: 20px; }
+    .ProductosCorp2 .ImagenCorporal2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; } }
+
+@media screen and (max-width: 1400px) {
+  .VideoContenedor {
+    margin: 30px 100px 30px 100px; } }
+
+@media screen and (max-width: 1200px) {
+  .VideoContenedor {
+    margin: 30px 80px 30px 80px; } }
+
+@media screen and (max-width: 1100px) {
+  .VideoContenedor {
+    margin: 30px 60px 30px 60px; }
+    .VideoContenedor .VideoVid video {
+      width: 620px;
+      height: 400px; }
+    .VideoContenedor .VideoDes {
+      padding: 20px; }
+      .VideoContenedor .VideoDes h2 {
+        margin: 10px;
+        font-size: 28px;
+        font-weight: 700; }
+      .VideoContenedor .VideoDes p {
+        font-size: 23px; } }
+
+@media screen and (max-width: 900px) {
+  .VideoContenedor {
+    margin: 30px 40px 30px 40px; }
+    .VideoContenedor .VideoVid video {
+      width: 620px;
+      height: 400px; }
+    .VideoContenedor .VideoDes {
+      padding: 10px; }
+      .VideoContenedor .VideoDes h2 {
+        margin: 10px;
+        font-size: 25px; }
+      .VideoContenedor .VideoDes p {
+        font-size: 20px;
+        padding: 5px; } }
+
+@media screen and (max-width: 800px) {
+  .VideoContenedor {
+    margin: 20px; }
+    .VideoContenedor .VideoVid video {
+      width: 600px;
+      height: 380px; }
+    .VideoContenedor .VideoDes {
+      padding: 5px; }
+      .VideoContenedor .VideoDes h2 {
+        font-size: 23px; }
+      .VideoContenedor .VideoDes p {
+        font-size: 18px; } }
+
+@media screen and (max-width: 700px) {
+  .VideoContenedor {
+    margin: 10px; }
+    .VideoContenedor .VideoDes h2 {
+      font-size: 21px; }
+    .VideoContenedor .VideoDes p {
+      font-size: 16px; } }
+
+@media screen and (max-width: 600px) {
+  .VideoContenedor {
+    flex-direction: column; }
+    .VideoContenedor .VideoVid video {
+      width: 680px;
+      height: 380px; }
+    .VideoContenedor .VideoDes {
+      padding: 20px; }
+      .VideoContenedor .VideoDes h2 {
+        font-size: 21px;
+        width: 70%; }
+      .VideoContenedor .VideoDes p {
+        font-size: 16px;
+        margin-bottom: 0; } }
+
+@media screen and (max-width: 1200px) {
+  .LineaDentalH1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px; }
+    .LineaDentalH1 div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 80px; }
+      .LineaDentalH1 div h1 {
+        font-size: 40px; }
+  .LineaDental .DentalProductos {
+    margin: 30px 80px 30px 80px; }
+    .LineaDental .DentalProductos .ProductosDen {
+      grid-template-rows: 40px 307px auto 40px; }
+      .LineaDental .DentalProductos .ProductosDen .ImagenDental Img {
+        width: 460px;
+        height: 307px; }
+      .LineaDental .DentalProductos .ProductosDen .TituloDental h3 {
+        font-size: 25px; }
+      .LineaDental .DentalProductos .ProductosDen .ParrafoDental {
+        font-size: 22px; }
+      .LineaDental .DentalProductos .ProductosDen .ComprarDental a button {
+        font-size: 19px; } }
+
+@media screen and (max-width: 800px) {
+  .LineaDentalH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+    .LineaDentalH1 div {
+      height: 60px; }
+      .LineaDentalH1 div h1 {
+        font-size: 35px; }
+  .LineaDental .DentalProductos {
+    margin: 30px 40px 30px 40px; }
+    .LineaDental .DentalProductos .ProductosDen {
+      grid-template-rows: 40px 267px auto 40px; }
+      .LineaDental .DentalProductos .ProductosDen .ImagenDental Img {
+        width: 400px;
+        height: 267px; }
+      .LineaDental .DentalProductos .ProductosDen .TituloDental h3 {
+        font-size: 24px; }
+      .LineaDental .DentalProductos .ProductosDen .ParrafoDental {
+        font-size: 20px; }
+      .LineaDental .DentalProductos .ProductosDen .ComprarDental a button {
+        font-size: 17px; } }
+
+@media screen and (max-width: 600px) {
+  .LineaDentalH1 div h1 {
+    font-size: 33px; }
+  .LineaDental .DentalProductos {
+    margin: 30px 20px 30px 20px; }
+    .LineaDental .DentalProductos .ProductosDen {
+      grid-template-rows: 40px 247px auto 40px; }
+      .LineaDental .DentalProductos .ProductosDen .ImagenDental Img {
+        width: 370px;
+        height: 247px; }
+      .LineaDental .DentalProductos .ProductosDen .TituloDental h3 {
+        font-size: 23px; }
+      .LineaDental .DentalProductos .ProductosDen .ParrafoDental {
+        font-size: 19px; }
+      .LineaDental .DentalProductos .ProductosDen .ComprarDental a button {
+        font-size: 16px; } }
+
+@media screen and (max-width: 500px) {
+  .LineaDental .DentalProductos .ProductosDen {
+    margin-bottom: 5px;
+    grid-template-rows: 40px 217px auto 40px; }
+    .LineaDental .DentalProductos .ProductosDen .ImagenDental Img {
+      width: 310px;
+      height: 217px; }
+    .LineaDental .DentalProductos .ProductosDen .TituloDental h3 {
+      font-size: 22px; }
+    .LineaDental .DentalProductos .ProductosDen .ParrafoDental {
+      font-size: 18px; }
+    .LineaDental .DentalProductos .ProductosDen .ComprarDental a button {
+      font-size: 15px; } }
+
+@media screen and (max-width: 1350px) {
+  .FacialProductos {
+    margin: 60px; } }
+
+@media screen and (max-width: 1200px) {
+  .LineaFacialH1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px; }
+    .LineaFacialH1 div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: 80px; }
+      .LineaFacialH1 div h1 {
+        font-size: 40px; }
+  .LineaFacial .FacialProductos .ProductosFac1 {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 40px 267px 40px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .TituloFacial h3 {
+      font-size: 25px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ImagenFacial img {
+      width: 400px;
+      height: 267px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ParrafoFacial {
+      font-size: 22px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ComprarFacial a button {
+      font-size: 17px; }
+  .LineaFacial .FacialProductos .ProductosFacialCol {
+    grid-template-rows: 40px 307px 40px auto; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .TituloFacialCol h3 {
+      font-size: 25px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ImagenFacial img {
+      width: 400px;
+      height: 267px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ParrafoFacial {
+      font-size: 22px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ComprarFacialCol a button {
+      font-size: 19px; } }
+
+@media screen and (max-width: 1000px) {
+  .LineaFacial .FacialProductos {
+    margin: 30px; }
+    .LineaFacial .FacialProductos .ProductosFac1 {
+      display: grid;
+      grid-template-columns: 370px auto;
+      grid-template-rows: 40px 247px 40px; }
+      .LineaFacial .FacialProductos .ProductosFac1 .ImagenFacial img {
+        width: 370px;
+        height: 247px; }
+      .LineaFacial .FacialProductos .ProductosFac1 .ParrafoFacial {
+        padding: 10px;
+        font-size: 19px; }
+      .LineaFacial .FacialProductos .ProductosFac1 .ComprarFacial a button {
+        font-size: 16px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol {
+      grid-template-rows: 40px 267px 40px auto; }
+      .LineaFacial .FacialProductos .ProductosFacialCol .TituloFacialCol h3 {
+        font-size: 25px; }
+      .LineaFacial .FacialProductos .ProductosFacialCol .ImagenFacial img {
+        width: 400px;
+        height: 267px; }
+      .LineaFacial .FacialProductos .ProductosFacialCol .ParrafoFacial {
+        font-size: 19px; }
+      .LineaFacial .FacialProductos .ProductosFacialCol .ComprarFacialCol a button {
+        font-size: 17px; } }
+
+@media screen and (max-width: 800px) {
+  .LineaFacialH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+    .LineaFacialH1 div {
+      height: 60px; }
+      .LineaFacialH1 div h1 {
+        font-size: 33px; }
+  .LineaFacial .FacialProductos {
+    margin: 30px 20px 30px 20px; }
+    .LineaFacial .FacialProductos .ProductosFac1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 40px 267px 40px auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      grid-template-areas: "titulofac" "imagenfac" "comprarfac" "parrafofac";
+      row-gap: 20px; }
+      .LineaFacial .FacialProductos .ProductosFac1 .TituloFacial h3 {
+        font-size: 22px; } }
+
+@media screen and (max-width: 600px) {
+  .LineaFacial .FacialProductos .ProductosFac1 {
+    grid-template-rows: 40px 217px 40px auto; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ImagenFacial img {
+      width: 310px;
+      height: 217px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .TituloFacial h3 {
+      font-size: 22px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ParrafoFacial {
+      font-size: 18px; }
+    .LineaFacial .FacialProductos .ProductosFac1 .ComprarFacial a button {
+      font-size: 15px; }
+  .LineaFacial .FacialProductos .ProductosFacialCol {
+    grid-template-rows: 40px 217px 40px auto; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ImagenFacialCol img {
+      width: 310px;
+      height: 217px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ParrafoFacialCol {
+      font-size: 18px; }
+    .LineaFacial .FacialProductos .ProductosFacialCol .ComprarFacialCol a button {
+      font-size: 15px; } }
+
+@media screen and (max-width: 1270px) {
+  .LineaEsencialH1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 80px; }
+    .LineaEsencialH1 div {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 80px; }
+      .LineaEsencialH1 div h1 {
+        font-size: 44px; }
+  .LineaEsencial .EsencialDiv .DesEsencial {
+    font-size: 28px; }
+  .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 {
+    grid-template-columns: repeat(4, 247px);
+    grid-template-rows: 370px 40px; }
+    .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 img {
+      width: 247px;
+      height: 370px; }
+    .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 .ComprarEsencial a button {
+      font-size: 16px; }
+  .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 {
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 247px; }
+    .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 img {
+      width: 370px;
+      height: 247px; } }
+
+@media screen and (max-width: 1170px) {
+  .LineaEsencial .EsencialDiv .DesEsencial {
+    height: 280px;
+    font-size: 26px; }
+  .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 {
+    grid-template-columns: repeat(4, 217px);
+    grid-template-rows: 310px 40px; }
+    .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 img {
+      width: 217px;
+      height: 310px; }
+    .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 .ComprarEsencial a button {
+      font-size: 14px; }
+  .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 {
+    grid-template-columns: 310px 10px 310px;
+    grid-template-rows: 217px 247px;
+    grid-template-areas: "quinta . septima" ". sexta ."; }
+    .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 img {
+      width: 310px;
+      height: 217px; } }
+
+@media screen and (max-width: 950px) {
+  .LineaEsencial .EsencialDiv .DesEsencial {
+    width: 90%;
+    font-size: 24px; }
+  .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 {
+    grid-template-columns: repeat(2, 217px);
+    grid-template-rows: 310px 310px 40px;
+    grid-template-areas: "primera segunda" "tercera cuarta" "comprarfac comprarfac"; } }
+
+@media screen and (max-width: 700px) {
+  .LineaEsencialH1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px; }
+    .LineaEsencialH1 div {
+      height: 60px; }
+      .LineaEsencialH1 div h1 {
+        font-size: 33px; }
+  .LineaEsencial .EsencialDiv .DesEsencial .DesEsencial {
+    width: 90%;
+    font-size: 22px;
+    height: 300px; }
+  .LineaEsencial .EsencialDiv .HidrolatosB .HidroDiv2 {
+    grid-template-columns: 310px;
+    grid-template-rows: repeat(3, 217px);
+    grid-template-areas: "quinta" "sexta" "septima"; } }
+
+@media screen and (max-width: 700px) {
+  .LineaEsencial .EsencialDiv .DesEsencial .DesEsencial {
+    width: 100%;
+    font-size: 20px;
+    height: 330px; }
+  .LineaEsencial .EsencialDiv .Hidrolatos .HidroDiv1 {
+    grid-template-columns: 217px;
+    grid-template-rows: 310px 310px 310px 310px 40px;
+    grid-template-areas: "primera" "segunda" "tercera" "cuarta" "comprarfac"; } }
+
+@media screen and (max-width: 1320px) {
+  .contacto .contcont {
+    width: 70%; } }
+
+@media screen and (max-width: 900px) {
+  .contacto .contcont {
+    width: 90%; }
+    .contacto .contcont .textocontacto div {
+      width: 80%; }
+    .contacto .contcont .formulario form {
+      width: 80%; }
+      .contacto .contcont .formulario form .enviar {
+        width: 80%; } }
+
+@media screen and (max-width: 700px) {
+  .contacto {
+    border: black solid 25px; }
+    .contacto .contcont {
+      width: 95%; }
+      .contacto .contcont .textocontacto h1 {
+        font-size: 35px; }
+      .contacto .contcont .textocontacto div {
+        width: 90%; }
+        .contacto .contcont .textocontacto div p {
+          font-size: 22px; }
+      .contacto .contcont .formulario form {
+        width: 90%; }
+        .contacto .contcont .formulario form .fomularioconteiner div h3 {
+          font-size: 28px; }
+        .contacto .contcont .formulario form .enviar {
+          width: 90%; }
+          .contacto .contcont .formulario form .enviar div input {
+            font-size: 15px; } }
+
+@media screen and (max-width: 499px) {
+  .contacto {
+    border: black solid 15px; }
+    .contacto .contcont {
+      width: 100%; }
+      .contacto .contcont .textocontacto h1 {
+        font-size: 32px; }
+      .contacto .contcont .textocontacto div {
+        width: 100%; }
+        .contacto .contcont .textocontacto div p {
+          font-size: 19px; }
+      .contacto .contcont .formulario form {
+        width: 90%; }
+        .contacto .contcont .formulario form .fomularioconteiner div h3 {
+          font-size: 25px; }
+        .contacto .contcont .formulario form .fomularioconteiner div textarea {
+          height: 210px; }
+        .contacto .contcont .formulario form .enviar {
+          width: 100%; }
+          .contacto .contcont .formulario form .enviar div input {
+            font-size: 14px; } }
+
+@media screen and (max-width: 1500px) {
+  .nosotros_p {
+    height: 550px; } }
+
+@media screen and (max-width: 1263px) {
+  .nosotros {
+    margin: 25px; }
+    .nosotros .filtrer .Pnosotros .nosotros_img {
+      width: 460px;
+      height: 580px;
+      margin: 0px; }
+      .nosotros .filtrer .Pnosotros .nosotros_img img {
+        width: 460px;
+        height: 580px; }
+    .nosotros .filtrer .Pnosotros .nosotros_p {
+      height: 450px; }
+      .nosotros .filtrer .Pnosotros .nosotros_p p {
+        font-size: 20px; } }
+
+@media screen and (max-width: 1100px) {
+  .nosotros_p {
+    height: 480px; }
+    .nosotros_p p {
+      font-size: 18px; } }
+
+@media screen and (max-width: 1000px) {
+  .nosotros .filtrer .Pnosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .nosotros .filtrer .Pnosotros .nosotros_img {
+      width: 340px;
+      height: 460px; }
+      .nosotros .filtrer .Pnosotros .nosotros_img img {
+        width: 340px;
+        height: 460px; }
+    .nosotros .filtrer .Pnosotros .nosotros_p {
+      width: 100%;
+      height: 350px; }
+      .nosotros .filtrer .Pnosotros .nosotros_p p {
+        font-size: 17px; } }
+
+@media screen and (max-width: 626px) {
+  .nosotros .filtrer .Pnosotros {
+    padding: 15px; }
+    .nosotros .filtrer .Pnosotros .nosotros_p {
+      margin: 10px 0px 0px 0px;
+      height: 350px; }
+      .nosotros .filtrer .Pnosotros .nosotros_p p {
+        padding: 15px;
+        font-size: 14px; } }
+
+@media screen and (max-width: 626px) {
+  .nosotros {
+    margin: 10px; }
+    .nosotros .filtrer .Pnosotros .nosotros_img {
+      width: 320px;
+      height: 420px; }
+      .nosotros .filtrer .Pnosotros .nosotros_img img {
+        width: 320px;
+        height: 420px; }
+    .nosotros .filtrer .Pnosotros .nosotros_p {
+      margin: 10px 0px 0px 0px;
+      height: 400px; }
+      .nosotros .filtrer .Pnosotros .nosotros_p p {
+        padding: 15px;
+        font-size: 14px; } }
