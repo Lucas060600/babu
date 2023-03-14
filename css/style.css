@@ -12,7 +12,6 @@
 
 body{
     background-color: #020108;
-    /* background-color: black; */
     font-family: 'Inter', sans-serif;
 }
 
@@ -213,7 +212,7 @@ header nav ul{
         align-items: center;
     }
 
-    header .imgheade img{
+    header .imgheader img{
         margin: 0;
     }
     nav{
@@ -230,7 +229,7 @@ header nav ul{
 /**-------------------------------*/
 /*!-------------------------Heroseccion--------------------------------------*/
 .hero{
-    background-image: url("../img/Seleccionadas/planta1.jpg");
+    background-image: url("../img/Optimizacion/planta1.jpg");
     text-align: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -252,7 +251,6 @@ header nav ul{
 
 .SpanHero{
     color: #c7c268;
-
 }
 
 
@@ -4311,7 +4309,6 @@ header nav ul{
 
 .SpanParrafos:hover{
     color: #c7c268;
-
 }
 
 @media screen and (max-width:1000px){
