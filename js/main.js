@@ -23,123 +23,100 @@ else {
     alert("No hay problema")
 }
 
-
-let opcion = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \n3 - Línea Corporal. \n4 - Línea Dental. \n5 - Línea Facial. \n6 - Línea Esencial. \nPresioná X para Salir.")
-while (opcion != "X") {
-    switch (opcion) {
-        case "1":
-            let LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-            while (LineaBienestar != "X") {
-                switch (LineaBienestar) {
-                    case "1":
-                        let balsamo = "1000"
-                        alert("El valor del prodcuto es " + balsamo);
-                        let cantidad = prompt("Ingresa la cantidad");
-                        if (cantidad > 0) {
-                            alert("El precio final es de " + balsamo * cantidad);
-                            let preguntaCompra = prompt("¿Desea Comprar?\n1 Si\n2 No");
-                            switch (preguntaCompra) {
-                                case "1":
-                                    let MetododePago = prompt("Ingrese por favor metodo de pago \n1 Efectivo\n2 Tarjeta(Solo Visa)");
-                                    switch (MetododePago) {
-                                        case "1":
-                                            alert("Para abonar en efectivo por favor acerquese a sucursal. Muchas gracias.")
-                                            break;
-                                        case "2":
-                                            for (let i = 2; i >= 0; i--) {
-                                                let tarjeta = parseInt(prompt("Ingresa por favor el numero de tarjeta"))
-                                                if(tarjeta > 4500000000000000){
-                                                    let vencimiento =  prompt("Ingresa el la fecha de vencimiento mm/aa")
-                                                    let cod = prompt("Ingresa el cod de 3 digitos en el dorso de su tarjeta")
-                                                    alert("Los datos ingresados son: Tajeta" + tarjeta + "Vencimiento: " + vencimiento + "Cod: " + cod)
-                                                    let domicilio = prompt("Ingresa tu domicilio")
-                                                    alert(domicilio)
-                                                    break;
-                                                }else{
-                                                    (tarjeta <= 4500000000000000)
-                                                    alert("tarjeta no valida")
-                                                    let tarjeta = prompt("Ingresa por favor el numero de tarjeta")
-                                                }                                               
-                                            }
-                                        break;
-                                        default:
-                                            break;
-                                    }
-                                    
-                                case "2":
-                                    LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir");
-                                    break;
-                                
-                                default:
-                                    alert("Opcion no valida")
-                                    LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                                    break;
-                            }
-
-                            LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                            break;
-                        } else {
-                            (cantidad <= 0)
-                            alert("Para que elegis producto si no vas a comprar")
-                        }
-                        LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                        break;
-                    case "2":
-                        let shampoo = "1200";
-                        alert("El valor del prodcuto es " + shampoo);
-                        cantidad = prompt("Ingresa la cantidad");
-                        if (cantidad > 0) {
-                            alert("El precio final es de " + shampoo * cantidad);
-                            LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                            break;
-                        } else {
-                            (cantidad <= 0)
-                            alert("Para que elegis producto si no vas a comprar")
-                        }
-                        LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                        break;
-                    case "3":
-                        let rolon = "900"
-                        alert("El valor del prodcuto es " + rolon);
-                        cantidad = prompt("Ingresa la cantidad");
-                        if (cantidad > 0) {
-                            alert("El precio final es de " + rolon * cantidad);
-                            LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                            break;
-                        } else {
-                            (cantidad <= 0)
-                            alert("Para que elegis producto si no vas a comprar")
-                        }
-                        LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
-                        break;
-                    case "X":
-                        break;
-                    default:
-                        alert("Ingreso no valido")
-                        LineaBienestar = prompt("Productos\n1 - Balsamo\n2 - Shampoo\nPresiona X para salir")
-                        break;
-                }
-            }
-
-            break;
-        case "2":
-            break;
-        case "3":
-            break;
-        case "4":
-            break;
-        case "5":
-            break;
-        case "6":
-            break;
-        case "X":
-            break;
-        default:
-            alert("Ingreso no valido");
-            break;
-    }
-    opcion = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \n3 - Línea Corporal. \n4 - Línea Dental. \n5 - Línea Facial. \n6 - Línea Esencial. \nPresioná X para Salir.")
+function CalcularPrecioFinal(precio, cantidad) {
+    let precioFinal = precio * cantidad
+    alert("El total seria $" + precioFinal);
 }
 
+let Linea = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \nPresioná X para Salir.")
+while (Linea != "X") {
+    switch (Linea) {
+        case "1":
+            let producto = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
+            while (producto != "X") {
+                switch (producto) {
+                    case "1":
+                        precio = 1000
+                        alert("El precio es de $" + precio)
+                        let preguntaCompra = prompt("¿Desea Comprar?\n1 Si\n2 No");
+                        //Pregunta Compra
+                        switch (preguntaCompra) {
+                            case "1":
+                                let cantidad = parseInt(prompt("Seleccione la cantidad"))
+                                if (cantidad > 0) {
+                                    alert(CalcularPrecioFinal(precio, cantidad))
+                                    let MetododePago = prompt("¿Cómo prefiere abonar? \n1 - Efectivo\n2 - Tarjeta(Solo Visa débito/crédito)\nPresiona X para volver")
 
+                                    switch (MetododePago) {
+                                        case "1":
+                                            alert("Por favor acerquese a un sucursal para la compra y retiro de su producto")
+                                            break;
 
+                                        case "2":                                    
+                                            for (let i = 2; i >= 0; i--) {
+                                                let tarjeta = parseInt(prompt("Ingrese por favor el numero de tarjeta. Te quedan " + (i + 1) + " intentos")) 
+                                                if (tarjeta > 4500000000000000) {
+                                                    let vencimiento = parseInt(prompt("Ingresa la fecha de vencimiento mm/aa."))
+                                                    let cod = parseInt(prompt("Ingresa el codigo de verificacion de 3 digitos que se encuentra en el dorso de la tarjeta."))
+                                                    alert("Ingresaste los siguientes datos - Tarjeta " + tarjeta + " - " + "Vencimiento:" + " - " + vencimiento + " - " + "Codigo" + " - " + cod)
+                                                    let domicilio = prompt("Ingresa calle altura y entre calles. Ej: Calle 123, entre Av.Siempre viva y Calle Falsa.")
+                                                    alert("Enviaremos el producto a la siguiente direccion:" + " " + domicilio + "Gracias por elegirnos.")
+                                                    break;
+                                                } else {
+                                                    alert("Tarjeta no valida. Ingrese por favor nuevamente")
+                                                }
+                                            
+                                            }
+                                                break;
+                                            
+                                        default:
+                                            alert("Opcion no valida")
+                                            MetododePago = prompt("¿Cómo prefiere abonar? \n1 - Efectivo\n2 - Tarjeta(Solo Visa débito/crédito)\nPresiona X para volver")
+                                            break;
+                                    }
+
+                                } else {
+                                    (cantidad <= 0)
+                                    alert("Para qué seleccionas un producto si no lo vas a comprar")
+                                    
+                                }
+
+                            case "2":
+                                producto = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
+                                break;
+                            default:
+                                alert("Opcion no valida")
+                                preguntaCompra = prompt("¿Desea Comprar?\n1 Si\n2 No");
+                                break;
+                        }
+                        break;
+
+                    case "2":
+                        alert("Producto sin stock");
+                        producto = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
+                        break;
+                        
+                    case "3":
+                        alert("Producto sin stock");
+                        producto = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
+                        break;
+
+                    default:
+                        alert("Opcion no valida")
+                        producto = prompt("Productos\n1 - Balsamo\n2 - Shampoo\n3 - Rolon\nPresiona X para salir")
+                        break;
+                }
+                
+            }
+            Linea = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \nPresioná X para Salir.")
+            break;
+        case "2":
+            alert("Sin stock por el momento")
+            Linea = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \nPresioná X para Salir.")
+            break;
+        default:
+            alert("Opción no válida")
+            Linea = prompt("Seleccione la línea del producto \n1 - Línea Bienestar. \n2 - Línea Capilar. \nPresioná X para Salir.")
+            break;
+    }
+}
