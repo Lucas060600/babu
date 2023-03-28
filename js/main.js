@@ -12,16 +12,37 @@ while (IngresaUsuario !== Usuario || IngresaPassword !== Password) {
     IngresaPassword = prompt("Ingresa contraseña")
 }
 alert("Bienvenido " + Nombre)
-alert("¿Te gustaria calificarnos? Si/No")
-let Pregunta = prompt("")
-if (Pregunta === CalificacionSi) {
-    prompt("Ingresa tu calificacion del 1 al 10")
-    alert("Gracias por valorarnos")
+let encuesta = prompt("¿Te gustaria calificarnos?\n1 - Si\n2 - No")
+
+switch (encuesta){
+    case "1":
+        let calificacion = prompt("¿Cuan satisfecho te encontras con nuestra plataforma?\n1 - Muy satisfecho \n2- Ni satifecho ni insatisfecho \n3 - Insatisfecho")
+        switch (calificacion) {
+            case "1":
+                alert("Tu valoracion nos ayuda a seguir mejorando")
+                break;
+            case "2":
+                prompt("¿Por que motivo nos calificaste de esta forma?")
+                alert("Tu valoracion nos ayuda a seguir mejorando")
+                break;
+            case "3":
+                prompt("¿Por que motivo nos calificaste de esta forma?")
+                alert("Tu valoracion nos ayuda a seguir mejorando")                
+                break;        
+            default:
+                break;
+        }
+        alert("Gracias por valorarnos")
+        break;
+    case "2":
+        alert("No hay problema")
+    break;
+    default:
+        alert("Opcion no válida")
+        encuesta = prompt("¿Te gustaria calificarnos?\n1 - Si\n2 - No")
+        break;
 }
-else {
-    (Pregunta === CalificacionNo || Pregunta !== CalificacionSi)
-    alert("No hay problema")
-}
+
 
 function CalcularPrecioFinal(precio, cantidad) {
     let precioFinal = precio * cantidad
